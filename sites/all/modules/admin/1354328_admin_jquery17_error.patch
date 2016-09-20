@@ -1,0 +1,28 @@
+diff --git a/includes/admin.menu.js b/includes/admin.menu.js
+index 3d1e334..658238e 100644
+--- a/includes/admin.menu.js
++++ b/includes/admin.menu.js
+@@ -13,7 +13,7 @@ Drupal.behaviors.adminToolbarMenu = function(context) {
+           $('a:has(span.menu-description)', menu).hover(
+             function() {
+               $('<a></a>')
+-                .attr('class', $(this).attr('class'))
++                .attr('class', $(this).attr('class')||"")
+                 .addClass('menu-hover')
+                 .append($('span.menu-description', this).clone())
+                 .appendTo(menu)
+diff --git a/includes/jquery.drilldown.js b/includes/jquery.drilldown.js
+index 3b6f181..437f630 100644
+--- a/includes/jquery.drilldown.js
++++ b/includes/jquery.drilldown.js
+@@ -84,8 +84,8 @@
+               // We don't use the $().clone() method here because of an
+               // IE & jQuery 1.2 bug.
+               var clone = $('<a></a>')
+-                .attr('href', $(breadcrumb[key]).attr('href'))
+-                .attr('class', $(breadcrumb[key]).attr('class'))
++                .attr('href', $(breadcrumb[key]).attr('href')||"")
++                .attr('class', $(breadcrumb[key]).attr('class')||"")
+                 .html($(breadcrumb[key]).html())
+                 .addClass('depth-'+key)
+                 .appendTo(trail);

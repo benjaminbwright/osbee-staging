@@ -1,0 +1,25 @@
+core = 7.x
+description = Osbee
+engine = phptemplate
+name = Osbee
+base theme = tao
+
+; Regions =====================================================================
+
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[navigation] = Navigation
+regions[content] = Content
+regions[postscript] = Postscript
+regions[header] = Header
+regions[help] = Help
+regions[footer] = Footer
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+; Stylesheets =================================================================
+stylesheets[all][] = css/osbee.css
+
+; Scripts
+scripts[] = js/script.js

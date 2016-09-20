@@ -1,0 +1,22 @@
+diff --git a/includes/jquery.drilldown.js b/includes/jquery.drilldown.js
+index 5e085fb..29f717c 100644
+--- a/includes/jquery.drilldown.js
++++ b/includes/jquery.drilldown.js
+@@ -81,12 +81,12 @@
+           trail.empty();
+           for (var key in breadcrumb) {
+             if (breadcrumb[key]) {
+-              // We don't use the $().clone() method here because of an
+-              // IE & jQuery 1.2 bug.
++              // As of jQuery 1.6, the .attr() method returns undefined for
++              // attributes that have not been set.
+               var clone = $('<a></a>')
+-                .attr('href', $(breadcrumb[key]).attr('href'))
+-                .attr('class', $(breadcrumb[key]).attr('class'))
+-                .html($(breadcrumb[key]).html())
++                clone.attr('href', $(breadcrumb[key]).attr('href'))
++                clone.attr('class', $(breadcrumb[key]).attr('class'))
++                clone.html($(breadcrumb[key]).html())
+                 .addClass('depth-'+key)
+                 .appendTo(trail);
+ 

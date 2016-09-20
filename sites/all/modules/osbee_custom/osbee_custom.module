@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file osbee_custom.module
+ * TODO: Enter file description here.
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function osbee_custom_theme($existing, $type, $theme, $path) {
+  return array(
+    'twitter_pull_simple' => array(
+      'arguments' => array('tweets' => NULL, 'twitkey' => NULL, 'title' => NULL),
+      'template' => 'twitter-simple'
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function osbee_custom_block_info() {
+  $blocks['twitter'] = array(
+    'info' => t('Twitter'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['social_footer'] = array(
+    'info' => t('Social Footer'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function osbee_custom_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'twitter':
+      $block['subject'] = t('Twitter');
+      $block['content'] = twitter_pull_render('@OsbeeIndustries', '', 20);
+      break;
+    case 'social_footer':
+      $block['content'] = osbee_custom_social_footer();
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ */
+function osbee_custom_block_view_facebook_pull_facebook_pull_default_alter(&$data, $block) {
+  $data['title'] = '/OsbeeIndustries';
+}
+
+function osbee_custom_social_footer() {
+  $facebook = _facebook_pull_feed_cached('353001247818', 'posts', '476499565758543', '3424372dcbdb98d9a11c29694104272b', array('limit' => 10));
+  if (!empty($facebook) && is_array($facebook)) {
+    foreach ($facebook as &$post) {
+      $post = array(
+        'title' => 'Facebook',
+        'text' => ((!empty($post->message)) ? $post->message : '') . ((!empty($post->story)) ? $post->story : ''),
+      );
+    }
+  }
+  $tweets = twitter_pull_retrieve('@OsbeeIndustries', 8);
+  if (!empty($tweets) && is_array($tweets)) {
+    foreach ($tweets as &$tweet) {
+      $tweet = array(
+        'title' => 'Twitter',
+        'text' => $tweet->text,
+      );
+    }
+  }
+  $output = array();
+  for ($i = 0 ; $i < 3 ; $i++ ) {
+    if (!empty($facebook) && is_array($facebook)) {
+      $output[] = '<div class="slide-item"><span class="title">' . l($facebook[$i]['title'], 'https://www.facebook.com/OsbeeIndustries', array("attributes" => array('target' => '_blank'))) . '</span>' . l($facebook[$i]['text'], 'https://www.facebook.com/OsbeeIndustries', array("attributes" => array('target' => '_blank'))) . '</div>';
+    }
+    if (!empty($tweets) && is_array($tweets) && !empty($tweets[$i])) {
+      $output[] = '<div class="slide-item"><span class="title">' . l($tweets[$i]['title'], 'https://twitter.com/OsbeeIndustries', array("attributes" => array('target' => '_blank'))). '</span>' . l($tweets[$i]['text'], 'https://twitter.com/OsbeeIndustries', array("attributes" => array('target' => '_blank'))) . '</div>';
+    }
+  }
+  return implode('', $output);
+}

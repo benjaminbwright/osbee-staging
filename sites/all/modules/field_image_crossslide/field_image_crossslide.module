@@ -1,0 +1,162 @@
+<?php 
+
+/* Field Code */
+function field_image_crossslide_field_formatter_info() {
+  return array(
+    'field_image_crossslide' => array(
+      'label' => t('Cross Slide'),
+      'field types' => array('image'),
+      'settings' => array('image_style' => '', 'image_link' => '', 'container_width' => 500, 'container_height' => 200, 'speed' => 45),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_settings_form().
+ */
+function field_image_crossslide_field_formatter_settings_form($field, $instance, $view_mode, $form, &$form_state) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+
+  $image_styles = image_style_options(FALSE);
+  $element['image_style'] = array(
+    '#title' => t('Image style'),
+    '#type' => 'select',
+    '#default_value' => $settings['image_style'],
+    '#empty_option' => t('None (original image)'),
+    '#options' => $image_styles,
+  );
+
+  $link_types = array(
+    'content' => t('Content'),
+    'file' => t('File'),
+  );
+  $element['image_link'] = array(
+    '#title' => t('Link image to'),
+    '#type' => 'select',
+    '#default_value' => $settings['image_link'],
+    '#empty_option' => t('Nothing'),
+    '#options' => $link_types,
+  );
+  
+  $element['container_width'] = array(
+    '#title' => t('Container Width'),
+    '#type' => 'textfield',
+    '#default_value' => $settings['container_width'],
+    '#size' => 10,
+    '#field_suffix' => t('px'),
+  );
+  
+  $element['container_height'] = array(
+    '#title' => t('Container Height'),
+    '#type' => 'textfield',
+    '#default_value' => $settings['container_height'],
+    '#size' => 10,
+    '#field_suffix' => t('px'),
+  );
+  
+  $element['speed'] = array(
+    '#title' => t('Speed'),
+    '#type' => 'textfield',
+    '#default_value' => $settings['speed'],
+    '#size' => 10,
+  );
+
+  return $element;
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary().
+ */
+function field_image_crossslide_field_formatter_settings_summary($field, $instance, $view_mode) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+
+  $summary = array();
+
+  $image_styles = image_style_options(FALSE);
+  // Unset possible 'No defined styles' option.
+  unset($image_styles['']);
+  // Styles could be lost because of enabled/disabled modules that defines
+  // their styles in code.
+  if (isset($image_styles[$settings['image_style']])) {
+    $summary[] = t('Image style: @style', array('@style' => $image_styles[$settings['image_style']]));
+  }
+  else {
+    $summary[] = t('Original image');
+  }
+
+  $link_types = array(
+    'content' => t('Linked to content'),
+    'file' => t('Linked to file'),
+  );
+  // Display this setting only if image is linked.
+  if (isset($link_types[$settings['image_link']])) {
+    $summary[] = $link_types[$settings['image_link']];
+  }
+  
+  $summary[] = t('Container Width: @container_width px', array('@container_width' => $settings['container_width']));
+  $summary[] = t('Container Height: @container_height px', array('@container_height' => $settings['container_height']));
+  $summary[] = t('Speed: @speed', array('@speed' => $settings['speed']));
+
+  return implode('<br />', $summary);
+}
+
+function field_image_crossslide_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  
+  if ($display['type'] != "field_image_crossslide") return;
+  
+  $element = array();
+  //$imageJquery = array();
+  $firstImagePath = "";
+  
+  // get the settings
+  $style = image_style_load($display['settings']['image_style']);
+  $containerWidth = $display['settings']['container_width'];
+  $containerHeight = $display['settings']['container_height'];
+  $speed = $display['settings']['speed'];
+  
+  // go through each image, create the image style and add it to a jQuery array
+  foreach ($items as $delta => $item) {
+    // check if the file exists and create it if not
+    $imagePath = image_style_path($style['name'], $item['uri']);
+    if (!file_exists($imagePath)) {
+      image_style_create_derivative($style, $item['uri'], $imagePath);
+    }
+    $path = file_create_url($imagePath);
+    if ($delta == 0) $firstImagePath = $path;
+    // append the image jQuery array
+    $imagesJQuery[] = "{ src: '$path', dir: " . (($delta % 2) ? "'down'" : "'up'") . " }";
+  }
+  
+  if (!isset($imagesJQuery)) return;
+  
+  $divid = 'crossslide-container-' . uniqid();
+  
+  $element[0] = array(
+    '#type' => 'html_tag',
+    '#tag' => 'div',
+    '#attributes' => array(
+      'id' => $divid,
+      'class' => 'crossslide-container',
+      'style' => "height:" . $containerHeight . "px; width: " . $containerWidth . "px; background: url($firstImagePath) no-repeat;"
+    ),
+    '#value' => "",
+  );
+  
+  $imagesJquery = implode(",",$imagesJQuery);
+  
+  $jquery = "
+    jQuery('#$divid').crossSlide({
+      speed: $speed,
+      fade: 1
+    }, [
+      $imagesJquery
+    ]);
+  ";
+  
+  drupal_add_js("sites/all/libraries/crossSlide/jquery.cross-slide.min.js");
+  drupal_add_js($jquery, array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+  
+  return $element;
+}

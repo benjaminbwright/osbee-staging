@@ -1,0 +1,6 @@
+name = Osbee Custom
+description = Osbee Custom
+dependencies[] = block
+dependencies[] = twitter_pull
+package = osbee
+core = 7.x

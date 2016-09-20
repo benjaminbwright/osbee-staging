@@ -1,0 +1,19 @@
+***************
+*** 84,91 ****
+                // We don't use the $().clone() method here because of an
+                // IE & jQuery 1.2 bug.
+                var clone = $('<a></a>')
+-                 .attr('href', $(breadcrumb[key]).attr('href'))
+-                 .attr('class', $(breadcrumb[key]).attr('class'))
+                  .html($(breadcrumb[key]).html())
+                  .addClass('depth-'+key)
+                  .appendTo(trail);
+--- 84,91 ----
+                // We don't use the $().clone() method here because of an
+                // IE & jQuery 1.2 bug.
+                var clone = $('<a></a>')
++                 .attr('href', $(breadcrumb[key]).attr('href')||"")
++                 .attr('class', $(breadcrumb[key]).attr('class')||"")
+                  .html($(breadcrumb[key]).html())
+                  .addClass('depth-'+key)
+                  .appendTo(trail);

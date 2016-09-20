@@ -1,0 +1,10 @@
+name = Field Image Cross Slide
+description = Implements the CrossSlide jQuery plugin via an Image Display Formatter
+package = Fields
+core = 7.x
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "field_image_crossslide"
+datestamp = "1380578883"
+

@@ -1,0 +1,86 @@
+diff --git a/domain_menu_access.admin.inc b/domain_menu_access.admin.inc
+index 8018822..eba2774 100644
+--- a/domain_menu_access.admin.inc
++++ b/domain_menu_access.admin.inc
+@@ -13,6 +13,7 @@ function domain_menu_access_form_menu_edit_item_alter(&$form, &$form_state) {
+     // Load default values.
+     $show_default_value = (isset($form['original_item']['#value']['options']['domain_menu_access']['show'])) ? $form['original_item']['#value']['options']['domain_menu_access']['show'] : array();
+     $hide_default_value = (isset($form['original_item']['#value']['options']['domain_menu_access']['hide'])) ? $form['original_item']['#value']['options']['domain_menu_access']['hide'] : array();
++		$link_default_value = (isset($form['original_item']['#value']['options']['domain_menu_access']['link'])) ? $form['original_item']['#value']['options']['domain_menu_access']['link'] : "no_redirect";
+     // If any of domain boxes are selected, display fieldset as expanded.
+     $collapsed = (count($show_default_value) || count($hide_default_value)) ? FALSE : TRUE;
+     $form['domain_menu_access']['manage'] = array(
+@@ -44,6 +45,20 @@ function domain_menu_access_form_menu_edit_item_alter(&$form, &$form_state) {
+       '#default_value'  => $hide_default_value,
+       '#description'    => t('Hide this menu item on selected domain(s). If you select no domains, the menu item will be visible on all domains.'),
+     );
++		
++		// Link to absolute domain config.
++		$options_redirect = array(
++			'no_redirect' => t("Don't redirect this link to a domain")
++		);
++		$options_redirect = array_merge($options_redirect, $options);
++		$form['domain_menu_access']['manage']['domain_menu_access_link'] = array(
++			'#type' => 'radios',
++			'#title' => t('Select domain to redirect this menu item to.'),
++			'#options' => $options_redirect,
++			'#default_value' => $link_default_value,
++			'#description' => t('The menu item will direct to the absolute link of the domain, if you´re not on the If you select a domain here, the link will turn into an absolute link to this domain, while being on any other domain on the website.')
++		);
++		
+     // Add weight to Submit button, as it is not set by default by menu.module,
+     // and because it sets weight of Delete button, it could happen that our
+     // fieldset is displayed between Save and Delete buttons.
+@@ -95,6 +110,12 @@ function domain_menu_access_form_menu_edit_item_submit($form, &$form_state) {
+         $form_state['values']['options']['domain_menu_access']['hide'][$key] = $key;
+       }
+     }
++		
++		// Process link to absolute domain.
++		if (isset($form_state['values']['domain_menu_access_link']) && $form_state['values']['domain_menu_access_link'] != "no-redirect"){
++			$form_state['values']['options']['domain_menu_access']['link'] =  $form_state['values']['domain_menu_access_link'];
++		}
++		
+     // Verify that at least one checkbox for 'show' and for 'hide' was ticked.
+     // Otherwise just unset relevant arrays, as no point in saving them then.
+     if (count($form_state['values']['options']['domain_menu_access']['show']) == 0) {
+@@ -103,9 +124,17 @@ function domain_menu_access_form_menu_edit_item_submit($form, &$form_state) {
+     if (count($form_state['values']['options']['domain_menu_access']['hide']) == 0) {
+       unset($form_state['values']['options']['domain_menu_access']['hide']);
+     }
++		
++		// Verify that the link is set, if not unset this one too.
++		if (!isset($form_state['values']['domain_menu_access_link']) || $form_state['values']['domain_menu_access_link'] == "no-redirect"){
++			unset($form_state['values']['options']['domain_menu_access']['link']);
++		}
++		
+     if (count($form_state['values']['options']['domain_menu_access']) == 0) {
+       unset($form_state['values']['options']['domain_menu_access']);
+     }
++
++		
+     // Set 'alter' flag to true for this menu item if it was modified, 
+     // otherwise hook_translated_menu_link_alter() will not be invoked:
+     // http://api.drupal.org/api/drupal/modules--system--system.api.php/function/hook_translated_menu_link_alter/7
+diff --git a/domain_menu_access.module b/domain_menu_access.module
+index 2ed506a..efde8a9 100644
+--- a/domain_menu_access.module
++++ b/domain_menu_access.module
+@@ -70,4 +70,16 @@ function domain_menu_access_translated_menu_link_alter(&$item, $map) {
+   if (isset($item['options']['domain_menu_access']['hide']['d' . $_domain['domain_id']])) {
+     $item['hidden'] = ($item['options']['domain_menu_access']['hide']['d' . $_domain['domain_id']]) ? 1 : 0;
+   }
++	
++	//Process menu items to link to the absolute url if not on the asigned domain already
++	if(isset($item['options']['domain_menu_access']['link']) && $item['options']['domain_menu_access']['link'] != 'd'.$_domain['domain_id']){
++		//remove the D
++		$domain_id =  substr($item['options']['domain_menu_access']['link'],1);
++		$domain = domain_lookup($domain_id);
++		$domain_url = $domain['path'];
++		// remove the extra slash
++		$local_url = substr(url($item['href']),1);
++		$item['href'] = url($domain_url . $local_url, $options = array('absolute'=> TRUE));
++	}
++	
+ }
+\ No newline at end of file
