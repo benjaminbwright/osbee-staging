@@ -261,22 +261,25 @@ $databases = array (
 );
 */
 
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
-      'database' => $_SERVER['DRUPAL_DB'],
-      'username' => $_SERVER['DRUPAL_DB_USER'],
-      'password' => $_SERVER['DRUPAL_DB_PASS'],
-      'host' => $_SERVER['DRUPAL_DB_HOST'],
-      'port' => $_SERVER['DRUPAL_DB_PORT'],
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
+if (!file_exists(DRUPAL_ROOT . '/' . conf_path() . '/settings.local.php')) {
+       
+    $databases = array (
+      'default' => 
+      array (
+        'default' => 
+        array (
+          'database' => $_SERVER['DRUPAL_DB'],
+          'username' => $_SERVER['DRUPAL_DB_USER'],
+          'password' => $_SERVER['DRUPAL_DB_PASS'],
+          'host' => $_SERVER['DRUPAL_DB_HOST'],
+          'port' => $_SERVER['DRUPAL_DB_PORT'],
+          'driver' => 'mysql',
+          'prefix' => '',
+        ),
+      ),
+    );
 
+}
 
 
 /**
