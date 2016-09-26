@@ -836,7 +836,7 @@ function drupal_settings_initialize() {
  * @return
  *   The filename of the requested item or NULL if the item is not found.
  */
-function drupal_get_filename($type, $name, $filename = NULL, $trigger_error = TRUE) {
+function drupal_get_filename($type, $name, $filename = NULL, $trigger_error = FALSE) {
   // The $files static variable will hold the locations of all requested files.
   // We can be sure that any file listed in this static variable actually
   // exists as all additions have gone through a file_exists() check.
