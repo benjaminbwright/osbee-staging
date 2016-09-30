@@ -10,7 +10,6 @@
     <?php print render($page['header']); ?>
   </div></div>
 <?php endif; ?>
-
 <?php if ($page['navigation']): ?>
   <div id='navigation'><div class='limiter clearfix'>
     <?php print render($page['navigation']); ?>
@@ -56,7 +55,14 @@
     <?php endif; ?>
   </div>
 
+
 </div></div>
+
+<?php if ($page['mobilenav']): ?>
+  <div id='mobile-navigation'><div class='limiter clearfix'>
+    <?php print render($page['mobilenav']); ?>
+  </div></div>
+<?php endif; ?>
 
 <div id="footer"><div class='limiter clearfix'>
   <?php print render($page['footer']) ?>
