@@ -1,6 +1,10 @@
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
+<<<<<<< HEAD
 !sites/default/settings.php
+=======
+sites/default/settings.php
+>>>>>>> develop
 
 # Ignore paths that contain user-generated content.
 # sites/*/files

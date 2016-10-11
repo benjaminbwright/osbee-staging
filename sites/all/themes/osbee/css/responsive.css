@@ -1,0 +1,8 @@
+@media screen only and (max-width: 400px) {
+  body {
+    background: #ffffff;
+    color: red;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

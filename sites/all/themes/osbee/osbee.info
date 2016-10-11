@@ -9,6 +9,7 @@ base theme = tao
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 regions[navigation] = Navigation
+regions[mobilenav] = Mobile Navigation
 regions[content] = Content
 regions[postscript] = Postscript
 regions[header] = Header
@@ -23,3 +24,6 @@ stylesheets[all][] = css/osbee.css
 
 ; Scripts
 scripts[] = js/script.js
+scripts[] = js/accordionmenu.js
+scripts[] = js/drawermenu.js
+
