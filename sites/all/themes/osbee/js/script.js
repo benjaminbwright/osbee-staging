@@ -31,7 +31,6 @@
       }
     }
 
-
   };
 
   Drupal.behaviors.osbeeOurProcessGallery = {
@@ -231,6 +230,7 @@
         }
 
       });
+
     }
   };
 

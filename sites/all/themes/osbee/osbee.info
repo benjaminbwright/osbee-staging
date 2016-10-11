@@ -24,3 +24,6 @@ stylesheets[all][] = css/osbee.css
 
 ; Scripts
 scripts[] = js/script.js
+scripts[] = js/accordionmenu.js
+scripts[] = js/drawermenu.js
+

@@ -16,10 +16,11 @@
   </div></div>
 <?php endif; ?>
 
-<div id='page'><div class='limiter clearfix'>
+<div id='page' class='off-screen'><div class='limiter clearfix'>
   <div id="left-strip">
     <div id='branding'>
       <?php if ($site_name): ?><h1 class='site-name'><?php print $site_name ?></h1><?php endif; ?>
+      <h3 class='site-slogan'>Making homes perform.</h3>
     </div>
     <?php if ($page['sidebar_first']): ?>
       <div id='left' class='clearfix'><?php print render($page['sidebar_first']) ?></div>
@@ -58,14 +59,21 @@
 
 </div></div>
 
-<?php if ($page['mobilenav']): ?>
-  <div id='mobile-navigation'><div class='limiter clearfix'>
-    <?php print render($page['mobilenav']); ?>
-  </div></div>
-<?php endif; ?>
+<div id="drawer-menu">
+    <div id="drawer-menu-toggle" class="toggle-menu" >
+        <div class="toggle-open">&#x61;<span class="MetaOT">Menu</span></div>
+        <div class="toggle-close">&#x4d;</div>
+    </div>
+    <?php if ($page['mobilenav']): ?>
+      <div id='mobile-navigation'><div class='limiter clearfix'>
+        <?php print render($page['mobilenav']); ?>
+      </div></div>
+    <?php endif; ?>
 
-<div id="footer"><div class='limiter clearfix'>
-  <?php print render($page['footer']) ?>
-</div></div>
+    <div id="footer"><div class='limiter clearfix'>
+      <?php print render($page['footer']) ?>
+    </div></div>
+</div>
+<div id="drawer-menu-overlay" class="toggle-menu"></div>
 
 <!-- debug: test -->
