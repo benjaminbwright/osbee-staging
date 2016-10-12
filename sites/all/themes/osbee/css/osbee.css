@@ -2154,7 +2154,7 @@ select.with-style option[selected="selected"] {
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block {
   display: block;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 5px;
   z-index: 500;
 }
@@ -2981,7 +2981,18 @@ select.with-style option[selected="selected"] {
   display: none;
 }
 
+#block-views-homepage-slideshow-block {
+  width: 100%;
+}
+
 @media (max-width: 640px) {
+  .front.domain-osbee-com #block-views-homepage-slideshow-block,
+  .front.domain-osbee-com #block-block-9,
+  .front.domain-osbee-com #block-block-10,
+  .front.domain-osbee-com #block-block-7 {
+    position: relative;
+  }
+
   html, body {
     max-width: 100%;
     font-family: MetaOT !important;
@@ -2992,14 +3003,31 @@ select.with-style option[selected="selected"] {
   }
   div#page #main-content {
     width: 100%;
+    height: auto;
   }
   div#page #block-views-homepage-slideshow-block {
+    width: 100%;
+    margin-top: -90px;
+  }
+  div#page img {
+    height: auto;
     width: 100%;
   }
 
   .limiter {
     width: 100%;
     padding: 0;
+  }
+
+  .front.domain-osbee-com #block-block-7 {
+    height: auto;
+  }
+  .front.domain-osbee-com #block-block-7 p {
+    display: none;
+  }
+
+  #widget_pager_bottom_homepage_slideshow-block {
+    display: none !important;
   }
 
   #navigation {
@@ -3042,6 +3070,7 @@ select.with-style option[selected="selected"] {
 
   #mobile-navigation {
     display: block;
+    margin-top: -4px;
   }
   #mobile-navigation .limiter {
     padding: 0;

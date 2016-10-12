@@ -32,7 +32,18 @@ $xlarge: 1024px;
     display: none;
 }
 
+#block-views-homepage-slideshow-block {
+    width: 100%;
+}
+
 @media (max-width: $small) {
+    .front.domain-osbee-com #block-views-homepage-slideshow-block, 
+    .front.domain-osbee-com #block-block-9, 
+    .front.domain-osbee-com #block-block-10, 
+    .front.domain-osbee-com #block-block-7 {
+        position: relative;
+    }
+
     html, body {
         // Confine mobile width to the width of the screen.
         max-width: 100%;
@@ -42,8 +53,14 @@ $xlarge: 1024px;
         width: 100%;
         #main-content {
             width: 100%;
+            height: auto;
         }
         #block-views-homepage-slideshow-block {
+            width: 100%;
+            margin-top: -90px;      
+        }
+        img {
+            height: auto;
             width: 100%;
         }
     }
@@ -52,6 +69,21 @@ $xlarge: 1024px;
         width: 100%;
         padding: 0;
     }
+
+    // Hide Block 7 Tagline on mobile
+    
+
+    .front.domain-osbee-com #block-block-7 {
+        p {
+            display: none;
+        }
+        height: auto;
+    }
+    
+    #widget_pager_bottom_homepage_slideshow-block {
+        display: none !important;
+    }
+
     // Hide the non-mobile navigation
     #navigation {
         display: none;
@@ -93,6 +125,7 @@ $xlarge: 1024px;
     // Mobile Navigation styles
     #mobile-navigation {
         display: block;
+        margin-top: -4px;
         // Get rid of limiter padding so nav items will go across the screen.
         .limiter {
             padding: 0;
