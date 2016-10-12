@@ -199,6 +199,12 @@ $xlarge: 1024px;
                     // Third level menu
                     ul {
                         display: none;
+                        li {
+                            // Fourth level menu
+                            ul{
+                                display: none;
+                            }
+                        }
                     }
                 }
                 &:last-child {
@@ -247,7 +253,13 @@ $xlarge: 1024px;
             z-index: 100;
             bottom: 0;
             background: #000000;
+            // Hide menu off-screen
             margin-left: -80%;
+            // Menu slides in from left
+            -webkit-transition:200ms ease;
+            -moz-transition:200ms ease;
+            -o-transition:200ms ease;
+            transition:200ms ease;
             &.on-screen {
                 margin-left: 0;
             }
