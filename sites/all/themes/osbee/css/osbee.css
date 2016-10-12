@@ -3004,7 +3004,7 @@ select.with-style option[selected="selected"] {
   div#page #main-content {
     width: 100%;
     height: auto;
-    padding: 40px 10px 55px 10px;
+    padding: 0 10px 0 10px;
   }
   div#page #block-views-homepage-slideshow-block {
     width: 100%;
@@ -3139,6 +3139,9 @@ select.with-style option[selected="selected"] {
 
   .not-front {
     background: #ffffff;
+  }
+  .not-front #page #main-content {
+    padding: 40px 10px 55px 10px;
   }
   .not-front #left-strip {
     visibility: hidden;
