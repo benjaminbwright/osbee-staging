@@ -54,6 +54,7 @@ $xlarge: 1024px;
         #main-content {
             width: 100%;
             height: auto;
+            padding: 40px 10px 55px 10px;
         }
         #block-views-homepage-slideshow-block {
             width: 100%;
@@ -62,6 +63,12 @@ $xlarge: 1024px;
         img {
             height: auto;
             width: 100%;
+            margin: 0 32px 0 -10px;
+        }
+
+        .narrow-body {
+            width: 100%;
+            float: none;
         }
     }
 
@@ -88,6 +95,7 @@ $xlarge: 1024px;
     #navigation {
         display: none;
     }
+
     #left-strip {
         width: 100%;
         #branding {
@@ -205,6 +213,13 @@ $xlarge: 1024px;
 
     // Draw Menu Styles
     .not-front {
+        background: #ffffff;
+        #left-strip {
+            visibility: hidden;
+            height: 50px;
+
+        }
+
         #mobile-navigation {
             margin-top: 70px;
         }
