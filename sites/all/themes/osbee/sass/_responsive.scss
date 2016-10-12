@@ -19,7 +19,7 @@ $large: 1024px;
 $xlarge: 1024px;
 
 
-
+// Mobile Defaults in full screen ===============================================
 #mobile-navigation {
     display: none;
 }
@@ -54,7 +54,7 @@ $xlarge: 1024px;
         #main-content {
             width: 100%;
             height: auto;
-            padding: 40px 10px 55px 10px;
+            padding: 0 10px 0 10px;
         }
         #block-views-homepage-slideshow-block {
             width: 100%;
@@ -214,6 +214,11 @@ $xlarge: 1024px;
     // Draw Menu Styles
     .not-front {
         background: #ffffff;
+        #page {
+            #main-content {
+                padding: 40px 10px 55px 10px;
+            }
+        }
         #left-strip {
             visibility: hidden;
             height: 50px;
