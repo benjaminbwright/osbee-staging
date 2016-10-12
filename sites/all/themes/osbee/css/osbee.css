@@ -3130,6 +3130,9 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu li ul ul {
     display: none;
   }
+  #mobile-navigation ul.menu li ul ul li ul {
+    display: none;
+  }
   #mobile-navigation ul.menu li:last-child {
     border: none;
   }
@@ -3170,6 +3173,10 @@ select.with-style option[selected="selected"] {
     bottom: 0;
     background: #000000;
     margin-left: -80%;
+    -webkit-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
   }
   .not-front #drawer-menu.on-screen {
     margin-left: 0;
