@@ -54,7 +54,7 @@ $xlarge: 1024px;
         #main-content {
             width: 100%;
             height: auto;
-            padding: 0 10px 0 10px;
+            padding: 0;
         }
         #block-views-homepage-slideshow-block {
             width: 100%;
@@ -63,7 +63,7 @@ $xlarge: 1024px;
         img {
             height: auto;
             width: 100%;
-            margin: 0 32px 0 -10px;
+            margin: 0 32px 0 0;
         }
 
         .narrow-body {
@@ -222,7 +222,7 @@ $xlarge: 1024px;
         background: #ffffff;
         #page {
             #main-content {
-                padding: 40px 10px 55px 10px;
+                padding: 40px 0 55px 0;
             }
         }
         #left-strip {
@@ -287,6 +287,114 @@ $xlarge: 1024px;
             }
         }
     }
+
+
+    // Mobile In-Page Menu styles
+    #main-content {
+        display: block;
+        margin-top: -4px;
+        // Get rid of limiter padding so nav items will go across the screen.
+        .limiter {
+            padding: 0;
+        }
+
+        // Hide the block title for this menu
+        .block-title {
+            display: none;
+        }
+
+        .field-name-field-menu-block {
+            //float: none;
+            width: 100%;
+        }
+
+
+        //Mobile Portfolio Items
+        .view-in-page-menu-portfolio-items .views-row {
+            width: 49%;
+            display: inline-block;
+        }
+
+        .views-field-title {
+            display: none;
+        }
+
+        // First Level of menu
+        ul.menu {
+            border-top: 1px solid $light-gray;
+            &.active-menu-item {
+                background: #a7a9ac;
+                a {
+                    color: #ffffff;
+                }
+                .menu-subcat {
+                    display: block;
+                }
+                ul {
+                    a {
+                        color: $light-gray;
+                    }
+                }
+            }
+            li {
+                background: #000000;
+                position: relative;
+                width: 100%;
+                border-bottom: 1px solid $light-gray;
+                margin-bottom: 0px;
+                .subcat-expand,
+                .subcat-collapse {
+                    font-size: 1.75em;
+                    position: absolute;
+                    right: 10px;
+                    top: 5px;
+                    font-family: 'ElegantIcons';
+                }
+                a {
+                    font-weight: normal;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $light-gray;
+                    padding: 5px 10px;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                }
+                // Second level menu items
+                .menu-subcat {
+                    display: none;
+                }
+
+                ul {
+                    //display: none;
+                    li {
+                        a {
+                            padding-left: 35px; 
+                            font-size: 11px;
+                        }
+                    }
+                    // Third level menu
+                    ul {
+                        display: none;
+                        li {
+                            // Fourth level menu
+                            ul{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    border:none;
+                }
+            }
+            & > ul {
+                border: none;
+            }
+        }
+    }
+
+
+
 
     // Mobile Footer Customization
     #footer {

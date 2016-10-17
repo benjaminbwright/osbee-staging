@@ -18,6 +18,8 @@ regions[footer] = Footer
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[highlighted] = Highlighted
+regions[inpage_menu] = In-Page Menu
+regions[inpage_portfolio] = In-Page Portfolio
 
 ; Stylesheets =================================================================
 stylesheets[all][] = css/osbee.css

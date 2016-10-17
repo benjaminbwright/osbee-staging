@@ -3004,7 +3004,7 @@ select.with-style option[selected="selected"] {
   div#page #main-content {
     width: 100%;
     height: auto;
-    padding: 0 10px 0 10px;
+    padding: 0;
   }
   div#page #block-views-homepage-slideshow-block {
     width: 100%;
@@ -3013,7 +3013,7 @@ select.with-style option[selected="selected"] {
   div#page img {
     height: auto;
     width: 100%;
-    margin: 0 32px 0 -10px;
+    margin: 0 32px 0 0;
   }
   div#page .narrow-body {
     width: 100%;
@@ -3144,7 +3144,7 @@ select.with-style option[selected="selected"] {
     background: #ffffff;
   }
   .not-front #page #main-content {
-    padding: 40px 10px 55px 10px;
+    padding: 40px 0 55px 0;
   }
   .not-front #left-strip {
     visibility: hidden;
@@ -3201,6 +3201,85 @@ select.with-style option[selected="selected"] {
     font-size: 13px;
     position: absolute;
     top: 7px;
+  }
+
+  #main-content {
+    display: block;
+    margin-top: -4px;
+  }
+  #main-content .limiter {
+    padding: 0;
+  }
+  #main-content .block-title {
+    display: none;
+  }
+  #main-content .field-name-field-menu-block {
+    width: 100%;
+  }
+  #main-content .view-in-page-menu-portfolio-items .views-row {
+    width: 49%;
+    display: inline-block;
+  }
+  #main-content .views-field-title {
+    display: none;
+  }
+  #main-content ul.menu {
+    border-top: 1px solid #bcbec0;
+  }
+  #main-content ul.menu.active-menu-item {
+    background: #a7a9ac;
+  }
+  #main-content ul.menu.active-menu-item a {
+    color: #ffffff;
+  }
+  #main-content ul.menu.active-menu-item .menu-subcat {
+    display: block;
+  }
+  #main-content ul.menu.active-menu-item ul a {
+    color: #bcbec0;
+  }
+  #main-content ul.menu li {
+    background: #000000;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #bcbec0;
+    margin-bottom: 0px;
+  }
+  #main-content ul.menu li .subcat-expand,
+  #main-content ul.menu li .subcat-collapse {
+    font-size: 1.75em;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-family: 'ElegantIcons';
+  }
+  #main-content ul.menu li a {
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+    color: #bcbec0;
+    padding: 5px 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  #main-content ul.menu li .menu-subcat {
+    display: none;
+  }
+  #main-content ul.menu li ul li a {
+    padding-left: 35px;
+    font-size: 11px;
+  }
+  #main-content ul.menu li ul ul {
+    display: none;
+  }
+  #main-content ul.menu li ul ul li ul {
+    display: none;
+  }
+  #main-content ul.menu li:last-child {
+    border: none;
+  }
+  #main-content ul.menu > ul {
+    border: none;
   }
 
   #footer {
