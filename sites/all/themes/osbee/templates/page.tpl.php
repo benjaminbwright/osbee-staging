@@ -77,3 +77,5 @@
 <div id="drawer-menu-overlay" class="toggle-menu"></div>
 
 <!-- debug: test -->
+<?php drupal_add_js('sites/all/themes/osbee/js/accordionmenu.js', array('scope'=>'footer'));
+ ?>

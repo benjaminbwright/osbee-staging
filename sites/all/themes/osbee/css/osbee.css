@@ -3111,6 +3111,7 @@ select.with-style option[selected="selected"] {
     position: absolute;
     right: 10px;
     font-family: 'ElegantIcons';
+    z-index: 5000;
   }
   #mobile-navigation ul.menu li a {
     display: inline-block;
@@ -3217,7 +3218,7 @@ select.with-style option[selected="selected"] {
     width: 100%;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row {
-    width: 49%;
+    width: 100%;
     display: inline-block;
   }
   #main-content .views-field-title {
@@ -3252,6 +3253,7 @@ select.with-style option[selected="selected"] {
     right: 10px;
     top: 5px;
     font-family: 'ElegantIcons';
+    z-index: 5000;
   }
   #main-content ul.menu li a {
     font-weight: normal;
