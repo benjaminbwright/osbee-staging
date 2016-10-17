@@ -48,6 +48,7 @@ $xlarge: 1024px;
         // Confine mobile width to the width of the screen.
         max-width: 100%;
         font-family: MetaOT !important;
+        background: $black;
     }
     div#page {
         width: 100%;
