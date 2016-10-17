@@ -172,7 +172,9 @@ $xlarge: 1024px;
                         font-size: 1.75em;
                         position: absolute;
                         right: 10px;
+                        top: 0;
                         font-family: 'ElegantIcons';
+                        z-index: 5000;
                     }
                 }
                 a {
@@ -311,7 +313,7 @@ $xlarge: 1024px;
 
         //Mobile Portfolio Items
         .view-in-page-menu-portfolio-items .views-row {
-            width: 49%;
+            width: 100%;
             display: inline-block;
         }
 
@@ -349,6 +351,7 @@ $xlarge: 1024px;
                     right: 10px;
                     top: 5px;
                     font-family: 'ElegantIcons';
+                    z-index: 5000;
                 }
                 a {
                     font-weight: normal;
