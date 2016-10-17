@@ -56,6 +56,11 @@ $xlarge: 1024px;
             width: 100%;
             height: auto;
             padding: 0;
+            background: $black;
+            color: $lighter-gray;
+            .field-name-body {
+                color: $lighter-gray;
+            }
         }
         #block-views-homepage-slideshow-block {
             width: 100%;
@@ -222,10 +227,21 @@ $xlarge: 1024px;
 
     // Draw Menu Styles
     .not-front {
-        background: #ffffff;
+        background: $black;
         #page {
             #main-content {
                 padding: 40px 0 55px 0;
+                .prose {
+                    p {
+                        padding: 5px 10px 0 10px;
+                    }
+                    .field-type-text {
+                        padding: 5px 10px 0 10px;
+                    }
+                    .field-name-field-heading {
+                        padding-bottom: 0;
+                    }
+                }
             }
         }
         #left-strip {

@@ -2996,6 +2996,7 @@ select.with-style option[selected="selected"] {
   html, body {
     max-width: 100%;
     font-family: MetaOT !important;
+    background: #000000;
   }
 
   div#page {
@@ -3005,6 +3006,11 @@ select.with-style option[selected="selected"] {
     width: 100%;
     height: auto;
     padding: 0;
+    background: #000000;
+    color: #E6E6E6;
+  }
+  div#page #main-content .field-name-body {
+    color: #E6E6E6;
   }
   div#page #block-views-homepage-slideshow-block {
     width: 100%;
@@ -3143,10 +3149,19 @@ select.with-style option[selected="selected"] {
   }
 
   .not-front {
-    background: #ffffff;
+    background: #000000;
   }
   .not-front #page #main-content {
     padding: 40px 0 55px 0;
+  }
+  .not-front #page #main-content .prose p {
+    padding: 5px 10px 0 10px;
+  }
+  .not-front #page #main-content .prose .field-type-text {
+    padding: 5px 10px 0 10px;
+  }
+  .not-front #page #main-content .prose .field-name-field-heading {
+    padding-bottom: 0;
   }
   .not-front #left-strip {
     visibility: hidden;
