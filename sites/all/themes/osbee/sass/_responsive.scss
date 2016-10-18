@@ -50,6 +50,7 @@ $xlarge: 1024px;
         font-family: MetaOT !important;
         background: $black;
     }
+    
     div#page {
         width: 100%;
         #main-content {
@@ -81,6 +82,11 @@ $xlarge: 1024px;
     .limiter {
         width: 100%;
         padding: 0;
+    }
+
+    .region-footer #social-links a {
+        margin-right: 4px;
+        margin-left: 4px;
     }
 
     // Hide Block 7 Tagline on mobile
@@ -162,6 +168,7 @@ $xlarge: 1024px;
                     display: block;
                 }
                 ul {
+                    border: none;
                     a {
                         color: $light-gray;
                     }
@@ -175,10 +182,12 @@ $xlarge: 1024px;
                 .menu-link-wrapper {
                     .subcat-expand,
                     .subcat-collapse {
-                        font-size: 1.75em;
+                        font-size: 2.25em;
                         position: absolute;
                         right: 10px;
-                        top: 0;
+                        left: 50%;
+                        text-align: right;
+                        top: 4px;
                         font-family: 'ElegantIcons';
                         z-index: 5000;
                     }
@@ -187,27 +196,41 @@ $xlarge: 1024px;
                     display: inline-block;
                     text-decoration: none;
                     color: $light-gray;
-                    padding: 5px 10px;
-                    font-size: 13px;
+                    padding: 10px 10px;
+                    margin-top: -4px;
+                    font-size: $menu-item-font-size;
                     text-transform: uppercase;
                 }
                 // Second level menu items
                 .menu-subcat {
                     display: none;
+                    li:last-child {
+                        border: none;
+                    }
+                    li {
+                        // Hide dropdowns to 3rd level from homepage menu.
+                        .subcat-collapse,
+                        .subcat-expand {
+                            display: none;
+                        }
+                    }
+
                 }
 
                 ul {
-                    //display: none;
+                    display: none;
                     li {
                         a {
                             padding-left: 35px; 
-                            font-size: 11px;
+                            font-size: $menu-child-item-font-size;
                         }
                     }
                     // Third level menu
                     ul {
                         display: none;
                         li {
+                            display: none;
+
                             // Fourth level menu
                             ul{
                                 display: none;
@@ -216,7 +239,7 @@ $xlarge: 1024px;
                     }
                 }
                 &:last-child {
-                    border:none;
+                    border-bottom: 1px solid $light-gray;
                 }
             }
             & > ul {
@@ -240,6 +263,10 @@ $xlarge: 1024px;
                     }
                     .field-name-field-heading {
                         padding-bottom: 0;
+                    }
+                    h1.term-name, .field-name-field-subtitle {
+                        line-height: 0;
+                        margin: 0 0 40px;
                     }
                 }
             }
@@ -361,12 +388,22 @@ $xlarge: 1024px;
                 width: 100%;
                 border-bottom: 1px solid $light-gray;
                 margin-bottom: 0px;
+                &.active {
+                    background: $light-gray;
+                    color: $black;
+                    a {
+                        color: $black;
+                    }
+                }
                 .subcat-expand,
                 .subcat-collapse {
-                    font-size: 1.75em;
+                    font-size: 2.25em;
                     position: absolute;
                     right: 10px;
-                    top: 5px;
+                    left: 50%;
+                    text-align: right;
+                    padding: 10px 10px;
+                    margin-top: -4px;
                     font-family: 'ElegantIcons';
                     z-index: 5000;
                 }
@@ -375,13 +412,16 @@ $xlarge: 1024px;
                     display: inline-block;
                     text-decoration: none;
                     color: $light-gray;
-                    padding: 5px 10px;
-                    font-size: 13px;
+                    padding: 10px 10px;
+                    font-size: $menu-item-font-size;
                     text-transform: uppercase;
                 }
                 // Second level menu items
                 .menu-subcat {
                     display: none;
+                    li:last-child {
+                        border: none;
+                    }
                 }
 
                 ul {
@@ -389,7 +429,7 @@ $xlarge: 1024px;
                     li {
                         a {
                             padding-left: 35px; 
-                            font-size: 11px;
+                            font-size: $menu-child-item-font-size;
                         }
                     }
                     // Third level menu
@@ -404,7 +444,7 @@ $xlarge: 1024px;
                     }
                 }
                 &:last-child {
-                    border:none;
+                    border-bottom: 1px solid $light-gray;
                 }
             }
             & > ul {
@@ -446,6 +486,7 @@ $xlarge: 1024px;
     .footer-company-info {
         display: block;
         text-align: center;
+        font-size: $menu-child-item-font-size !important;
     }
     .footer-company-info::after {
         content: "";
