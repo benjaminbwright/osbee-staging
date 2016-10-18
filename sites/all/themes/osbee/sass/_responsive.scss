@@ -453,9 +453,6 @@ $xlarge: 1024px;
         }
     }
 
-
-
-
     // Mobile Footer Customization
     #footer {
         background: #000000;
@@ -499,4 +496,7 @@ $xlarge: 1024px;
         content: "";
     }
 
+    #back-to-top {
+        background: $blue;
+    }
 }
