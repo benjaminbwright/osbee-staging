@@ -3131,6 +3131,18 @@ select.with-style option[selected="selected"] {
     width: 100%;
     border-bottom: 1px solid #bcbec0;
   }
+  #mobile-navigation ul.menu li.active {
+    background: #bcbec0;
+  }
+  #mobile-navigation ul.menu li.active a {
+    color: #000000;
+  }
+  #mobile-navigation ul.menu li.active li {
+    background: #000000;
+  }
+  #mobile-navigation ul.menu li.active li a {
+    color: #bcbec0;
+  }
   #mobile-navigation ul.menu li .subcat-expand,
   #mobile-navigation ul.menu li .subcat-collapse {
     font-size: 1.7em;
@@ -3202,6 +3214,14 @@ select.with-style option[selected="selected"] {
   .not-front #page #main-content .prose h1.term-name, .not-front #page #main-content .prose .field-name-field-subtitle {
     line-height: 0;
     margin: 0 0 40px;
+  }
+  .not-front #page #main-content .field-name-field-portfolio-type {
+    padding: 5px 10px 0 10px;
+  }
+  .not-front #page #main-content h1.term-name {
+    line-height: 0;
+    margin: 0 0 40px;
+    padding: 5px 10px 0 10px;
   }
   .not-front #left-strip {
     visibility: hidden;

@@ -182,6 +182,11 @@ $xlarge: 1024px;
                 border-bottom: 1px solid $light-gray;
                 &.active {
                     background: $light-gray;
+                    a { color: $black;}
+                    li {
+                      background: $black;
+                      a {color: $light-gray;}
+                    }
                 }
                 .subcat-expand,
                 .subcat-collapse {
@@ -271,6 +276,14 @@ $xlarge: 1024px;
                         line-height: 0;
                         margin: 0 0 40px;
                     }
+                }
+                .field-name-field-portfolio-type {
+                    padding: 5px 10px 0 10px;
+                }
+                h1.term-name {
+                    line-height: 0;
+                    margin: 0 0 40px;
+                    padding: 5px 10px 0 10px;
                 }
             }
         }
