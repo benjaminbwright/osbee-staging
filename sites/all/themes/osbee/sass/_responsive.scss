@@ -180,14 +180,6 @@ $xlarge: 1024px;
                 position: relative;
                 width: 100%;
                 border-bottom: 1px solid $light-gray;
-                &.active {
-                    background: $light-gray;
-                    a { color: $black;}
-                    li {
-                      background: $black;
-                      a {color: $light-gray;}
-                    }
-                }
                 .subcat-expand,
                 .subcat-collapse {
                     font-size: 1.7em;
