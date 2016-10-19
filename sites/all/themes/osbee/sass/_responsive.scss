@@ -553,8 +553,12 @@ $xlarge: 1024px;
         position: fixed;
         right: 10px;
         bottom: 10px;
-        width: 40px;
+        width: 34px;
         height: 40px;
+        padding-left: 6px;
         border-radius: 23px;
+        font-size: 28px;
+        font-family: 'ElegantIcons';
+        color: $lighter-gray;
     }
 }
