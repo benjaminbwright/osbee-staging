@@ -2996,7 +2996,7 @@ select.with-style option[selected="selected"] {
   width: 100%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .front.domain-osbee-com #block-views-homepage-slideshow-block,
   .front.domain-osbee-com #block-block-9,
   .front.domain-osbee-com #block-block-10,
@@ -3301,10 +3301,15 @@ select.with-style option[selected="selected"] {
   }
   #main-content .view-in-page-menu-portfolio-items .views-row .views-field-title {
     position: absolute;
-    bottom: 76px;
+    bottom: 45%;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
+  }
+  #main-content .view-in-page-menu-portfolio-items .views-row .views-field-title a {
+    font-family: 'MetaOT-Medi';
+    padding-left: 0;
+    font-size: 16px;
   }
   #main-content ul.menu {
     border-top: 1px solid #bcbec0;
