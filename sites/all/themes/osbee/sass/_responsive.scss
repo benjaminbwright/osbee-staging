@@ -114,7 +114,7 @@ $xlarge: 1024px;
     #left-strip {
         width: 100%;
         #branding {
-            height: 128px;
+            height: 150px;
             margin: auto;
             .site-name a {
                 display: block;
@@ -378,6 +378,13 @@ $xlarge: 1024px;
 
 
         //Mobile Portfolio Items
+        .menu-name-menu-inpage-portfolio-menu {
+            .subcat-expand,
+            .subcat-collapse {
+                left: 0 !important;
+            }
+        }
+
         .view-in-page-menu-portfolio-items .views-row {
             width: 49.7%;
             display: inline-block;
@@ -550,6 +557,7 @@ $xlarge: 1024px;
         width: 100%;
         .block {
             float: none;
+            margin-right: 0;
         }
         #block-osbee-custom-social-footer {
             float: none;
@@ -570,7 +578,8 @@ $xlarge: 1024px;
     .footer-company-info {
         display: block;
         text-align: center;
-        font-size: $menu-child-item-font-size !important;
+        font-size: 16px !important;
+        padding: 6px 0 0 0;
     }
     .footer-company-info::after {
         content: "";
@@ -595,6 +604,7 @@ $xlarge: 1024px;
         font-size: 28px;
         font-family: 'ElegantIcons';
         color: $lighter-gray;
+        z-index: 100000;
     }
 }
 

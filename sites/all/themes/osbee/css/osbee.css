@@ -3067,7 +3067,7 @@ select.with-style option[selected="selected"] {
     width: 100%;
   }
   #left-strip #branding {
-    height: 128px;
+    height: 150px;
     margin: auto;
   }
   #left-strip #branding .site-name a {
@@ -3289,6 +3289,10 @@ select.with-style option[selected="selected"] {
   #main-content .field-name-field-menu-block {
     width: 100%;
   }
+  #main-content .menu-name-menu-inpage-portfolio-menu .subcat-expand,
+  #main-content .menu-name-menu-inpage-portfolio-menu .subcat-collapse {
+    left: 0 !important;
+  }
   #main-content .view-in-page-menu-portfolio-items .views-row {
     width: 49.7%;
     display: inline-block;
@@ -3438,6 +3442,7 @@ select.with-style option[selected="selected"] {
   }
   .region-footer .block {
     float: none;
+    margin-right: 0;
   }
   .region-footer #block-osbee-custom-social-footer {
     float: none;
@@ -3456,7 +3461,8 @@ select.with-style option[selected="selected"] {
   .footer-company-info {
     display: block;
     text-align: center;
-    font-size: 13px !important;
+    font-size: 16px !important;
+    padding: 6px 0 0 0;
   }
 
   .footer-company-info::after {
@@ -3482,6 +3488,7 @@ select.with-style option[selected="selected"] {
     font-size: 28px;
     font-family: 'ElegantIcons';
     color: #E6E6E6;
+    z-index: 100000;
   }
 }
 @media (max-width: 640px) {
