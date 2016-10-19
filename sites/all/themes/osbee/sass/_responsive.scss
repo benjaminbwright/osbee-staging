@@ -380,9 +380,18 @@ $xlarge: 1024px;
             width: 100%;
             display: inline-block;
         }
-
-        .views-field-title {
-            display: none;
+        .view-in-page-menu-portfolio-items .views-row {
+            position: relative;
+            .field-content {
+                height:auto;
+            }
+            .views-field-title {
+                position: absolute;
+                bottom: 76px;
+                background: rgba(0,0,0,.5);
+                width: 100%;
+                text-align: center;
+            }
         }
 
         // First Level of menu
@@ -429,6 +438,12 @@ $xlarge: 1024px;
                     padding: 10px 10px;
                     font-size: $menu-item-font-size;
                     text-transform: uppercase;
+                }
+                .views-field-field-portfolio-landing-page-ima {
+                    a {
+                        width: 100%;
+                        padding: 0;
+                    }
                 }
                 // Second level menu items
                 .menu-subcat {
