@@ -259,6 +259,17 @@ $xlarge: 1024px;
     // Draw Menu Styles
     .not-front {
         background: $black;
+        .menu {
+            li {
+                &.active {
+                    background: $light-gray;
+                    color: $black;
+                    a {
+                        color: $black;
+                    }
+                }
+            }
+        }
         #page {
             #main-content {
                 padding: 40px 0 55px 0;
@@ -405,13 +416,7 @@ $xlarge: 1024px;
                 width: 100%;
                 border-bottom: 1px solid $light-gray;
                 margin-bottom: 0px;
-                &.active {
-                    background: $light-gray;
-                    color: $black;
-                    a {
-                        color: $black;
-                    }
-                }
+                
                 .subcat-expand,
                 .subcat-collapse {
                     font-size: 1.7em;
