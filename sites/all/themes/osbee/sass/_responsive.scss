@@ -498,5 +498,11 @@ $xlarge: 1024px;
 
     #back-to-top {
         background: $blue;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 23px;
     }
 }

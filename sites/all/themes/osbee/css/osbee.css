@@ -3393,6 +3393,16 @@ select.with-style option[selected="selected"] {
     margin-right: 0;
     content: "";
   }
+
+  #back-to-top {
+    background: #5d86a0;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 23px;
+  }
 }
 
 /*# sourceMappingURL=osbee.css.map */
