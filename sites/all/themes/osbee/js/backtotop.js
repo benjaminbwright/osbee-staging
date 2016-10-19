@@ -1,16 +1,17 @@
 (function($){
+    /*
     $(window).load(function(){
         $('#back-to-top').hide();
     });
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 350) {
+        if ($(this).scrollTop() > 200) {
             jQuery('#back-to-top').fadeIn(300);
         } else {
             jQuery('#back-to-top').fadeOut(300);
         }
     });
-
+    */
     $(document).ready(function(){
 
         $('#back-to-top').click(function(event) {
