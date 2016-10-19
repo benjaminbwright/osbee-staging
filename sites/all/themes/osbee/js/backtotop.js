@@ -1,5 +1,5 @@
 (function($){
-    /*$(window).load(function(){
+    $(window).load(function(){
         $('#back-to-top').hide();
     });
 
@@ -10,7 +10,7 @@
             jQuery('#back-to-top').fadeOut(300);
         }
     });
-    */
+
     $(document).ready(function(){
 
         $('#back-to-top').click(function(event) {
