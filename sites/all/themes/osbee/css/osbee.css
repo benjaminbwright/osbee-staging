@@ -3199,6 +3199,13 @@ select.with-style option[selected="selected"] {
   .not-front {
     background: #000000;
   }
+  .not-front .menu li.active {
+    background: #bcbec0;
+    color: #000000;
+  }
+  .not-front .menu li.active a {
+    color: #000000;
+  }
   .not-front #page #main-content {
     padding: 40px 0 55px 0;
   }
@@ -3322,13 +3329,6 @@ select.with-style option[selected="selected"] {
     width: 100%;
     border-bottom: 1px solid #bcbec0;
     margin-bottom: 0px;
-  }
-  #main-content ul.menu li.active {
-    background: #bcbec0;
-    color: #000000;
-  }
-  #main-content ul.menu li.active a {
-    color: #000000;
   }
   #main-content ul.menu li .subcat-expand,
   #main-content ul.menu li .subcat-collapse {
