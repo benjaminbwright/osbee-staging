@@ -36,6 +36,8 @@ $xlarge: 1024px;
     width: 100%;
 }
 
+
+
 @media (max-width: $medium) {
     .front.domain-osbee-com #block-views-homepage-slideshow-block, 
     .front.domain-osbee-com #block-block-9, 
@@ -377,7 +379,7 @@ $xlarge: 1024px;
 
         //Mobile Portfolio Items
         .view-in-page-menu-portfolio-items .views-row {
-            width: 100%;
+            width: 49.7%;
             display: inline-block;
         }
         .view-in-page-menu-portfolio-items .views-row {
@@ -593,5 +595,12 @@ $xlarge: 1024px;
         font-size: 28px;
         font-family: 'ElegantIcons';
         color: $lighter-gray;
+    }
+}
+
+@media (max-width: $small) {
+    .view-in-page-menu-portfolio-items .views-row {
+        width: 100% !important;
+        display: inline-block;
     }
 }
