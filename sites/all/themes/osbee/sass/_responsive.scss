@@ -48,6 +48,7 @@ $xlarge: 1024px;
         // Confine mobile width to the width of the screen.
         max-width: 100%;
         font-family: MetaOT !important;
+        font-size: 16px;
         background: $black;
     }
     
@@ -179,18 +180,18 @@ $xlarge: 1024px;
                 position: relative;
                 width: 100%;
                 border-bottom: 1px solid $light-gray;
-                .menu-link-wrapper {
-                    .subcat-expand,
-                    .subcat-collapse {
-                        font-size: 2.25em;
-                        position: absolute;
-                        right: 10px;
-                        left: 50%;
-                        text-align: right;
-                        top: 4px;
-                        font-family: 'ElegantIcons';
-                        z-index: 5000;
-                    }
+
+                .subcat-expand,
+                .subcat-collapse {
+                    font-size: 1.7em;
+                    position: absolute;
+                    right: 10px;
+                    left: 50%;
+                    text-align: right;
+                    top: 4px;
+                    font-family: 'ElegantIcons';
+                    z-index: 80;
+
                 }
                 a {
                     display: inline-block;
@@ -321,7 +322,7 @@ $xlarge: 1024px;
                 border-radius: 0 23px 23px 0;
                 color: #ffffff;
                 font-family: 'ElegantIcons';
-                font-size: 2em;
+                font-size: 24px;
                 .toggle-open {
                     width: 50px;
                     span {
@@ -397,7 +398,7 @@ $xlarge: 1024px;
                 }
                 .subcat-expand,
                 .subcat-collapse {
-                    font-size: 2.25em;
+                    font-size: 1.7em;
                     position: absolute;
                     right: 10px;
                     left: 50%;
@@ -405,7 +406,7 @@ $xlarge: 1024px;
                     padding: 10px 10px;
                     margin-top: -4px;
                     font-family: 'ElegantIcons';
-                    z-index: 5000;
+                    z-index: 80;
                 }
                 a {
                     font-weight: normal;
@@ -452,6 +453,57 @@ $xlarge: 1024px;
             }
         }
     }
+
+    // Mobile Portfolio
+    
+    #block-block-6 {
+        // 
+        display: none;
+    }
+
+    .section-portfolio-page #page .view-content {
+        width: 100%;
+    }
+    .section-portfolio-page .region-content .block-views {
+        float: none;
+        position: static;
+        width: 100%;
+        margin-right: 0;
+        .views-slideshow-cycle-main-frame {
+            position: static !important;
+            width: 100% !important;
+            height: auto !important;
+        }
+        .views-slideshow-cycle-main-frame-row {
+            position: relative !important;
+            display: block !important;
+            z-index: 95 !important;
+            width: 100%;
+            .views-field-field-portfolio-image {
+                width: 100% !important;
+                height: auto !important;
+                .resume {
+                    display: none;
+                }
+            }
+        }
+        .views-field-field-caption {
+            display: block !important;
+            .field-content {
+                padding: 10px;
+            }
+        }
+        .views-slideshow-controls-bottom,
+        .views-slideshow-controls-top
+         {
+            display: none;
+        }
+    }
+    .section-portfolio .group-links {
+        bottom: 0;
+    }
+
+
 
     // Mobile Footer Customization
     #footer {
