@@ -75,6 +75,6 @@
     </div></div>
 </div>
 <div id="drawer-menu-overlay" class="toggle-menu"></div>
-<div id="back-to-top">B</div>
+<div id="back-to-top">&#x32;</div>
 
 <!-- debug: test -->

@@ -3116,6 +3116,9 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu .active-menu-item a {
     color: #ffffff;
   }
+  #mobile-navigation ul.menu .active-menu-item .subcat-expand {
+    color: #ffffff;
+  }
   #mobile-navigation ul.menu .active-menu-item .menu-subcat {
     display: block;
   }
@@ -3135,10 +3138,11 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu li .subcat-collapse {
     font-size: 1.7em;
     position: absolute;
+    color: #bcbec0;
     right: 10px;
-    left: 50%;
+    left: 0;
     text-align: right;
-    top: 4px;
+    top: 1px;
     font-family: 'ElegantIcons';
     z-index: 80;
   }
@@ -3163,6 +3167,9 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li ul {
     display: none;
+  }
+  #mobile-navigation ul.menu li ul li {
+    background: #3a3a3a;
   }
   #mobile-navigation ul.menu li ul li a {
     padding-left: 35px;
@@ -3255,6 +3262,7 @@ select.with-style option[selected="selected"] {
   }
   .not-front #drawer-menu.on-screen {
     margin-left: 0;
+    box-shadow: 5px 0 22px #000000;
   }
   .not-front #drawer-menu #drawer-menu-toggle {
     display: inline-block;
@@ -3393,8 +3401,9 @@ select.with-style option[selected="selected"] {
   #main-content ul.menu li .subcat-collapse {
     font-size: 1.7em;
     position: absolute;
+    color: #bcbec0;
     right: 10px;
-    left: 50%;
+    left: 100%;
     text-align: right;
     padding: 10px 10px;
     margin-top: -4px;
@@ -3531,12 +3540,11 @@ select.with-style option[selected="selected"] {
   #back-to-top {
     background: #5d86a0;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 0;
+    bottom: 0;
     width: 34px;
     height: 40px;
     padding-left: 6px;
-    border-radius: 23px;
     font-size: 28px;
     font-family: 'ElegantIcons';
     color: #E6E6E6;

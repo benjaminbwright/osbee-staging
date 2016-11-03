@@ -167,6 +167,9 @@ $xlarge: 1024px;
                 a {
                     color: #ffffff;
                 }
+                .subcat-expand {
+                    color: #ffffff;
+                }
                 .menu-subcat {
                     display: block;
                 }
@@ -186,10 +189,11 @@ $xlarge: 1024px;
                 .subcat-collapse {
                     font-size: 1.7em;
                     position: absolute;
+                    color: #bcbec0;
                     right: 10px;
-                    left: 50%;
+                    left: 0;
                     text-align: right;
-                    top: 4px;
+                    top: 1px;
                     font-family: 'ElegantIcons';
                     z-index: 80;
 
@@ -222,6 +226,7 @@ $xlarge: 1024px;
                 ul {
                     display: none;
                     li {
+                        background: #3a3a3a;
                         a {
                             padding-left: 35px; 
                             font-size: $menu-child-item-font-size;
@@ -332,6 +337,7 @@ $xlarge: 1024px;
             transition:200ms ease;
             &.on-screen {
                 margin-left: 0;
+                box-shadow: 5px 0 22px #000000;
             }
 
             #drawer-menu-toggle {
@@ -492,8 +498,9 @@ $xlarge: 1024px;
                 .subcat-collapse {
                     font-size: 1.7em;
                     position: absolute;
+                    color: #bcbec0;
                     right: 10px;
-                    left: 50%;
+                    left: 100%;
                     text-align: right;
                     padding: 10px 10px;
                     margin-top: -4px;
@@ -651,12 +658,11 @@ $xlarge: 1024px;
     #back-to-top {
         background: $blue;
         position: fixed;
-        right: 10px;
-        bottom: 10px;
+        right: 0;
+        bottom: 0;
         width: 34px;
         height: 40px;
         padding-left: 6px;
-        border-radius: 23px;
         font-size: 28px;
         font-family: 'ElegantIcons';
         color: $lighter-gray;
