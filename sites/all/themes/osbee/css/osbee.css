@@ -3242,9 +3242,6 @@ select.with-style option[selected="selected"] {
     visibility: hidden;
     height: 50px;
   }
-  .not-front #mobile-navigation {
-    margin-top: 70px;
-  }
   .not-front #drawer-menu-overlay {
     top: 0;
     bottom: 0;
