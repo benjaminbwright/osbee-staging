@@ -3194,8 +3194,11 @@ select.with-style option[selected="selected"] {
   .not-front .menu li.active a {
     color: #000000;
   }
+  .not-front #page #left-strip {
+    display: none;
+  }
   .not-front #page #main-content {
-    padding: 40px 0 55px 0;
+    padding: 15px 0 55px 0;
   }
   .not-front #page #main-content .prose p {
     padding: 5px 10px 0 10px;
@@ -3257,11 +3260,10 @@ select.with-style option[selected="selected"] {
     display: inline-block;
     position: fixed;
     z-index: 10000;
-    width: 50px;
-    top: 35px;
+    width: 18px;
+    top: 0;
     right: 0;
     padding: 0px 13px 0px 8px;
-    border-radius: 23px 0 0 23px;
     color: #ffffff;
     font-family: 'ElegantIcons';
     font-size: 24px;
@@ -3329,7 +3331,11 @@ select.with-style option[selected="selected"] {
     position: relative;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row .field-content {
-    height: auto;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    min-height: 60px;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row .views-field-title {
     /* position: absolute; */
@@ -3347,6 +3353,9 @@ select.with-style option[selected="selected"] {
     left: 0;
     bottom: 0;
     right: 0;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row .views-field-title a {
     font-family: 'MetaOT';
@@ -3355,6 +3364,8 @@ select.with-style option[selected="selected"] {
     padding-top: 5px;
     padding-bottom: 5px;
     line-height: 3vh;
+    display: table-cell;
+    vertical-align: middle;
   }
   #main-content ul.menu {
     border-top: 1px solid #bcbec0;

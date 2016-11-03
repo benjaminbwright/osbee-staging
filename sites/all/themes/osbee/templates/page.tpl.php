@@ -61,7 +61,7 @@
 
 <div id="drawer-menu">
     <div id="drawer-menu-toggle" class="toggle-menu" >
-        <div class="toggle-open">&#x61;<span class="MetaOT">Menu</span></div>
+        <div class="toggle-open">&#x61;</div>
         <div class="toggle-close">&#x4d;</div>
     </div>
     <?php if ($page['mobilenav']): ?>
