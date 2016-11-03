@@ -329,8 +329,8 @@ $xlarge: 1024px;
         #drawer-menu {
             position: fixed;
             top: 0;
-            //height: 100vh;
-            overflow-y: auto;
+            min-height: 100%;
+            overflow-y: scroll;
             width: 80%;
             z-index: 100;
             bottom: 0;

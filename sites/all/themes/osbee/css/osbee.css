@@ -3256,7 +3256,8 @@ select.with-style option[selected="selected"] {
   .not-front #drawer-menu {
     position: fixed;
     top: 0;
-    overflow-y: auto;
+    min-height: 100%;
+    overflow-y: scroll;
     width: 80%;
     z-index: 100;
     bottom: 0;
