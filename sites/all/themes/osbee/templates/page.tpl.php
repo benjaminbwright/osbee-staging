@@ -60,10 +60,6 @@
 </div></div>
 
 <div id="drawer-menu">
-    <div id="drawer-menu-toggle" class="toggle-menu" >
-        <div class="toggle-open">&#x61;</div>
-        <div class="toggle-close">&#x4d;</div>
-    </div>
     <?php if ($page['mobilenav']): ?>
       <div id='mobile-navigation'><div class='limiter clearfix'>
         <?php print render($page['mobilenav']); ?>
@@ -74,6 +70,10 @@
       <?php print render($page['footer']) ?>
     </div></div>
 </div>
+<div id="drawer-menu-toggle" class="toggle-menu" >
+        <div class="toggle-open">&#x61;</div>
+        <div class="toggle-close">&#x4d;</div>
+    </div>
 <div id="drawer-menu-overlay" class="toggle-menu"></div>
 <div id="back-to-top">&#x32;</div>
 

@@ -3257,6 +3257,7 @@ select.with-style option[selected="selected"] {
     position: fixed;
     top: 0;
     min-height: 100%;
+    overflow-y: scroll;
     width: 80%;
     z-index: 100;
     bottom: 0;
@@ -3271,7 +3272,8 @@ select.with-style option[selected="selected"] {
     margin-left: 0;
     box-shadow: 5px 0 22px #000000;
   }
-  .not-front #drawer-menu #drawer-menu-toggle {
+
+  #drawer-menu-toggle {
     display: inline-block;
     position: fixed;
     z-index: 10000;
@@ -3284,10 +3286,10 @@ select.with-style option[selected="selected"] {
     font-size: 24px;
     background: #5d86a0;
   }
-  .not-front #drawer-menu #drawer-menu-toggle .toggle-open {
+  #drawer-menu-toggle .toggle-open {
     width: 50px;
   }
-  .not-front #drawer-menu #drawer-menu-toggle .toggle-open span {
+  #drawer-menu-toggle .toggle-open span {
     font-size: 13px;
     position: absolute;
     top: 7px;
