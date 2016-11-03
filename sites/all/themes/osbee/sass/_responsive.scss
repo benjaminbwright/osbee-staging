@@ -210,6 +210,7 @@ $xlarge: 1024px;
                 // Second level menu items
                 .menu-subcat {
                     display: none;
+                    overflow: hidden;
                     li:last-child {
                         border: none;
                     }
@@ -232,6 +233,7 @@ $xlarge: 1024px;
                             p {
                                 padding: 10px 0;
                                 font-size: 13px;
+                                width: 80%;
                             }
                         }
                         background: #3a3a3a;

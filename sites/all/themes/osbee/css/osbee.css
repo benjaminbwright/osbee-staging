@@ -3157,6 +3157,7 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li .menu-subcat {
     display: none;
+    overflow: hidden;
   }
   #mobile-navigation ul.menu li .menu-subcat li:last-child {
     border: none;
@@ -3178,6 +3179,7 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu li ul li.menu-views p {
     padding: 10px 0;
     font-size: 13px;
+    width: 80%;
   }
   #mobile-navigation ul.menu li ul li a {
     padding-left: 35px;
