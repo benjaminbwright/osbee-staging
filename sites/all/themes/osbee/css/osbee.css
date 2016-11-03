@@ -3294,7 +3294,7 @@ select.with-style option[selected="selected"] {
     left: 0 !important;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row {
-    width: 49.7%;
+    width: 32.8%;
     display: inline-block;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row {
@@ -3493,7 +3493,7 @@ select.with-style option[selected="selected"] {
 }
 @media (max-width: 640px) {
   .view-in-page-menu-portfolio-items .views-row {
-    width: 100% !important;
+    width: 32.8% !important;
     display: inline-block;
   }
 }
