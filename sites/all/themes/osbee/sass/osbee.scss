@@ -2070,29 +2070,35 @@ select.with-style option[selected="selected"] {
 
 /* line 61, ../src/scss/_front.scss */
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block {
-  display: block;
-  position: absolute;
-  bottom: 50px;
-  right: 5px;
-  z-index: 500;
+    display: inline-block;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 500;
 }
 
 /* line 69, ../src/scss/_front.scss */
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item {
-  float: left;
-  width: 44px;
-  height: 44px;
-  margin-right: 8px;
-  background: url(../images/gray-dot.png);
-  cursor: pointer;
-  text-indent: 44px;
-  overflow: hidden;
+    /* float: left; */
+    display: inline-block;
+    /* text-align: center; */
+    width: 10px;
+    height: 10px;
+    margin-right: 13px;
+    background: #ffffff;
+    border-radius: 50%;
+    /* cursor: pointer; */
+    text-indent: 44px;
+    overflow: hidden;
 }
 
 /* line 80, ../src/scss/_front.scss */
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item:hover,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item.active {
-  background: url(../images/orange-dot.png);
+  background: #5d86a0;
 }
 
 /* line 85, ../src/scss/_front.scss */
