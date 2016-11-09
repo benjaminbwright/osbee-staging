@@ -2,9 +2,9 @@
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 200) {
-            jQuery('#back-to-top').fadeIn(300);
+            jQuery('#back-to-top').fadeIn(200);
         } else {
-            jQuery('#back-to-top').fadeOut(300);
+            jQuery('#back-to-top').fadeOut(200);
         }
     });
 
@@ -12,7 +12,7 @@
         $('#back-to-top').hide();
         $('#back-to-top').click(function(event) {
             event.preventDefault();
-            $('html, body').animate({scrollTop: 0}, 200);
+            $('html, body').animate({scrollTop: 0}, 300);
             return false;    
         });
     });
