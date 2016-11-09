@@ -2984,7 +2984,8 @@ select.with-style option[selected="selected"] {
   display: none;
 }
 
-#drawer-menu-toggle {
+#drawer-menu-toggle,
+.front #drawer-menu-toggle {
   display: none;
 }
 
