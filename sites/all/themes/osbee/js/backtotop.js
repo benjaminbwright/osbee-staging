@@ -1,8 +1,4 @@
 (function($){
-    /*
-    $(window).load(function(){
-        $('#back-to-top').hide();
-    });
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 200) {
@@ -11,12 +7,12 @@
             jQuery('#back-to-top').fadeOut(300);
         }
     });
-    */
-    $(document).ready(function(){
 
+    $(document).ready(function(){
+        $('#back-to-top').hide();
         $('#back-to-top').click(function(event) {
             event.preventDefault();
-            $('html, body').animate({scrollTop: 0}, 300);
+            $('html, body').animate({scrollTop: 0}, 200);
             return false;    
         });
     });
