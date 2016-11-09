@@ -675,6 +675,10 @@ $xlarge: 1024px;
         font-family: 'ElegantIcons';
         color: $lighter-gray;
         z-index: 100000;
+        -webkit-transition: all 1s ease-in-out; /* Transition properties (for each vendor) */
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;   
     }
 }
 

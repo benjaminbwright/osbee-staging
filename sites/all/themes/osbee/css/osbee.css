@@ -3558,6 +3558,11 @@ select.with-style option[selected="selected"] {
     font-family: 'ElegantIcons';
     color: #E6E6E6;
     z-index: 100000;
+    -webkit-transition: all 1s ease-in-out;
+    /* Transition properties (for each vendor) */
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 }
 @media (max-width: 640px) {
