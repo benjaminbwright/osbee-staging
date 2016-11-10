@@ -140,3 +140,14 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('TrajanPro-Regular.eot');
+    src: url('TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TrajanPro-Regular.woff') format('woff'),
+        url('TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

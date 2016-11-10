@@ -70,6 +70,10 @@ $xlarge: 1024px;
         #block-views-homepage-slideshow-block {
             width: 100%;
             margin-top: -90px;      
+            img {
+                height: 100vh;
+                width: auto;
+            }
         }
         img {
             height: auto;
@@ -95,17 +99,25 @@ $xlarge: 1024px;
 
     // Hide Block 7 Tagline on mobile
     
+    .front #left-strip {
+        display: none;
+    }
 
     .front.domain-osbee-com #block-block-7 {
+        bottom: 75vh;
         p {
-            display: none;
+            //display: none;
+            width: 100%;
         }
-        height: auto;
+        height: 186px;
+        margin-bottom: -186px;
     }
     
     #widget_pager_bottom_homepage_slideshow-block {
-        display: none !important;
+        //display: none !important;
     }
+
+
 
     // Hide the non-mobile navigation
     #navigation {

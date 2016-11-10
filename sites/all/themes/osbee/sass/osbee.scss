@@ -15,6 +15,7 @@
 body {
   //background: #555454;
   background: #000000;
+  font-family: MetaOT !important;
 }
 
 /* line 5, ../src/scss/_base.scss */
@@ -2054,8 +2055,32 @@ select.with-style option[selected="selected"] {
 
 /* line 48, ../src/scss/_front.scss */
 .front.domain-osbee-com #block-block-7 {
-  top: 40px;
-  color: #FEA519;
+    bottom: 187px;
+    height: 185px;
+    color: #FEA519;
+    text-align: center;
+    .prose {
+        line-height: 8px;
+        .site-name {
+            a {
+                height: 136px;
+                background-size: 100%;
+            }
+        }
+
+    }
+    p {
+        position: absolute;
+        width: 1013px;
+        height: 45px;
+        line-height: 15px;
+        padding-left: 10px;
+        background: none;
+        font-size: 22px;
+        left: 0;
+        color: #ffffff;
+        text-transform: capitalize;
+    }
 }
 
 /* line 53, ../src/scss/_front.scss */
@@ -2087,12 +2112,25 @@ select.with-style option[selected="selected"] {
     /* text-align: center; */
     width: 10px;
     height: 10px;
-    margin-right: 13px;
+    margin: 0 7px;
     background: #ffffff;
     border-radius: 50%;
     /* cursor: pointer; */
     text-indent: 44px;
     overflow: hidden;
+}
+
+.front.domain-osbee-com .views-field.views-field-field-slide-caption {
+    position: absolute;
+    z-index: 500;
+    bottom: 90px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 250%;
+    text-transform: initial;
+    font-family: 'Trajan Pro';
+    //text-shadow: 1px 1px 5px #000000;
 }
 
 /* line 80, ../src/scss/_front.scss */
@@ -2104,6 +2142,46 @@ select.with-style option[selected="selected"] {
 /* line 85, ../src/scss/_front.scss */
 .front.domain-osbee-com #highlighted .views-slideshow-cycle-main-frame-row {
   width: 1023px;
+}
+
+.swiper-slide {
+    .views-field-field-slide-image {
+        img {
+            -webkit-filter: brightness(1.2) grayscale(1);
+            filter: brightness(1.2) grayscale(1);
+        }
+    }
+}
+
+.swiper-slide-active {
+    z-index: 10000;
+    .views-field-field-slide-image {
+        img {
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-filter: brightness(1) grayscale(0);
+            filter: brightness(1) grayscale(0);
+            -webkit-transition: 5s ease;
+            -moz-transition: 5s ease;
+            -o-transition: 5s ease;
+            transition: 5s ease;
+        }
+    }
+}
+
+.front.domain-osbee-com #block-block-7 {
+    width: 100%;
+    pointer-events: none;
+}
+
+#block-block-7 {
+    h1.site-name {
+        /* position: inherit; */
+        width: 140px;
+        margin: auto;
+    }
 }
 
 /* line 1, ../src/scss/_blog.scss */

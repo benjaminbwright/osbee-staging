@@ -106,8 +106,16 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url("TrajanPro-Regular.eot");
+  src: url("TrajanPro-Regular.eot?#iefix") format("embedded-opentype"), url("TrajanPro-Regular.woff") format("woff"), url("TrajanPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: #000000;
+  font-family: MetaOT !important;
 }
 
 /* line 5, ../src/scss/_base.scss */
@@ -2147,8 +2155,29 @@ select.with-style option[selected="selected"] {
 
 /* line 48, ../src/scss/_front.scss */
 .front.domain-osbee-com #block-block-7 {
-  top: 40px;
+  bottom: 187px;
+  height: 185px;
   color: #FEA519;
+  text-align: center;
+}
+.front.domain-osbee-com #block-block-7 .prose {
+  line-height: 8px;
+}
+.front.domain-osbee-com #block-block-7 .prose .site-name a {
+  height: 136px;
+  background-size: 100%;
+}
+.front.domain-osbee-com #block-block-7 p {
+  position: absolute;
+  width: 1013px;
+  height: 45px;
+  line-height: 15px;
+  padding-left: 10px;
+  background: none;
+  font-size: 22px;
+  left: 0;
+  color: #ffffff;
+  text-transform: capitalize;
 }
 
 /* line 53, ../src/scss/_front.scss */
@@ -2180,12 +2209,24 @@ select.with-style option[selected="selected"] {
   /* text-align: center; */
   width: 10px;
   height: 10px;
-  margin-right: 13px;
+  margin: 0 7px;
   background: #ffffff;
   border-radius: 50%;
   /* cursor: pointer; */
   text-indent: 44px;
   overflow: hidden;
+}
+
+.front.domain-osbee-com .views-field.views-field-field-slide-caption {
+  position: absolute;
+  z-index: 500;
+  bottom: 90px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 250%;
+  text-transform: initial;
+  font-family: 'Trajan Pro';
 }
 
 /* line 80, ../src/scss/_front.scss */
@@ -2197,6 +2238,38 @@ select.with-style option[selected="selected"] {
 /* line 85, ../src/scss/_front.scss */
 .front.domain-osbee-com #highlighted .views-slideshow-cycle-main-frame-row {
   width: 1023px;
+}
+
+.swiper-slide .views-field-field-slide-image img {
+  -webkit-filter: brightness(1.2) grayscale(1);
+  filter: brightness(1.2) grayscale(1);
+}
+
+.swiper-slide-active {
+  z-index: 10000;
+}
+.swiper-slide-active .views-field-field-slide-image img {
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-filter: brightness(1) grayscale(0);
+  filter: brightness(1) grayscale(0);
+  -webkit-transition: 5s ease;
+  -moz-transition: 5s ease;
+  -o-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.front.domain-osbee-com #block-block-7 {
+  width: 100%;
+  pointer-events: none;
+}
+
+#block-block-7 h1.site-name {
+  /* position: inherit; */
+  width: 140px;
+  margin: auto;
 }
 
 /* line 1, ../src/scss/_blog.scss */
@@ -3035,6 +3108,10 @@ select.with-style option[selected="selected"] {
     width: 100%;
     margin-top: -90px;
   }
+  div#page #block-views-homepage-slideshow-block img {
+    height: 100vh;
+    width: auto;
+  }
   div#page img {
     height: auto;
     width: 100%;
@@ -3055,15 +3132,17 @@ select.with-style option[selected="selected"] {
     margin-left: 4px;
   }
 
-  .front.domain-osbee-com #block-block-7 {
-    height: auto;
-  }
-  .front.domain-osbee-com #block-block-7 p {
+  .front #left-strip {
     display: none;
   }
 
-  #widget_pager_bottom_homepage_slideshow-block {
-    display: none !important;
+  .front.domain-osbee-com #block-block-7 {
+    bottom: 75vh;
+    height: 186px;
+    margin-bottom: -186px;
+  }
+  .front.domain-osbee-com #block-block-7 p {
+    width: 100%;
   }
 
   #navigation {
