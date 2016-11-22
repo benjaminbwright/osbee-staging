@@ -26,7 +26,7 @@ $xlarge: 1024px;
 
 #drawer-menu-toggle,
 .front #drawer-menu-toggle {
-    display: none;
+    //display: none;
 }
 
 .site-slogan {
@@ -37,6 +37,11 @@ $xlarge: 1024px;
     width: 100%;
 }
 
+
+.section-portfolio-page .region-content .block-views {
+    overflow: hidden;
+    height: 425px;
+}
 
 
 @media (max-width: $medium) {
@@ -63,6 +68,7 @@ $xlarge: 1024px;
             padding: 0;
             background: $black;
             color: $lighter-gray;
+            overflow: visible;
             .field-name-body {
                 color: $lighter-gray;
             }
@@ -328,9 +334,9 @@ $xlarge: 1024px;
             height: 50px;
 
         }
+    }
 
-
-        #drawer-menu-overlay {
+    #drawer-menu-overlay {
             top: 0;
             bottom: 0;
             left: 0;
@@ -363,7 +369,6 @@ $xlarge: 1024px;
             }
 
         }
-    }
             #drawer-menu-toggle {
                 display: inline-block;
                 position: fixed;
@@ -448,6 +453,7 @@ $xlarge: 1024px;
             margin-left: 0;
             margin-right: -1px;
             display: inline-block;
+            line-height: 0;
         }
         .view-in-page-menu-portfolio-items .views-row {
             position: relative;
@@ -587,6 +593,7 @@ $xlarge: 1024px;
         display: none;
     }
 
+
     .section-portfolio-page #page .view-content {
         width: 100%;
     }
@@ -595,6 +602,8 @@ $xlarge: 1024px;
         position: static;
         width: 100%;
         margin-right: 0;
+        height: auto;
+        // overflow: visible;
         .views-slideshow-cycle-main-frame {
             position: static !important;
             width: 100% !important;
@@ -615,6 +624,7 @@ $xlarge: 1024px;
         }
         .views-field-field-caption {
             display: block !important;
+            // margin-top: 100px;
             .field-content {
                 padding: 10px;
             }
@@ -622,13 +632,34 @@ $xlarge: 1024px;
         .views-slideshow-controls-bottom,
         .views-slideshow-controls-top
          {
-            display: none;
+            //display: none;
+            bottom: -175px;
+            top: initial !important;
+        }
+        .views-slideshow-controls-bottom {
+            width: 100%;
+            .jcarousel-list-horizontal {
+                width: 98% !important;
+                margin-left: 2.5% !important;
+                .views_slideshow_jcarousel_pager_item {
+                    margin-bottom: 6px;
+                    height: 72px !important;
+                    width: 72px !important;
+                    img {
+                        margin: 0 !important;
+                    }
+                }
+            }
         }
     }
     .section-portfolio .group-links {
-        bottom: 0;
+        bottom: -235px;
+        z-index: 10000;
     }
 
+    .section-portfolio-page .jcarousel-container, .section-portfolio-page .jcarousel-clip {
+        width: 100%;
+    }
 
 
     // Mobile Footer Customization
