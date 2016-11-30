@@ -2306,10 +2306,11 @@ select.with-style option[selected="selected"] {
   z-index: 10000;
 }
 .swiper-slide-active .views-field-field-slide-image img {
-  /*-moz-transform: scale(1.2);
+  -webkit-backface-visibility: hidden;
+  -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
-  transform: scale(1.2);*/
+  transform: scale(1.2);
   -webkit-filter: brightness(1) grayscale(0);
   filter: brightness(1) grayscale(0);
   -webkit-transition: 1s ease;
@@ -3148,6 +3149,7 @@ select.with-style option[selected="selected"] {
     font-size: 16px;
     background: #000000;
     -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
   }
 
   div#page {

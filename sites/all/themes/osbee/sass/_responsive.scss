@@ -60,6 +60,7 @@ $xlarge: 1024px;
         font-size: 16px;
         background: $black;
         -webkit-overflow-scrolling: touch;
+        touch-action: manipulation;
     }
     
     div#page {
