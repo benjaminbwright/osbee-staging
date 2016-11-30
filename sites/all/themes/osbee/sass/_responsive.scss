@@ -744,7 +744,7 @@ $xlarge: 1024px;
             }
         }
         .views-field-field-slide-caption {
-            bottom: 63px !important;
+            bottom: 83px !important;
             font-size: 150% !important;
         }
 
@@ -752,7 +752,7 @@ $xlarge: 1024px;
 
     // Logo placement on homepage slideshow
     #block-block-7 {
-        bottom: 230px !important; 
+        bottom: 250px !important; 
         h1.site-name {
             width: 80px;
             a {
@@ -768,11 +768,10 @@ $xlarge: 1024px;
     }
 
     #widget_pager_bottom_homepage_slideshow-block {
-        bottom: 30px !important;
+        bottom: 50px !important;
     }
     
 }
-
 
 @media (max-width: $small) {
     .view-in-page-menu-portfolio-items .views-row {

@@ -3746,12 +3746,12 @@ select.with-style option[selected="selected"] {
     height: auto !important;
   }
   .views_slideshow_swiper_main .views-field-field-slide-caption {
-    bottom: 63px !important;
+    bottom: 83px !important;
     font-size: 150% !important;
   }
 
   #block-block-7 {
-    bottom: 230px !important;
+    bottom: 250px !important;
   }
   #block-block-7 h1.site-name {
     width: 80px;
@@ -3766,7 +3766,7 @@ select.with-style option[selected="selected"] {
   }
 
   #widget_pager_bottom_homepage_slideshow-block {
-    bottom: 30px !important;
+    bottom: 50px !important;
   }
 }
 @media (max-width: 640px) {
