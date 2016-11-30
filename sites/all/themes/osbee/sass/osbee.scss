@@ -2157,6 +2157,8 @@ select.with-style option[selected="selected"] {
     z-index: 10000;
     .views-field-field-slide-image {
         img {
+            // Prevent flicker on mobile browsers
+            // http://stackoverflow.com/questions/2975217/how-to-fix-flicker-when-using-webkit-transforms-transitions
             -webkit-backface-visibility: hidden;
             -moz-transform: scale(1.2);
             -o-transform: scale(1.2);
