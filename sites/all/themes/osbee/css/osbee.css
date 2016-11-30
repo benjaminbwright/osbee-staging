@@ -113,6 +113,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   background: #000000;
   font-family: MetaOT !important;
@@ -2302,7 +2306,6 @@ select.with-style option[selected="selected"] {
   z-index: 10000;
 }
 .swiper-slide-active .views-field-field-slide-image img {
-  -webkit-backface-visibility: hidden;
   /*-moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
