@@ -3678,6 +3678,41 @@ select.with-style option[selected="selected"] {
     transition: all 1s ease-in-out;
   }
 }
+@media (orientation: landscape) and (max-width: 768px) {
+  .front #page {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  .views_slideshow_swiper_main .views-field-field-slide-image img {
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .views_slideshow_swiper_main .views-field-field-slide-caption {
+    bottom: 63px !important;
+    font-size: 150% !important;
+  }
+
+  #block-block-7 {
+    bottom: 230px;
+  }
+  #block-block-7 h1.site-name {
+    width: 80px;
+  }
+  #block-block-7 h1.site-name a {
+    height: 84px !important;
+    margin-bottom: 0;
+  }
+  #block-block-7 p {
+    padding-left: 0 !important;
+    font-size: 14px !important;
+  }
+
+  #widget_pager_bottom_homepage_slideshow-block {
+    bottom: 30px !important;
+  }
+}
 @media (max-width: 640px) {
   .view-in-page-menu-portfolio-items .views-row {
     width: 32.8% !important;

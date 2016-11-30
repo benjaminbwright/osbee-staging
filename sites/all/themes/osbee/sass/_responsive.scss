@@ -726,6 +726,52 @@ $xlarge: 1024px;
     }
 }
 
+@media (orientation: landscape) and (max-width: $medium) {
+    .front #page {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    // Slideshow in landscape mode
+    .views_slideshow_swiper_main {
+        .views-field-field-slide-image {
+            img {
+                margin: 0 !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+        .views-field-field-slide-caption {
+            bottom: 63px !important;
+            font-size: 150% !important;
+        }
+
+    }
+
+    // Logo placement on homepage slideshow
+    #block-block-7 {
+        bottom: 230px; 
+        h1.site-name {
+            width: 80px;
+            a {
+                height: 84px !important;
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            padding-left: 0 !important;
+            font-size: 14px !important;
+        }
+    }
+
+    #widget_pager_bottom_homepage_slideshow-block {
+        bottom: 30px !important;
+    }
+    
+}
+
+
 @media (max-width: $small) {
     .view-in-page-menu-portfolio-items .views-row {
         width: 32.8% !important;
