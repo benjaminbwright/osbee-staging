@@ -2215,10 +2215,10 @@ select.with-style option[selected="selected"] {
             transform: scale(1.2);
             -webkit-filter: brightness(1) grayscale(0);
             filter: brightness(1) grayscale(0);
-            -webkit-transition: 5s ease;
-            -moz-transition: 5s ease;
-            -o-transition: 5s ease;
-            transition: 5s ease;
+            -webkit-transition: 1s ease;
+            -moz-transition: 1s ease;
+            -o-transition: 1s ease;
+            transition: 1s ease;
         }
     }
 }
