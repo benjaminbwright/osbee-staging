@@ -883,6 +883,10 @@ span.views-slideshow-controls-text-previous {
     }
 }
 
+span.views-slideshow-controls-text-pause {
+    display: none;
+}
+
 /* line 489, ../src/scss/_page.scss */
 .section-portfolio-page #page .views_slideshow_jcarousel_pager_item {
   float: left;
