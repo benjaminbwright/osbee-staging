@@ -842,6 +842,47 @@ h1.term-name,
   z-index: 1000;
 }
 
+.views_slideshow_controls_text span:hover {
+    text-decoration: none;
+}
+
+span.views-slideshow-controls-text-next,
+span.views-slideshow-controls-text-previous {
+    position: absolute;
+    z-index: 48;
+    bottom: 50%;
+    a {
+        visibility: hidden;
+        text-decoration: none;
+        &::hover {
+            text-decoration: none;
+        }
+    }
+    a:before,
+    a:after {
+        font-family: 'ElegantIcons';
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 70px;
+    }
+}
+
+span.views-slideshow-controls-text-next {
+    right: 10px;
+    a:after {
+        visibility: visible;
+        content: '5';
+    }
+}
+
+span.views-slideshow-controls-text-previous {
+    left: 10px;
+    a:before {
+        visibility: visible;
+        content: '4';
+    }
+}
+
 /* line 489, ../src/scss/_page.scss */
 .section-portfolio-page #page .views_slideshow_jcarousel_pager_item {
   float: left;
