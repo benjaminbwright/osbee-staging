@@ -347,6 +347,7 @@ $xlarge: 1024px;
             position:fixed;
             width: 100%;
             height: 100vh;
+            z-index: 50;
         }
         #drawer-menu {
             position: fixed;
@@ -751,7 +752,7 @@ $xlarge: 1024px;
 
     // Logo placement on homepage slideshow
     #block-block-7 {
-        bottom: 230px; 
+        bottom: 230px !important; 
         h1.site-name {
             width: 80px;
             a {

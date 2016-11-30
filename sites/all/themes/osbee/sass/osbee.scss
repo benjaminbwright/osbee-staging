@@ -2102,7 +2102,7 @@ select.with-style option[selected="selected"] {
     left: 0;
     width: 100%;
     text-align: center;
-    z-index: 500;
+    z-index: 48;
 }
 
 /* line 69, ../src/scss/_front.scss */
@@ -2157,6 +2157,7 @@ select.with-style option[selected="selected"] {
     z-index: 10000;
     .views-field-field-slide-image {
         img {
+            -webkit-backface-visibility: hidden;
             -moz-transform: scale(1.2);
             -o-transform: scale(1.2);
             -ms-transform: scale(1.2);
@@ -2789,6 +2790,8 @@ select.with-style option[selected="selected"] {
   margin-right: 12px;
   max-width: 200px;
 }
+
+
 /* line 91, ../src/scss/_profile.scss */
 .profile.profile--40 .profile__image {
   display: none;

@@ -3,7 +3,7 @@
         //Drawer Menu
         menuToggle = $(".toggle-menu");
         drawer = $("#drawer-menu");
-        page = $(".not-front");
+        page = $(".page-node");
         overlay = $('#drawer-menu-overlay');
         
         overlay.hide();
