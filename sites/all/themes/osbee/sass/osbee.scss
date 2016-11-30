@@ -2193,6 +2193,10 @@ select.with-style option[selected="selected"] {
   width: 1023px;
 }
 
+.swiper-container-horizontal {
+    overflow-x: scroll;
+}
+
 .swiper-slide {
     .views-field-field-slide-image {
         a {

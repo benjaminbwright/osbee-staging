@@ -2293,6 +2293,10 @@ select.with-style option[selected="selected"] {
   width: 1023px;
 }
 
+.swiper-container-horizontal {
+  overflow-x: scroll;
+}
+
 .swiper-slide .views-field-field-slide-image a {
   pointer-events: none;
   cursor: default;
@@ -3205,6 +3209,7 @@ select.with-style option[selected="selected"] {
   }
   .front.domain-osbee-com #block-block-7 p {
     width: 100%;
+    font-weight: bold;
   }
 
   #navigation {
@@ -3490,11 +3495,11 @@ select.with-style option[selected="selected"] {
     display: none;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row {
-    width: 33%;
-    margin-left: 0;
-    margin-right: -1px;
+    width: 30%;
+    margin-left: 3.25%;
+    margin-right: -2%;
     display: inline-block;
-    line-height: 0;
+    line-height: 2;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row {
     position: relative;
@@ -3504,7 +3509,7 @@ select.with-style option[selected="selected"] {
     text-align: center;
     vertical-align: middle;
     width: 100%;
-    min-height: 60px;
+    min-height: 85px;
   }
   #main-content .view-in-page-menu-portfolio-items .views-row .views-field-title {
     /* position: absolute; */
@@ -3777,11 +3782,14 @@ select.with-style option[selected="selected"] {
 }
 @media (max-width: 640px) {
   .view-in-page-menu-portfolio-items .views-row {
-    width: 32.8% !important;
+    width: 30% !important;
     display: inline-block;
+    margin-left: 3%;
+    margin-right: -1.5%;
+    line-height: 1.5;
   }
   .view-in-page-menu-portfolio-items .views-row .views-field-title {
-    height: 53px !important;
+    height: 85px !important;
   }
 }
 @media (max-width: 400px) {

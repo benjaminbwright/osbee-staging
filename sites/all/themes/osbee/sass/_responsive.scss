@@ -117,6 +117,7 @@ $xlarge: 1024px;
         p {
             //display: none;
             width: 100%;
+            font-weight: bold;
         }
         height: 186px;
         margin-bottom: -186px;
@@ -453,11 +454,11 @@ $xlarge: 1024px;
         }
 
         .view-in-page-menu-portfolio-items .views-row {
-            width: 33%;
-            margin-left: 0;
-            margin-right: -1px;
+            width: 30%;
+            margin-left: 3.25%;
+            margin-right: -2%;
             display: inline-block;
-            line-height: 0;
+            line-height: 2;
         }
         .view-in-page-menu-portfolio-items .views-row {
             position: relative;
@@ -466,7 +467,7 @@ $xlarge: 1024px;
                 text-align: center;
                 vertical-align: middle;
                 width: 100%;
-                min-height: 60px;
+                min-height: 85px;
             }
             .views-field-title {
                 /* position: absolute; */
@@ -777,10 +778,13 @@ $xlarge: 1024px;
 
 @media (max-width: $small) {
     .view-in-page-menu-portfolio-items .views-row {
-        width: 32.8% !important;
+        width: 30% !important;
         display: inline-block;
+        margin-left: 3%;
+        margin-right: -1.5%;
+        line-height: 1.5;
         .views-field-title {
-            height: 53px !important;
+            height: 85px !important;
         }
     }
 }
