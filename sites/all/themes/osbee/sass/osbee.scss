@@ -2191,6 +2191,10 @@ select.with-style option[selected="selected"] {
 
 .swiper-slide {
     .views-field-field-slide-image {
+        a {
+            pointer-events: none;
+            cursor: default;
+        }
         img {
             -webkit-filter: brightness(1.2) grayscale(1);
             filter: brightness(1.2) grayscale(1);
