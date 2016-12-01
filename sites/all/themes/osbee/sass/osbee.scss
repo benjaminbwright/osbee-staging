@@ -2199,8 +2199,8 @@ select.with-style option[selected="selected"] {
 }
 
 .swiper-container-horizontal {
-   -webkit-overflow-scrolling: touch;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 .swiper-slide {
