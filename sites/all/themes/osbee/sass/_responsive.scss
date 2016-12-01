@@ -79,7 +79,8 @@ $xlarge: 1024px;
         }
         #block-views-homepage-slideshow-block {
             width: 100%;
-            margin-top: -90px;      
+            margin-top: -90px;
+            y-overflow: hidden;
             img {
                 height: 100vh;
                 width: auto;

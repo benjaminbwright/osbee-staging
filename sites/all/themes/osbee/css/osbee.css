@@ -3163,6 +3163,7 @@ select.with-style option[selected="selected"] {
   div#page #block-views-homepage-slideshow-block {
     width: 100%;
     margin-top: -90px;
+    y-overflow: hidden;
   }
   div#page #block-views-homepage-slideshow-block img {
     height: 100vh;
