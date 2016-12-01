@@ -212,7 +212,7 @@ function jcarousel_add($class_name = NULL, $options = array(), $add = TRUE) {
   $attachments = array(
     // TODO: Change this to 'library' in Drupal 7.
     'js' => array(
-      drupal_get_path('module', 'jcarousel') . '/js/jquery.jcarousel.min.js',
+      drupal_get_path('module', 'jcarousel') . '/js/jquery.jcarousel.js',
       drupal_get_path('module', 'jcarousel') . '/js/jcarousel.js',
     ),
   );

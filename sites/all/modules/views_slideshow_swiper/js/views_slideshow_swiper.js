@@ -40,7 +40,7 @@
         Drupal.viewsSlideshow.action({
           'action': 'transitionBegin',
           'slideshowID': Drupal.settings.viewsSlideshowSwiper['#' + swiper.container.attr('id')].vss_id,
-          'slideNum': swiper.activeIndex - 1 // Minus one as the active slide is not yet in focus.
+          'slideNum': swiper.activeIndex - 1  // Minus one as the active slide is not yet in focus.
         });
       },
       'onTransitionEnd': function(swiper) {

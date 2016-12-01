@@ -27,7 +27,7 @@ Drupal.behaviors.viewsSlideshowJcarouselPager = {
 
       $(this).find('.views_slideshow_jcarousel_pager_item').each(function(index, pagerItem) {
         $(pagerItem).click(function() {
-          Drupal.viewsSlideshow.action({ "action": 'goToSlide', "slideshowID": uniqueID, "slideNum": index });
+          Drupal.viewsSlideshow.action({ "action": 'goToSlide', "slideshowID": uniqueID, "slideNum": index + 1 });
         });
       });
 			if (Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].updateOnPrevNext) {
