@@ -113,10 +113,6 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-* {
-  -webkit-overflow-scrolling: touch;
-}
-
 body {
   background: #000000;
   font-family: MetaOT !important;
@@ -2286,8 +2282,8 @@ select.with-style option[selected="selected"] {
 }
 
 .swiper-container-horizontal {
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .swiper-slide .views-field-field-slide-image a {
