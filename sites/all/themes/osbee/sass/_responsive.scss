@@ -35,13 +35,19 @@ $xlarge: 1024px;
 
 #block-views-homepage-slideshow-block {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
 .section-portfolio-page .region-content .block-views {
     overflow: hidden;
     height: 425px;
+}
+
+@media screen and (min-width: $medium) {
+    #block-views-vertical-slideshow-block {
+        display: none;
+    }
 }
 
 
@@ -80,6 +86,17 @@ $xlarge: 1024px;
             width: 100%;
             margin-top: -90px;
             y-overflow: hidden;
+            img {
+            //    height: 100vh;
+            //    width: auto;
+            }
+            //display: none;
+        }
+        #block-views-vertical-slideshow-block {
+            width: 100%;
+            margin-top: -90px;
+            y-overflow: hidden;
+            display: block;
             img {
                 height: 100vh;
                 width: auto;
@@ -735,6 +752,23 @@ $xlarge: 1024px;
     }
 }
 
+@media (orientation: portrait) and (max-width: $medium) {
+    #block-views-homepage-slideshow-block {
+        display: none;
+    }
+
+    #block-views-vertical-slideshow-block {
+        width: 100%;
+        margin-top: -90px;
+        y-overflow: hidden;
+        position: fixed;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
 @media (orientation: landscape) and (max-width: $medium) {
     .front #page {
         max-height: 100vh;
@@ -777,6 +811,12 @@ $xlarge: 1024px;
     #widget_pager_bottom_homepage_slideshow-block {
         bottom: 50px !important;
     }
+
+    #block-views-vertical-slideshow-block {
+        display: none;
+    }
+
+
     
 }
 
@@ -861,5 +901,58 @@ $xlarge: 1024px;
     .section-portfolio-page #page .views_slideshow_controls_text_previous,
     .section-portfolio-page #page .views_slideshow_controls_text_next {
         top: 10%;
+    }
+}
+
+// Everything to do with the touch overlays on portfolio items.
+@media (max-width: $medium) {
+    .page-node-645 {
+        // make it possible to absolutely position the caption
+        // Constrain the size of the slide
+        // Position the text over the slide image
+        .views-slideshow-swiper-main-frame-row-item{
+            position: relative;
+            .views-field-field-caption {
+                position: absolute;
+                z-index: 10000;
+                top: 0;
+                width: 100%;
+                background: blue;
+                height: 100%;
+                overflow: scroll;
+                visibility: hidden;
+                &.caption-expanded {
+                    visibility: visible;
+                }
+
+            }
+            .caption-expand {
+                display: inline-block;
+                position: absolute;
+                z-index: 10000;
+                width: 18px;
+                bottom: 6px;
+                left: 0px;
+                padding: 0px 4px 0px 14px;
+                color: #ffffff;
+                font-size: 24px;
+                background: #5d86a0;
+                pointer-events: s
+            }
+        }       
+        // Set the background color of the text overlay
+        // Show trigger to close the overlay
+        .views-slideshow-controls-bottom, 
+        .views-slideshow-controls-top {
+            bottom: -175px;
+            top: initial !important;
+            position: relative !important;
+        }
+
+        .views_slideshow_controls_text_previous,
+        .views_slideshow_controls_text_next {
+            top:10% !important;
+            display:none;
+        }
     }
 }

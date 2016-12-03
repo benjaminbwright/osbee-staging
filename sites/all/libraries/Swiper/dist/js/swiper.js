@@ -27,12 +27,12 @@
             initialSlide: 0,
             speed: 300,
             // autoplay
-            autoplay: false,
+            autoplay: true,
             autoplayDisableOnInteraction: true,
             autoplayStopOnLast: false,
             // To support iOS's swipe-to-go-back gesture (when being used in-app, with UIWebView).
             iOSEdgeSwipeDetection: false,
-            iOSEdgeSwipeThreshold: 10,
+            iOSEdgeSwipeThreshold: 30,
             // Free mode
             freeMode: false,
             freeModeMomentum: true,

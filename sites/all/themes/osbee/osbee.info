@@ -20,6 +20,7 @@ regions[page_bottom] = Page bottom
 regions[highlighted] = Highlighted
 regions[inpage_menu] = In-Page Menu
 regions[inpage_portfolio] = In-Page Portfolio
+regions[homepage_vertical] = Home Page Vertical Menu
 
 ; Stylesheets =================================================================
 stylesheets[all][] = css/osbee.css
@@ -29,4 +30,4 @@ scripts[] = js/script.js
 scripts[] = js/accordionmenu.js
 scripts[] = js/drawermenu.js
 scripts[] = js/backtotop.js
-
+scripts[] = js/portfolio.js
