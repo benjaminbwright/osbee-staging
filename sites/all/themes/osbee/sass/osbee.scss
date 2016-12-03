@@ -2187,6 +2187,8 @@ select.with-style option[selected="selected"] {
 }
 
 /* line 80, ../src/scss/_front.scss */
+.front.domain-osbee-com #widget_pager_bottom_vertical_slideshow-block .views-slideshow-pager-field-item:hover,
+.front.domain-osbee-com #widget_pager_bottom_vertical_slideshow-block .views-slideshow-pager-field-item.active,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item:hover,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item.active {
   background: #5d86a0;

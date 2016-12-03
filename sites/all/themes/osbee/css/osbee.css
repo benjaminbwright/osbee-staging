@@ -2269,6 +2269,8 @@ select.with-style option[selected="selected"] {
 }
 
 /* line 80, ../src/scss/_front.scss */
+.front.domain-osbee-com #widget_pager_bottom_vertical_slideshow-block .views-slideshow-pager-field-item:hover,
+.front.domain-osbee-com #widget_pager_bottom_vertical_slideshow-block .views-slideshow-pager-field-item.active,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item:hover,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item.active {
   background: #5d86a0;
@@ -3153,7 +3155,6 @@ select.with-style option[selected="selected"] {
 
   html, body {
     max-width: 100%;
-    overflow: hidden;
     font-family: MetaOT !important;
     font-size: 16px;
     background: #000000;
