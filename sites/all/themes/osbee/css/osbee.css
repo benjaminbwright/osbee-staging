@@ -2278,12 +2278,11 @@ select.with-style option[selected="selected"] {
 }
 
 .view-homepage-slideshow {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .swiper-container-horizontal {
   overflow: hidden;
-  overflow-x: hidden;
 }
 
 .swiper-slide .views-field-field-slide-image a {
@@ -3120,7 +3119,7 @@ select.with-style option[selected="selected"] {
 
 #block-views-homepage-slideshow-block {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .section-portfolio-page .region-content .block-views {
