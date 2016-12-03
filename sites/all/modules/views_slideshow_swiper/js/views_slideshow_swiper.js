@@ -40,7 +40,7 @@
         Drupal.viewsSlideshow.action({
           'action': 'transitionBegin',
           'slideshowID': Drupal.settings.viewsSlideshowSwiper['#' + swiper.container.attr('id')].vss_id,
-          'slideNum': swiper.activeIndex  // Minus one as the active slide is not yet in focus.
+          'slideNum': (swiper.activeIndex - 1) % (swiper.slides.length - 2)  // Minus one as the active slide is not yet in focus.
         });
       },
       'onTransitionEnd': function(swiper) {
@@ -147,7 +147,7 @@
     if (settings.loaded) {
       switch (options.action) {
         case 'goToSlide':
-          settings.swiper.slideTo(options.slideNum);
+          settings.swiper.slideTo(options.slideNum + 1);
           break;
         case 'nextSlide':
           settings.swiper.slideNext();

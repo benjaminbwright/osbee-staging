@@ -106,6 +106,15 @@ h1.site-name a {
   margin-bottom: 28px;
 }
 
+#branding {
+    h1.site-name {
+        a {
+            width: 86px;
+            background-size: 100%;
+        }
+    }
+}
+
 /* line 11, ../src/scss/_left.scss */
 #left ul.menu li {
   margin: 0 0 9px;
