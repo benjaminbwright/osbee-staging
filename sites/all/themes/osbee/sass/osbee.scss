@@ -2079,6 +2079,7 @@ select.with-style option[selected="selected"] {
   position: absolute;
 }
 
+
 /* line 26, ../src/scss/_front.scss */
 .front.domain-osbee-com #block-block-9,
 .front.domain-osbee-com #block-block-10,
@@ -2195,12 +2196,11 @@ select.with-style option[selected="selected"] {
 }
 
 .view-homepage-slideshow {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .swiper-container-horizontal {
     overflow: hidden;
-    overflow-x: hidden;
 }
 
 .swiper-slide {
