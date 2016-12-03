@@ -59,6 +59,15 @@
 
 </div></div>
 
+<div id="homepage-vertical">
+    <?php if ($page['homepage_vertical']): ?>
+      <div id='vertical-slideshow'><div class='limiter clearfix'>
+        <?php print render($page['homepage_vertical']); ?>
+      </div></div>
+    <?php endif; ?>
+</div>
+
+
 <div id="drawer-menu">
     <?php if ($page['mobilenav']): ?>
       <div id='mobile-navigation'><div class='limiter clearfix'>
