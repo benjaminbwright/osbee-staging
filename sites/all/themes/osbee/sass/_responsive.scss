@@ -44,12 +44,21 @@ $xlarge: 1024px;
     height: 425px;
 }
 
-@media screen and (min-width: $medium) {
+@media screen and (min-width: 769px) {
     #block-views-vertical-slideshow-block {
+        display: none;
+    }
+
+    #block-block-7--2 {
         display: none;
     }
 }
 
+@media screen and (max-width: $medium) and (orientation: landscape) {
+    #block-block-7--2 {
+        display: none;
+    }
+}
 
 @media (max-width: $medium) {
     .front.domain-osbee-com #block-views-homepage-slideshow-block, 
@@ -759,14 +768,47 @@ $xlarge: 1024px;
 
     #block-views-vertical-slideshow-block {
         width: 100%;
-        margin-top: -90px;
+        margin-top: -86px;
         y-overflow: hidden;
         position: fixed;
+        .swiper-container-horizontal {
+            height: 100vh !important;
+        }
         img {
             width: 100%;
             height: auto;
         }
     }
+    
+    #block-block-7--2 {
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        pointer-events: none;
+        h1.site-name {
+            text-align: center;
+            width: 136px;
+            margin: auto;
+            a {
+                height: 136px;
+                background-size: 100%;
+            }
+        }
+        bottom: 75vh;
+        p {
+            //display: none;
+            width: 100%;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 22px;
+            color: #ffffff;
+            text-transform: capitalize;
+            font-family: 'MetaOT';
+        }
+        //height: 186px;
+        margin-bottom: -186px;
+    }
+
 }
 
 @media (orientation: landscape) and (max-width: $medium) {

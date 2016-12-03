@@ -2228,6 +2228,7 @@ select.with-style option[selected="selected"] {
 }
 
 /* line 61, ../src/scss/_front.scss */
+#widget_pager_bottom_vertical_slideshow-block,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block {
   display: inline-block;
   position: absolute;
@@ -2240,6 +2241,7 @@ select.with-style option[selected="selected"] {
 }
 
 /* line 69, ../src/scss/_front.scss */
+#widget_pager_bottom_vertical_slideshow-block .views-slideshow-pager-field-item,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item {
   /* float: left; */
   display: inline-block;
@@ -3127,8 +3129,17 @@ select.with-style option[selected="selected"] {
   height: 425px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   #block-views-vertical-slideshow-block {
+    display: none;
+  }
+
+  #block-block-7--2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  #block-block-7--2 {
     display: none;
   }
 }
@@ -3754,13 +3765,43 @@ select.with-style option[selected="selected"] {
 
   #block-views-vertical-slideshow-block {
     width: 100%;
-    margin-top: -90px;
+    margin-top: -86px;
     y-overflow: hidden;
     position: fixed;
+  }
+  #block-views-vertical-slideshow-block .swiper-container-horizontal {
+    height: 100vh !important;
   }
   #block-views-vertical-slideshow-block img {
     width: 100%;
     height: auto;
+  }
+
+  #block-block-7--2 {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    pointer-events: none;
+    bottom: 75vh;
+    margin-bottom: -186px;
+  }
+  #block-block-7--2 h1.site-name {
+    text-align: center;
+    width: 136px;
+    margin: auto;
+  }
+  #block-block-7--2 h1.site-name a {
+    height: 136px;
+    background-size: 100%;
+  }
+  #block-block-7--2 p {
+    width: 100%;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: 'MetaOT';
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {

@@ -2145,6 +2145,7 @@ select.with-style option[selected="selected"] {
 }
 
 /* line 61, ../src/scss/_front.scss */
+#widget_pager_bottom_vertical_slideshow-block,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block {
     display: inline-block;
     position: absolute;
@@ -2157,6 +2158,7 @@ select.with-style option[selected="selected"] {
 }
 
 /* line 69, ../src/scss/_front.scss */
+#widget_pager_bottom_vertical_slideshow-block .views-slideshow-pager-field-item,
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block .views-slideshow-pager-field-item {
     /* float: left; */
     display: inline-block;
