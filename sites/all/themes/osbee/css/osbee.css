@@ -953,6 +953,7 @@ h1.term-name,
 span.views-slideshow-controls-text-next,
 span.views-slideshow-controls-text-previous {
   position: absolute;
+  max-width: 10px;
   z-index: 48;
   bottom: 44%;
 }
@@ -976,7 +977,7 @@ span.views-slideshow-controls-text-previous a:after {
 }
 
 span.views-slideshow-controls-text-next {
-  right: 10px;
+  right: 0;
 }
 span.views-slideshow-controls-text-next a:after {
   visibility: visible;
@@ -984,7 +985,7 @@ span.views-slideshow-controls-text-next a:after {
 }
 
 span.views-slideshow-controls-text-previous {
-  left: 10px;
+  left: 0;
 }
 span.views-slideshow-controls-text-previous a:before {
   visibility: visible;
