@@ -2308,10 +2308,10 @@ select.with-style option[selected="selected"] {
 }
 .swiper-slide-active .views-field-field-slide-image img {
   -webkit-backface-visibility: hidden;
-  -moz-transform: scale(1.2);
+  /*-moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  transform: scale(1.2);*/
   -webkit-filter: brightness(1) grayscale(0);
   filter: brightness(1) grayscale(0);
   -webkit-transition: 1s ease;
