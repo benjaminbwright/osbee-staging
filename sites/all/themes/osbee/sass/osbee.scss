@@ -862,7 +862,6 @@ h1.term-name,
 span.views-slideshow-controls-text-next,
 span.views-slideshow-controls-text-previous {
     position: absolute;
-    max-width: 10px;
     z-index: 48;
     bottom: 44%;
     a {
@@ -882,7 +881,7 @@ span.views-slideshow-controls-text-previous {
 }
 
 span.views-slideshow-controls-text-next {
-    right: 0;
+    right: 10px;
     a:after {
         visibility: visible;
         content: '5';
@@ -890,7 +889,7 @@ span.views-slideshow-controls-text-next {
 }
 
 span.views-slideshow-controls-text-previous {
-    left: 0;
+    left: 10px;
     a:before {
         visibility: visible;
         content: '4';
