@@ -951,20 +951,41 @@ $xlarge: 1024px;
         // make it possible to absolutely position the caption
         // Constrain the size of the slide
         // Position the text over the slide image
+
         .views-slideshow-swiper-main-frame-row-item{
             position: relative;
+                    ::-webkit-scrollbar {
+                        -webkit-appearance: none;
+                        width: 7px;
+                        height: 0;
+                    }
+
+                    ::-webkit-scrollbar-thumb {
+                        border: 1px solid #ffffff;
+                        border-radius: 4px;
+                        background-color: rgba(0,0,0,.5);
+                        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+                    }
             .views-field-field-caption {
                 position: absolute;
                 z-index: 10000;
                 top: 0;
                 width: 100%;
-                background: blue;
-                height: 100%;
+                background: rgba(0, 0, 0, 0.75);
+                bottom: 6px;
                 overflow: scroll;
                 visibility: hidden;
+                .field-content {
+                    padding-left: 50px !important;
+                    padding-right: 50px !important;
+
+                }
                 &.caption-expanded {
                     visibility: visible;
                 }
+
+                
+
 
             }
             .caption-expand {
@@ -979,6 +1000,11 @@ $xlarge: 1024px;
                 font-size: 24px;
                 background: #5d86a0;
                 pointer-events: s
+            }
+            .caption-close {
+                font-family: 'ElegantIcons' !important;
+                width: 26px;
+                padding: 0px 4px 0px 6px;
             }
         }       
         // Set the background color of the text overlay

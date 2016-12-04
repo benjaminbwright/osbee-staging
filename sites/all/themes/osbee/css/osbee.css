@@ -943,7 +943,7 @@ h1.term-name,
 .section-portfolio-page #page .views-slideshow-controls-bottom {
   margin-left: -6px;
   top: 339px;
-  z-index: 1000;
+  z-index: 50;
 }
 
 .views_slideshow_controls_text span:hover {
@@ -3925,15 +3925,30 @@ select.with-style option[selected="selected"] {
   .page-node-645 .views-slideshow-swiper-main-frame-row-item {
     position: relative;
   }
+  .page-node-645 .views-slideshow-swiper-main-frame-row-item ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 0;
+  }
+  .page-node-645 .views-slideshow-swiper-main-frame-row-item ::-webkit-scrollbar-thumb {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
   .page-node-645 .views-slideshow-swiper-main-frame-row-item .views-field-field-caption {
     position: absolute;
     z-index: 10000;
     top: 0;
     width: 100%;
-    background: blue;
-    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    bottom: 6px;
     overflow: scroll;
     visibility: hidden;
+  }
+  .page-node-645 .views-slideshow-swiper-main-frame-row-item .views-field-field-caption .field-content {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
   }
   .page-node-645 .views-slideshow-swiper-main-frame-row-item .views-field-field-caption.caption-expanded {
     visibility: visible;
@@ -3950,6 +3965,11 @@ select.with-style option[selected="selected"] {
     font-size: 24px;
     background: #5d86a0;
     pointer-events: s;
+  }
+  .page-node-645 .views-slideshow-swiper-main-frame-row-item .caption-close {
+    font-family: 'ElegantIcons' !important;
+    width: 26px;
+    padding: 0px 4px 0px 6px;
   }
   .page-node-645 .views-slideshow-controls-bottom,
   .page-node-645 .views-slideshow-controls-top {

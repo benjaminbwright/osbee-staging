@@ -185,7 +185,7 @@
             lastSlideMessage: 'This is the last slide',
             paginationBulletMessage: 'Go to slide {{index}}',
             // Callbacks
-            runCallbacksOnInit: true
+            runCallbacksOnInit: true,
             /*
             Callbacks:
             onInit: function (swiper)

@@ -27,7 +27,7 @@ Drupal.behaviors.viewsSlideshowJcarouselPager = {
 
       $(this).find('.views_slideshow_jcarousel_pager_item').each(function(index, pagerItem) {
         $(pagerItem).click(function() {
-          Drupal.viewsSlideshow.action({ "action": 'goToSlide', "slideshowID": uniqueID, "slideNum": index + 1 });
+          Drupal.viewsSlideshow.action({ "action": 'goToSlide', "slideshowID": uniqueID, "slideNum": index });
         });
       });
 			if (Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].updateOnPrevNext) {
@@ -73,7 +73,7 @@ Drupal.viewsSlideshowJcarouselPager.goToSlide = function (options) {
     $('[id^="views_slideshow_jcarousel_pager_item_' + pagerLocation + '_' + options.slideshowID + '"]').removeClass('active');
     console.log("views_slideshow_jcarousel_pager_item_"+ pagerLocation + '_' + options.slideshowID + '_' + options.slideNum);
     // Add active class to active pager.
-    $('#views_slideshow_jcarousel_pager_item_'+ pagerLocation + '_' + options.slideshowID + '_' + options.slideNum).addClass('active');
+    $('#views_slideshow_jcarousel_pager_item_'+ pagerLocation + '_' + options.slideshowID + '_' + options.slideNum ).addClass('active');
   }
 };
 
@@ -88,7 +88,7 @@ Drupal.viewsSlideshowJcarouselPager.previousSlide = function (options) {
     // If we are on the first pager then activate the last pager.
     // Otherwise activate the previous pager.
     if (pagerNum == 0) {
-      pagerNum = $('[id^="views_slideshow_jcarousel_pager_item_' + pagerLocation + '_'  + options.slideshowID + '"]').length() - 1;
+      pagerNum = $('[id^="views_slideshow_jcarousel_pager_item_' + pagerLocation + '_'  + options.slideshowID + '"]').length();
     }
     else {
       pagerNum--;
