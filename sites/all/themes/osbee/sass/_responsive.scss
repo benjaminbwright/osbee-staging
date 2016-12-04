@@ -77,6 +77,12 @@ $xlarge: 1024px;
         
     }
     
+
+    span.views-slideshow-controls-text-next,
+    span.views-slideshow-controls-text-previous {
+        pointer-events: none;
+    }
+    
     div#page {
         width: 100%;
         #main-content {
@@ -529,6 +535,8 @@ $xlarge: 1024px;
             }
         }
 
+
+
         // First Level of menu
         ul.menu {
             border-top: 1px solid $light-gray;
@@ -685,6 +693,7 @@ $xlarge: 1024px;
                     }
                 }
             }
+
         }
     }
     .section-portfolio .group-links {
@@ -807,6 +816,7 @@ $xlarge: 1024px;
         }
         //height: 186px;
         margin-bottom: -186px;
+        left: 4px;
     }
 
 }

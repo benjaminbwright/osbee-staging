@@ -3165,6 +3165,11 @@ select.with-style option[selected="selected"] {
     background: #000000;
   }
 
+  span.views-slideshow-controls-text-next,
+  span.views-slideshow-controls-text-previous {
+    pointer-events: none;
+  }
+
   div#page {
     width: 100%;
   }
@@ -3791,6 +3796,7 @@ select.with-style option[selected="selected"] {
     pointer-events: none;
     bottom: 75vh;
     margin-bottom: -186px;
+    left: 4px;
   }
   #block-block-7--2 h1.site-name {
     text-align: center;
