@@ -19,10 +19,10 @@ $large: 1024px;
 $xlarge: 1024px;
 
 
+@import "mobile-navigation";
+@import "swiper-slideshows";
+
 // Mobile Defaults in full screen ===============================================
-#mobile-navigation {
-    display: none;
-}
 
 #drawer-menu-toggle,
 .front #drawer-menu-toggle {
@@ -73,6 +73,8 @@ $xlarge: 1024px;
         display: none;
     }
 }
+
+
 
 @media (max-width: $medium) {
     .front.domain-osbee-com #block-views-homepage-slideshow-block, 
@@ -181,13 +183,6 @@ $xlarge: 1024px;
         //display: none !important;
     }
 
-
-
-    // Hide the non-mobile navigation
-    #navigation {
-        display: none;
-    }
-
     #left-strip {
         width: 100%;
         #branding {
@@ -222,174 +217,7 @@ $xlarge: 1024px;
         }
     }
 
-    // Mobile Navigation styles
-    #mobile-navigation {
-        display: block;
-        margin-top: -4px;
-
-        -webkit-transition: all 3s ease;
-        -moz-transition: all 3s ease;
-        -o-transition: all 3s ease;
-        transition: all 3s ease;
-        // Get rid of limiter padding so nav items will go across the screen.
-        .limiter {
-            padding: 0;
-        }
-
-        // Hide the block title for this menu
-        .block-title {
-            display: none;
-        }
-
-        // First Level of menu
-        ul.menu {
-            border-top: 1px solid $light-gray;
-            li.active-trail {
-                background: #a7a9ac;
-                a {
-                    color: #ffffff;
-                }
-                .subcat-expand {
-                    color: #ffffff;
-                }
-                &.active {
-                    background: #a7a9ac;
-                }
-                li.active-trail {
-                    //background: #3a3a3a;
-                    &.active {
-                        background: #a7a9ac;
-                    }
-                    a.active {
-                        background: transparent;
-                        color: #ffffff;
-                    }
-                    li.active-trail {
-                        //background: #3a3a3a;
-                        &.active {
-
-                        }
-                    }
-                }
-            }
-            li.active,
-            li.active-menu-item {
-                background: #a7a9ac;
-
-                a {
-                    color: #ffffff;
-                }
-                .subcat-expand {
-                    color: #ffffff;
-                }
-                .menu-subcat {
-                    display: block;
-                }
-                ul {
-
-                    border: none;
-                    a.active {
-                        color: $light-gray;
-                    }
-                }
-            }
-            li {
-                background: #000000;
-                position: relative;
-                width: 100%;
-                border-bottom: 1px solid $light-gray;
-                &.first {
-                    border-top: 1px solid $light-gray;
-                }
-                .subcat-expand,
-                .subcat-collapse {
-                    font-size: 1.7em;
-                    position: absolute;
-                    color: #bcbec0;
-                    right: 10px;
-                    left: 0;
-                    text-align: right;
-                    top: 1px;
-                    font-family: 'ElegantIcons';
-                    z-index: 80;
-
-                }
-                a {
-                    display: inline-block;
-                    text-decoration: none;
-                    color: $light-gray;
-                    padding: 10px 10px;
-                    margin-top: -4px;
-                    font-size: $menu-item-font-size;
-                    text-transform: uppercase;
-                }
-                // Second level menu items
-                .menu-subcat {
-                    display: none;
-                    overflow: hidden;
-                    li:last-child {
-                        border: none;
-                    }
-                    li {
-                        // Hide dropdowns to 3rd level from homepage menu.
-                        .subcat-collapse,
-                        .subcat-expand {
-                            display: none;
-                        }
-                    }
-
-                }
-
-                .active-trail {
-                    .menu-subcat {
-                        display: block;
-                        li {
-                            display: block;
-                        }
-                    }
-                }
-
-
-                ul {
-                    display: none;
-                    li {
-                        &.menu-views {
-                            padding-left: 35px;
-                            color: #ffffff;
-                            p {
-                                padding: 10px 0;
-                                font-size: 13px;
-                                width: 80%;
-                            }
-                        }
-                        background: #3a3a3a;
-                        a {
-                            padding-left: 35px; 
-                            font-size: $menu-child-item-font-size;
-                        }
-                    }
-                    // Third level menu
-                    ul {
-                        display: none;
-                        li {
-                            display: none;
-
-                            // Fourth level menu
-                            ul{
-                                display: none;
-                            }
-                        }
-                    }
-                }
-                &:last-child {
-                    border-bottom: 1px solid $light-gray;
-                }
-            }
-            & > ul {
-                border: none;
-            }
-        }
-    }
+    
 
     // Draw Menu Styles
     .not-front {

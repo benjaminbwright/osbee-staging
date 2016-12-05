@@ -3122,176 +3122,14 @@ select.with-style option[selected="selected"] {
   display: none;
 }
 
-.site-slogan {
-  display: none;
-}
-
-#block-views-homepage-slideshow-block {
-  width: 100%;
-  overflow: hidden;
-}
-
-.section-portfolio-page .region-content .block-views {
-  overflow: hidden;
-  height: 425px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-company-info.locations {
-    display: none;
-  }
-}
-@media screen and (min-width: 769px) {
-  #block-views-vertical-slideshow-block {
-    display: none;
-  }
-
-  #block-block-7--2 {
-    display: none;
-  }
-
-  .subcat-expand,
-  .subcat-collapse {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  #block-block-7--2 {
-    display: none;
-  }
-}
 @media (max-width: 768px) {
-  .front.domain-osbee-com #block-views-homepage-slideshow-block,
-  .front.domain-osbee-com #block-block-9,
-  .front.domain-osbee-com #block-block-10,
-  .front.domain-osbee-com #block-block-7 {
-    position: relative;
-  }
-
-  html, body {
-    max-width: 100%;
-    font-family: MetaOT !important;
-    font-size: 16px;
-    background: #000000;
-  }
-
-  span.views-slideshow-controls-text-next,
-  span.views-slideshow-controls-text-previous {
-    pointer-events: none;
-  }
-
-  div#page {
-    width: 100%;
-  }
-  div#page #main-content {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    background: #000000;
-    color: #E6E6E6;
-    overflow: visible;
-  }
-  div#page #main-content .field-name-body {
-    color: #E6E6E6;
-  }
-  div#page #block-views-homepage-slideshow-block {
-    width: 100%;
-    margin-top: -90px;
-    y-overflow: hidden;
-  }
-  div#page #block-views-vertical-slideshow-block {
-    width: 100%;
-    margin-top: -90px;
-    y-overflow: hidden;
-    display: block;
-  }
-  div#page #block-views-vertical-slideshow-block img {
-    height: 100vh;
-    width: auto;
-  }
-  div#page img {
-    height: auto;
-    width: 100%;
-    margin: 0 32px 0 0;
-  }
-  div#page .narrow-body {
-    margin-top: 15px;
-    width: 100%;
-    float: left;
-  }
-  div#page #active-content .narrow-body {
-    float: none;
-  }
-
-  .limiter {
-    width: 100%;
-    padding: 0;
-  }
-
-  .region-footer #social-links a {
-    margin-right: 4px;
-    margin-left: 4px;
-  }
-
-  .front #left-strip {
-    display: none;
-  }
-
-  .front.domain-osbee-com #block-block-7 {
-    bottom: 75vh;
-    height: 186px;
-    margin-bottom: -186px;
-  }
-  .front.domain-osbee-com #block-block-7 p {
-    width: 100%;
-    font-weight: bold;
-  }
-
   #navigation {
-    display: none;
-  }
-
-  #left-strip {
-    width: 100%;
-  }
-  #left-strip #branding {
-    height: 150px;
-    margin: auto;
-  }
-  #left-strip #branding .site-name a {
-    display: block;
-    position: absolute;
-    width: 50%;
-    text-indent: 100%;
-    overflow: hidden;
-    background: url(../images/logo.png) no-repeat;
-    height: 84px;
-    margin-bottom: 28px;
-    left: 50%;
-    margin-left: -42px;
-    top: 15px;
-  }
-  #left-strip #branding .site-slogan {
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    margin-left: -50%;
-    text-align: center;
-    top: 103px;
-    color: #FEA519;
-  }
-  #left-strip #left {
     display: none;
   }
 
   #mobile-navigation {
     display: block;
     margin-top: -4px;
-    -webkit-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    transition: all 3s ease;
   }
   #mobile-navigation .limiter {
     padding: 0;
@@ -3425,6 +3263,185 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu > ul {
     border: none;
+  }
+}
+/* Styles for All Swiper.js Slideshows ===========================================*/
+@media screen and (max-width: 768px) {
+  .swipe-icon-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10000;
+  }
+  .swipe-icon-overlay .swipe-icon {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 30%;
+    margin-left: -14%;
+    height: auto;
+  }
+}
+.site-slogan {
+  display: none;
+}
+
+#block-views-homepage-slideshow-block {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-portfolio-page .region-content .block-views {
+  overflow: hidden;
+  height: 425px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-company-info.locations {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  #block-views-vertical-slideshow-block {
+    display: none;
+  }
+
+  #block-block-7--2 {
+    display: none;
+  }
+
+  .subcat-expand,
+  .subcat-collapse {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  #block-block-7--2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .front.domain-osbee-com #block-views-homepage-slideshow-block,
+  .front.domain-osbee-com #block-block-9,
+  .front.domain-osbee-com #block-block-10,
+  .front.domain-osbee-com #block-block-7 {
+    position: relative;
+  }
+
+  html, body {
+    max-width: 100%;
+    font-family: MetaOT !important;
+    font-size: 16px;
+    background: #000000;
+  }
+
+  span.views-slideshow-controls-text-next,
+  span.views-slideshow-controls-text-previous {
+    pointer-events: none;
+  }
+
+  div#page {
+    width: 100%;
+  }
+  div#page #main-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background: #000000;
+    color: #E6E6E6;
+    overflow: visible;
+  }
+  div#page #main-content .field-name-body {
+    color: #E6E6E6;
+  }
+  div#page #block-views-homepage-slideshow-block {
+    width: 100%;
+    margin-top: -90px;
+    y-overflow: hidden;
+  }
+  div#page #block-views-vertical-slideshow-block {
+    width: 100%;
+    margin-top: -90px;
+    y-overflow: hidden;
+    display: block;
+  }
+  div#page #block-views-vertical-slideshow-block img {
+    height: 100vh;
+    width: auto;
+  }
+  div#page img {
+    height: auto;
+    width: 100%;
+    margin: 0 32px 0 0;
+  }
+  div#page .narrow-body {
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+  }
+  div#page #active-content .narrow-body {
+    float: none;
+  }
+
+  .limiter {
+    width: 100%;
+    padding: 0;
+  }
+
+  .region-footer #social-links a {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  .front #left-strip {
+    display: none;
+  }
+
+  .front.domain-osbee-com #block-block-7 {
+    bottom: 75vh;
+    height: 186px;
+    margin-bottom: -186px;
+  }
+  .front.domain-osbee-com #block-block-7 p {
+    width: 100%;
+    font-weight: bold;
+  }
+
+  #left-strip {
+    width: 100%;
+  }
+  #left-strip #branding {
+    height: 150px;
+    margin: auto;
+  }
+  #left-strip #branding .site-name a {
+    display: block;
+    position: absolute;
+    width: 50%;
+    text-indent: 100%;
+    overflow: hidden;
+    background: url(../images/logo.png) no-repeat;
+    height: 84px;
+    margin-bottom: 28px;
+    left: 50%;
+    margin-left: -42px;
+    top: 15px;
+  }
+  #left-strip #branding .site-slogan {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    text-align: center;
+    top: 103px;
+    color: #FEA519;
+  }
+  #left-strip #left {
+    display: none;
   }
 
   .not-front {

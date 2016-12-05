@@ -1,0 +1,23 @@
+/* Styles for All Swiper.js Slideshows ===========================================*/
+
+
+// Styles for swipe icon overlay
+@media screen and (max-width: $medium) {
+    .swipe-icon-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $black-transparent;
+        z-index: 10000;
+        .swipe-icon {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 30%;
+            margin-left: -14%;
+            height: auto;
+        }
+    }
+}
