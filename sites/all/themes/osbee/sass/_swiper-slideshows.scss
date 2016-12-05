@@ -10,14 +10,37 @@
         bottom: 0;
         left: 0;
         background: $black-transparent;
-        z-index: 10000;
+        z-index: 100000;
         .swipe-icon {
             position: absolute;
             top: 30%;
             left: 50%;
-            width: 30%;
-            margin-left: -14%;
-            height: auto;
+            width: 30% !important;
+            margin-left: -14% !important;
+            height: auto !important;
+
+            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+            pointer-events: none;
         }
     }
+
+    @keyframes shake {
+      20% {
+        transform: translate3d(20px, 0, 0);
+      }
+      
+      60% {
+        transform: translate3d(-30px, 0, 0);
+      }
+
+      90%{
+        transform: translate3d(-30px, 0, 0);
+      }
+
+
+    }
+
 }
