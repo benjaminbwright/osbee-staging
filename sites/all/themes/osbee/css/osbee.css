@@ -3293,22 +3293,47 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu {
     border-top: 1px solid #bcbec0;
   }
-  #mobile-navigation ul.menu .active-menu-item {
+  #mobile-navigation ul.menu li.active-trail {
     background: #a7a9ac;
   }
-  #mobile-navigation ul.menu .active-menu-item a {
+  #mobile-navigation ul.menu li.active-trail a {
     color: #ffffff;
   }
-  #mobile-navigation ul.menu .active-menu-item .subcat-expand {
+  #mobile-navigation ul.menu li.active-trail .subcat-expand {
     color: #ffffff;
   }
-  #mobile-navigation ul.menu .active-menu-item .menu-subcat {
+  #mobile-navigation ul.menu li.active-trail.active {
+    background: #a7a9ac;
+  }
+  #mobile-navigation ul.menu li.active-trail li.active-trail.active {
+    background: #a7a9ac;
+  }
+  #mobile-navigation ul.menu li.active-trail li.active-trail a.active {
+    background: transparent;
+    color: #ffffff;
+  }
+  #mobile-navigation ul.menu li.active,
+  #mobile-navigation ul.menu li.active-menu-item {
+    background: #a7a9ac;
+  }
+  #mobile-navigation ul.menu li.active a,
+  #mobile-navigation ul.menu li.active-menu-item a {
+    color: #ffffff;
+  }
+  #mobile-navigation ul.menu li.active .subcat-expand,
+  #mobile-navigation ul.menu li.active-menu-item .subcat-expand {
+    color: #ffffff;
+  }
+  #mobile-navigation ul.menu li.active .menu-subcat,
+  #mobile-navigation ul.menu li.active-menu-item .menu-subcat {
     display: block;
   }
-  #mobile-navigation ul.menu .active-menu-item ul {
+  #mobile-navigation ul.menu li.active ul,
+  #mobile-navigation ul.menu li.active-menu-item ul {
     border: none;
   }
-  #mobile-navigation ul.menu .active-menu-item ul a {
+  #mobile-navigation ul.menu li.active ul a.active,
+  #mobile-navigation ul.menu li.active-menu-item ul a.active {
     color: #bcbec0;
   }
   #mobile-navigation ul.menu li {
@@ -3316,6 +3341,9 @@ select.with-style option[selected="selected"] {
     position: relative;
     width: 100%;
     border-bottom: 1px solid #bcbec0;
+  }
+  #mobile-navigation ul.menu li.first {
+    border-top: 1px solid #bcbec0;
   }
   #mobile-navigation ul.menu li .subcat-expand,
   #mobile-navigation ul.menu li .subcat-collapse {
@@ -3348,6 +3376,12 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu li .menu-subcat li .subcat-collapse,
   #mobile-navigation ul.menu li .menu-subcat li .subcat-expand {
     display: none;
+  }
+  #mobile-navigation ul.menu li .active-trail .menu-subcat {
+    display: block;
+  }
+  #mobile-navigation ul.menu li .active-trail .menu-subcat li {
+    display: block;
   }
   #mobile-navigation ul.menu li ul {
     display: none;
@@ -3580,16 +3614,16 @@ select.with-style option[selected="selected"] {
   #main-content ul.menu {
     border-top: 1px solid #bcbec0;
   }
-  #main-content ul.menu.active-menu-item {
+  #main-content ul.menu.active, #main-content ul.menu.active-menu-item {
     background: #a7a9ac;
   }
-  #main-content ul.menu.active-menu-item a {
+  #main-content ul.menu.active a, #main-content ul.menu.active-menu-item a {
     color: #ffffff;
   }
-  #main-content ul.menu.active-menu-item .menu-subcat {
+  #main-content ul.menu.active .menu-subcat, #main-content ul.menu.active-menu-item .menu-subcat {
     display: block;
   }
-  #main-content ul.menu.active-menu-item ul a {
+  #main-content ul.menu.active ul a, #main-content ul.menu.active-menu-item ul a {
     color: #bcbec0;
   }
   #main-content ul.menu li {

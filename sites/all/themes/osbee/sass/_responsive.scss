@@ -233,7 +233,36 @@ $xlarge: 1024px;
         // First Level of menu
         ul.menu {
             border-top: 1px solid $light-gray;
-            .active-menu-item {
+            li.active-trail {
+                background: #a7a9ac;
+                a {
+                    color: #ffffff;
+                }
+                .subcat-expand {
+                    color: #ffffff;
+                }
+                &.active {
+                    background: #a7a9ac;
+                }
+                li.active-trail {
+                    //background: #3a3a3a;
+                    &.active {
+                        background: #a7a9ac;
+                    }
+                    a.active {
+                        background: transparent;
+                        color: #ffffff;
+                    }
+                    li.active-trail {
+                        //background: #3a3a3a;
+                        &.active {
+
+                        }
+                    }
+                }
+            }
+            li.active,
+            li.active-menu-item {
                 background: #a7a9ac;
                 a {
                     color: #ffffff;
@@ -246,7 +275,7 @@ $xlarge: 1024px;
                 }
                 ul {
                     border: none;
-                    a {
+                    a.active {
                         color: $light-gray;
                     }
                 }
@@ -256,6 +285,9 @@ $xlarge: 1024px;
                 position: relative;
                 width: 100%;
                 border-bottom: 1px solid $light-gray;
+                &.first {
+                    border-top: 1px solid $light-gray;
+                }
                 .subcat-expand,
                 .subcat-collapse {
                     font-size: 1.7em;
@@ -294,6 +326,16 @@ $xlarge: 1024px;
                     }
 
                 }
+
+                .active-trail {
+                    .menu-subcat {
+                        display: block;
+                        li {
+                            display: block;
+                        }
+                    }
+                }
+
 
                 ul {
                     display: none;
@@ -561,6 +603,7 @@ $xlarge: 1024px;
         // First Level of menu
         ul.menu {
             border-top: 1px solid $light-gray;
+            &.active,
             &.active-menu-item {
                 background: #a7a9ac;
                 a {
