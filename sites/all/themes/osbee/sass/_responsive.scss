@@ -29,6 +29,8 @@ $xlarge: 1024px;
     //display: none;
 }
 
+
+
 .site-slogan {
     display: none;
 }
@@ -44,12 +46,18 @@ $xlarge: 1024px;
     height: 425px;
 }
 
+
 @media screen and (min-width: 769px) {
     #block-views-vertical-slideshow-block {
         display: none;
     }
 
     #block-block-7--2 {
+        display: none;
+    }
+
+    .subcat-expand,
+    .subcat-collapse {
         display: none;
     }
 }
