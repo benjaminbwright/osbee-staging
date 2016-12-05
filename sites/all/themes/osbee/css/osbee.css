@@ -3205,7 +3205,11 @@ select.with-style option[selected="selected"] {
     margin: 0 32px 0 0;
   }
   div#page .narrow-body {
+    margin-top: 15px;
     width: 100%;
+    float: left;
+  }
+  div#page #active-content .narrow-body {
     float: none;
   }
 
@@ -3401,7 +3405,7 @@ select.with-style option[selected="selected"] {
     padding-bottom: 0;
   }
   .not-front #page #main-content .prose h1.term-name, .not-front #page #main-content .prose .field-name-field-subtitle {
-    line-height: 0;
+    line-height: 1;
     margin: 0 0 40px;
   }
   .not-front #page #main-content .field-name-field-portfolio-type {
@@ -3484,6 +3488,10 @@ select.with-style option[selected="selected"] {
   }
   #main-content .field-name-field-menu-block {
     width: 100%;
+  }
+  #main-content .field-name-field-menu-block p {
+    font-size: 14px;
+    color: #ffffff;
   }
   #main-content .menu-name-menu-inpage-portfolio-menu {
     margin-top: -15px;
@@ -3592,7 +3600,7 @@ select.with-style option[selected="selected"] {
     position: absolute;
     color: #bcbec0;
     right: 10px;
-    left: 100%;
+    top: 4px;
     text-align: right;
     padding: 10px 10px;
     margin-top: -4px;
@@ -3607,6 +3615,7 @@ select.with-style option[selected="selected"] {
     padding: 10px 10px;
     font-size: 18px;
     text-transform: uppercase;
+    width: 97%;
   }
   #main-content ul.menu li .views-field-field-portfolio-landing-page-ima a {
     width: 100%;
@@ -3617,6 +3626,9 @@ select.with-style option[selected="selected"] {
   }
   #main-content ul.menu li .menu-subcat li:last-child {
     border: none;
+  }
+  #main-content ul.menu li.active .menu-subcat {
+    display: block;
   }
   #main-content ul.menu li ul li a {
     padding-left: 35px;
@@ -3633,6 +3645,11 @@ select.with-style option[selected="selected"] {
   }
   #main-content ul.menu > ul {
     border: none;
+  }
+
+  .menu-block-1 .subcat-expand,
+  .menu-block-1 .subcat-collapse {
+    pointer-events: none;
   }
 
   #block-block-6 {
@@ -3815,6 +3832,25 @@ select.with-style option[selected="selected"] {
     color: #ffffff;
     text-transform: capitalize;
     font-family: 'MetaOT';
+  }
+
+  .page-node-1079 .field-name-body {
+    padding-left: 0;
+  }
+  .page-node-1079 .field-name-body .field-item p a.button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .page-node-1079 .field-name-body .field-item p img {
+    position: static;
+    width: auto !important;
+  }
+  .page-node-1079 .field-name-body .field-item p img.dave {
+    width: 105% !important;
+    height: auto !important;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {

@@ -31,3 +31,4 @@ scripts[] = js/accordionmenu.js
 scripts[] = js/drawermenu.js
 scripts[] = js/backtotop.js
 scripts[] = js/portfolio.js
+scripts[] = js/services.js

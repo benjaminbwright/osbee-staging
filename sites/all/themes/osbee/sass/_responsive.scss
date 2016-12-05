@@ -82,7 +82,7 @@ $xlarge: 1024px;
     span.views-slideshow-controls-text-previous {
         pointer-events: none;
     }
-    
+
     div#page {
         width: 100%;
         #main-content {
@@ -121,10 +121,18 @@ $xlarge: 1024px;
             width: 100%;
             margin: 0 32px 0 0;
         }
-
+        
         .narrow-body {
+            margin-top: 15px;
             width: 100%;
-            float: none;
+            float: left;
+            
+        }
+
+        #active-content {
+            .narrow-body {
+                float: none;
+            }
         }
     }
 
@@ -351,7 +359,7 @@ $xlarge: 1024px;
                         padding-bottom: 0;
                     }
                     h1.term-name, .field-name-field-subtitle {
-                        line-height: 0;
+                        line-height: 1;
                         margin: 0 0 40px;
                     }
                 }
@@ -445,7 +453,12 @@ $xlarge: 1024px;
         .field-name-field-menu-block {
             //float: none;
             width: 100%;
+            p {
+                font-size: 14px;
+                color: #ffffff;
+            }
         }
+
 
 
         //Mobile Portfolio Items
@@ -567,7 +580,8 @@ $xlarge: 1024px;
                     position: absolute;
                     color: #bcbec0;
                     right: 10px;
-                    left: 100%;
+                    //left: 100%;
+                    top: 4px;
                     text-align: right;
                     padding: 10px 10px;
                     margin-top: -4px;
@@ -582,6 +596,7 @@ $xlarge: 1024px;
                     padding: 10px 10px;
                     font-size: $menu-item-font-size;
                     text-transform: uppercase;
+                    width: 97%;
                 }
                 .views-field-field-portfolio-landing-page-ima {
                     a {
@@ -594,6 +609,11 @@ $xlarge: 1024px;
                     display: none;
                     li:last-child {
                         border: none;
+                    }
+                }
+                &.active {
+                    .menu-subcat {
+                        display: block;
                     }
                 }
 
@@ -623,6 +643,15 @@ $xlarge: 1024px;
             & > ul {
                 border: none;
             }
+        }
+    }
+
+    // Mobile Services Menu
+    
+    .menu-block-1 {
+        .subcat-expand,
+        .subcat-collapse {
+            pointer-events: none;
         }
     }
 
@@ -818,6 +847,34 @@ $xlarge: 1024px;
         margin-bottom: -186px;
         left: 4px;
     }
+
+    // Careers Page
+    .page-node-1079 {
+        .field-name-body {
+            padding-left: 0;
+            .field-item {
+                p {
+                    a.button {
+                        position: fixed;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    img {
+                        position: static;
+                        width: auto !important;
+                        &.dave {
+                            width: 105% !important;
+                            height: auto !important;
+                            margin-left: -10px !important;
+                            margin-right: -10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 
 }
 
