@@ -6,15 +6,18 @@
         $('#mobile-navigation li.active-trail:first').toggleClass('active');
         $('#mobile-navigation li.active-trail a.active').parent().toggleClass('active');
         $('#mobile-navigation .subcat-expand').click(function(){
-            if ($(this).hasClass('active')) {
+            if (!$(this).parent().hasClass('active')) {
                 $("#mobile-navigation li").each(function(){
                     if ($(this).hasClass('active')) {
                         $(this).removeClass('active');
                         $(this).find(".subcat-expand").html("&#x33;");
                     }
                 });
+                $(this).parent().addClass('active');
+            } else {
+                $(this).parent().removeClass('active');
             }
-            $(this).parent().toggleClass('active');
+
             if ($(this).parent().hasClass('active')) {
                 $(this).html("&#x32;");
             } else {
