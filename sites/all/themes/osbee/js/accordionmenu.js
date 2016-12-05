@@ -6,12 +6,14 @@
         $('#mobile-navigation li.active-trail:first').toggleClass('active');
         $('#mobile-navigation li.active-trail a.active').parent().toggleClass('active');
         $('#mobile-navigation .subcat-expand').click(function(){
-            $("#mobile-navigation li").each(function(){
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
-                    $(this).find(".subcat-expand").html("&#x33;");
-                }
-            });
+            if ($(this).hasClass('active')) {
+                $("#mobile-navigation li").each(function(){
+                    if ($(this).hasClass('active')) {
+                        $(this).removeClass('active');
+                        $(this).find(".subcat-expand").html("&#x33;");
+                    }
+                });
+            }
             $(this).parent().toggleClass('active');
             if ($(this).parent().hasClass('active')) {
                 $(this).html("&#x32;");
