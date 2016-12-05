@@ -46,6 +46,12 @@ $xlarge: 1024px;
     height: 425px;
 }
 
+@media screen and (min-width: 768px)
+{
+    .footer-company-info.locations {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 769px) {
     #block-views-vertical-slideshow-block {
@@ -220,6 +226,11 @@ $xlarge: 1024px;
     #mobile-navigation {
         display: block;
         margin-top: -4px;
+
+        -webkit-transition: all 3s ease;
+        -moz-transition: all 3s ease;
+        -o-transition: all 3s ease;
+        transition: all 3s ease;
         // Get rid of limiter padding so nav items will go across the screen.
         .limiter {
             padding: 0;
@@ -264,6 +275,7 @@ $xlarge: 1024px;
             li.active,
             li.active-menu-item {
                 background: #a7a9ac;
+
                 a {
                     color: #ffffff;
                 }
@@ -274,6 +286,7 @@ $xlarge: 1024px;
                     display: block;
                 }
                 ul {
+
                     border: none;
                     a.active {
                         color: $light-gray;

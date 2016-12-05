@@ -3136,6 +3136,11 @@ select.with-style option[selected="selected"] {
   height: 425px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-company-info.locations {
+    display: none;
+  }
+}
 @media screen and (min-width: 769px) {
   #block-views-vertical-slideshow-block {
     display: none;
@@ -3283,6 +3288,10 @@ select.with-style option[selected="selected"] {
   #mobile-navigation {
     display: block;
     margin-top: -4px;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
   }
   #mobile-navigation .limiter {
     padding: 0;
