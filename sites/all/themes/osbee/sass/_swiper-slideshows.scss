@@ -1,6 +1,13 @@
 /* Styles for All Swiper.js Slideshows ===========================================*/
 
 
+// Swipe Icon Styles
+
+// Hide the swipe icon overlay
+.swipe-icon-overlay {
+    display: none;
+}
+
 // Styles for swipe icon overlay
 @media screen and (max-width: $medium) {
     .swipe-icon-overlay {
@@ -48,6 +55,27 @@
     .views_slideshow_controls_text_next {
         top:10% !important;
         display:none;
+    }
+
+}
+
+
+// Portfolio Slideshow Styles 
+@media screen and (min-width: 769px) {
+    .section-portfolio-page #page .views-field-field-caption {
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+    }
+}
+
+.section-portfolio-page .slide-caption {
+    display: block;
+}
+
+@media screen and (max-width: $medium) {
+    .section-portfolio-page .slide-caption {
+        display: none !important;
     }
 
 }

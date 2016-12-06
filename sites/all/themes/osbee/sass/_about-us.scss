@@ -1,0 +1,25 @@
+// About Us Page Styles ===================================================
+
+
+
+
+@media screen and (max-width: $medium) {
+    .section-about-us {
+        // Hide the dynamic image grid from mobile
+        .attachment {
+            display: none;
+        }
+        
+        #block-views-profiles-block {
+            .view-content {
+                padding: 0;
+                width: 100%;
+                .view-group__title.active {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }    
+}

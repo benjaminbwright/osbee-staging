@@ -34,6 +34,8 @@
         // Views Slideshow controls to affect the Swiper.
         Drupal.viewsSlideshowSwiper.active = Drupal.viewsSlideshowSwiper.active || {};
         Drupal.viewsSlideshowSwiper.active[Drupal.settings.viewsSlideshowSwiper] = swiper;
+
+        $(".node-content .term-name").after('<div class="slide-caption"></div>');
       },
       // Trigger Slideshow's transition events when Swiper's transition events occur.
       'onTransitionStart': function(swiper) {
@@ -49,6 +51,8 @@
           'slideshowID': Drupal.settings.viewsSlideshowSwiper['#' + swiper.container.attr('id')].vss_id,
           'slideNum': swiper.activeIndex
         });
+        var slideCaption = $(".swiper-slide-active .views-field-field-caption").html();
+        $(".node-content .slide-caption").html(slideCaption).fadeIn('fast');
       },
       'onAutoplayStart': function(swiper) {
         Drupal.viewsSlideshow.action({
