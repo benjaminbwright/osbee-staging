@@ -14,9 +14,71 @@
             .view-content {
                 padding: 0;
                 width: 100%;
-                .view-group__title.active {
-                    &::before {
+                .view-group--block {
+                    margin-bottom: 0;
+                    position: relative;
+                    .view-group__title {
+                        width: 100%;
+                        background: $black;
+                        border-top: 1px solid $light-gray;
+                        border-bottom: 1px solid $light-gray;
+                        color: $white;
+                        font-weight: normal;
+                        font-size: 18px;
+                        padding: 10px;
+                        margin-bottom: -4px;
+                        &.active {
+
+                        }
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    .subcat-expand,
+                    .subcat-collapse {
+                        font-size: 1.7em;
+                        position: absolute;
+                        color: #bcbec0;
+                        right: 10px;
+                        left: 0;
+                        text-align: right;
+                        top: 1px;
+                        font-family: 'ElegantIcons';
+                        z-index: 80;
+                    }
+                    .view-group__content {
+                        margin-left: 0;
+                        height: auto;
+                        opacity: 1;
                         display: none;
+                    }
+                    
+                    &.expanded {
+                        .view-group__title {
+                            background: $gray;
+                        }
+                        .subcat-expand,
+                        .subcat-collapse {
+                            color: $white;
+                        }
+                        .view-group__content {
+                            display: block; 
+                            background: $gray-dark;
+                            color: $white;  
+                            p {
+                                margin: 10px;
+                            }
+                        }  
+                    }
+
+                    .profile {
+                        height: auto;
+                        opacity: 1;
+                        .profile__image {
+                            float:none;
+                            max-width: 100%;
+                            margin: 0;
+                        }
                     }
                 }
             }

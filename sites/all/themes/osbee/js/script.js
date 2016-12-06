@@ -209,25 +209,26 @@
       }
 
       $(document).ready(function() {
-        if ($profileImageLinks.length > 0) {
-          if (typeof urlParam !== 'undefined') {
-            var $currentLink = $groupLinks.filter(function() {
-              return (urlParam == $(this).attr('href'));
-            });
+            if ($profileImageLinks.length > 0) {
+              if (typeof urlParam !== 'undefined') {
+                var $currentLink = $groupLinks.filter(function() {
+                  return (urlParam == $(this).attr('href'));
+                });
 
-            if ($currentLink.length > 0) {
-              $currentLink.trigger('click');
+                if ($currentLink.length > 0) {
+                  $currentLink.trigger('click');
+                }
+                //show first group
+                else {
+                  $groupLinks.eq(0).trigger('click');
+                }
+              }
+              //show first group
+              else {
+                $groupLinks.eq(0).trigger('click');
+              }
             }
-            //show first group
-            else {
-              $groupLinks.eq(0).trigger('click');
-            }
-          }
-          //show first group
-          else {
-            $groupLinks.eq(0).trigger('click');
-          }
-        }
+
 
       });
 

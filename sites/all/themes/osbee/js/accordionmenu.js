@@ -35,6 +35,8 @@
             }
         });
 
+        // INPAGE ACCORDION MENU
+
         $('#main-content ul.menu li ul').addClass('menu-subcat');
         $('#main-content .menu-subcat').prev('a').after('<span class="fa subcat-expand">&#x33;</span>');
         $('#main-content .subcat-expand').click(function(){
@@ -46,5 +48,32 @@
             }
         });
 
+
+        // TEAM PAGE ACCORDION MENU
+        $('.section-about-us .view-group__title').after('<span class="subcat-expand">&#x33;</span>');
+        $('.section-about-us #block-views-profiles-block .subcat-expand').click(function(){
+            //$(this).parent().toggleClass('expanded');
+            // Open/Close Menu Itemw
+            if (!$(this).parent().hasClass('expanded')) {
+                // Close any open menu items if clicking a closed menu item
+                $(".section-about-us .view-group__title").each(function(){
+                    if ($(this).parent().hasClass('expanded')) {
+                        $(this).parent().removeClass('expanded');
+                        $(this).parent().find(".subcat-expand").html("&#x33;");
+                    }
+                });
+                // Open the new menu item
+                $(this).parent().addClass('expanded', 400, 'easeOutQuart');
+            } else {
+                // Only close the current menu item
+                $(this).parent().removeClass('expanded');
+            }
+
+            if ($(this).parent().hasClass('expanded')) {
+                $(this).html("&#x32;");
+            } else {
+                $(this).html("&#x33;");
+            }
+        });
     });
 })(jQuery);

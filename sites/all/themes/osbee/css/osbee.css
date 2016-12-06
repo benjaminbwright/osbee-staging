@@ -3335,8 +3335,65 @@ select.with-style option[selected="selected"] {
     padding: 0;
     width: 100%;
   }
-  .section-about-us #block-views-profiles-block .view-content .view-group__title.active::before {
+  .section-about-us #block-views-profiles-block .view-content .view-group--block {
+    margin-bottom: 0;
+    position: relative;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block .view-group__title {
+    width: 100%;
+    background: #000000;
+    border-top: 1px solid #bcbec0;
+    border-bottom: 1px solid #bcbec0;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: -4px;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block .view-group__title::before {
     display: none;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block .subcat-expand,
+  .section-about-us #block-views-profiles-block .view-content .view-group--block .subcat-collapse {
+    font-size: 1.7em;
+    position: absolute;
+    color: #bcbec0;
+    right: 10px;
+    left: 0;
+    text-align: right;
+    top: 1px;
+    font-family: 'ElegantIcons';
+    z-index: 80;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block .view-group__content {
+    margin-left: 0;
+    height: auto;
+    opacity: 1;
+    display: none;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block.expanded .view-group__title {
+    background: #a7a9ac;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block.expanded .subcat-expand,
+  .section-about-us #block-views-profiles-block .view-content .view-group--block.expanded .subcat-collapse {
+    color: #ffffff;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block.expanded .view-group__content {
+    display: block;
+    background: #3a3a3a;
+    color: #ffffff;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block.expanded .view-group__content p {
+    margin: 10px;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block .profile {
+    height: auto;
+    opacity: 1;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group--block .profile .profile__image {
+    float: none;
+    max-width: 100%;
+    margin: 0;
   }
 }
 .site-slogan {
