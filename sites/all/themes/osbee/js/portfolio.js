@@ -22,5 +22,17 @@
 
         // Slide back to first slide.
         $(".jcarousel-item-1").trigger("click");
+
+
+        //Pull caption from the active slide and place it under the Page heading.
+       /*$(document).bind('DOMSubtreeModified', function() { 
+           $(".swiper-slide-active .views-field-field-caption").detach(); //.after($(".field-name-field-portfolio-type .term-name"));
+        }*/
+        //$(".field-name-field-portfolio-type .term-name").detach().appendTo($(".swiper-slide-active .views-field-field-caption"));
+
+
     });
+
+
+      
 })(jQuery);

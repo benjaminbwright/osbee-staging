@@ -3266,6 +3266,10 @@ select.with-style option[selected="selected"] {
   }
 }
 /* Styles for All Swiper.js Slideshows ===========================================*/
+.swipe-icon-overlay {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .swipe-icon-overlay {
     position: fixed;
@@ -3304,6 +3308,34 @@ select.with-style option[selected="selected"] {
   .views_slideshow_controls_text_previous,
   .views_slideshow_controls_text_next {
     top: 10% !important;
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .section-portfolio-page #page .views-field-field-caption {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+  }
+}
+.section-portfolio-page .slide-caption {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .section-portfolio-page .slide-caption {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-about-us .attachment {
+    display: none;
+  }
+  .section-about-us #block-views-profiles-block .view-content {
+    padding: 0;
+    width: 100%;
+  }
+  .section-about-us #block-views-profiles-block .view-content .view-group__title.active::before {
     display: none;
   }
 }

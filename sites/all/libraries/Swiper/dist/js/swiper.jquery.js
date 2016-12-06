@@ -213,6 +213,7 @@
             onLazyImageLoad: function (swiper, slide, image)
             onLazyImageReady: function (swiper, slide, image)
             */
+
         };
         var initialVirtualTranslate = params && params.virtualTranslate;
         
