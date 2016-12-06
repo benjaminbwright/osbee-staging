@@ -3410,6 +3410,10 @@ select.with-style option[selected="selected"] {
   height: 425px;
 }
 
+.menu-block-1 .active-trail ul.menu-subcat {
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .footer-company-info.locations {
     display: none;
