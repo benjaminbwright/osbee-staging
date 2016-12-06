@@ -45,8 +45,9 @@
         var scrollTo = $(".menu-block-1 .active-trail:visible:first");
         //var scrollTo = $("#node-page-full-group-prev-next");
 
-        container.animate({ scrollTop: scrollTo.offset().top},'1200');
-        
+        if (scrollTo.offset() !== null) { 
+            container.animate({ scrollTop: scrollTo.offset().top},'1200');
+        }
 
         
 

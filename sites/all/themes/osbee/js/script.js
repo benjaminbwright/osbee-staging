@@ -228,8 +228,6 @@
                 $groupLinks.eq(0).trigger('click');
               }
             }
-
-
       });
 
     }

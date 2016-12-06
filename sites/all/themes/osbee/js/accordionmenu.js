@@ -50,7 +50,15 @@
 
 
         // TEAM PAGE ACCORDION MENU
+        $('.section-about-us .profile').each(function(){
+            $(".profile__image", this).before($(".profile__header-links", this));
+        });
+
         $('.section-about-us .view-group__title').after('<span class="subcat-expand">&#x33;</span>');
+        $('.section-about-us .profile__header-links').append('<span class="profile-expand">&#x33;</span>');
+
+
+        // Toggle profile group headers
         $('.section-about-us #block-views-profiles-block .subcat-expand').click(function(){
             //$(this).parent().toggleClass('expanded');
             // Open/Close Menu Itemw
@@ -61,7 +69,7 @@
                         $(this).parent().removeClass('expanded');
                         $(this).parent().find(".subcat-expand").html("&#x33;");
                     }
-                });
+                });                
                 // Open the new menu item
                 $(this).parent().addClass('expanded', 400, 'easeOutQuart');
             } else {
@@ -74,6 +82,49 @@
             } else {
                 $(this).html("&#x33;");
             }
+
         });
+
+        // Toggle Individual profiles =================
+        // Add expanded class to all of the 1st profiles in each profile group.
+        // 
+        // Toggle profile group headers
+        $('.section-about-us #block-views-profiles-block .profile-expand').click(function(){
+            //$(this).parent().toggleClass('expanded');
+            // Open/Close Menu Itemw
+            if (!$(this).parent().parent().hasClass('expanded')) {
+                // Close any open menu items if clicking a closed menu item
+                $(".section-about-us .profile").each(function(){
+                    if ($(this).hasClass('expanded')) {
+                        $(this).removeClass('expanded');
+                        $(this).find(".profile-expand").html("&#x33;");
+                    }
+                });                
+                // Open the new menu item
+                $(this).parent().parent().addClass('expanded', 400, 'easeOutQuart');
+            } else {
+                // Only close the current menu item
+                $(this).parent().parent().removeClass('expanded');
+            }
+
+            if ($(this).parent().parent().hasClass('expanded')) {
+                $(this).html("&#x32;");
+            } else {
+                $(this).html("&#x33;");
+            }
+
+        });
+
+        // Expand the first profile in each group
+        $('.section-about-us .view-group').each(function(){
+            if ($(".expanded") > 0){
+
+            } else {
+                $(".profile", this).eq(0).addClass('expanded');
+            }
+        });
+
+        $(".section-about-us .subcat-expand").eq(0).trigger('click');
+
     });
 })(jQuery);

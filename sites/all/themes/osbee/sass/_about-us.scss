@@ -26,7 +26,7 @@
                         font-weight: normal;
                         font-size: 18px;
                         padding: 10px;
-                        margin-bottom: -4px;
+                        margin-bottom: 0;
                         &.active {
 
                         }
@@ -70,14 +70,61 @@
                             }
                         }  
                     }
+                    
+                    .profile__header-links {
+                        width: 100%;
+                        background: $black;
+                        color: $white;
+                        padding: 10px 10px;
+                        border-bottom: 1px solid $light-gray;
+                        position: relative;
+                        h4, h5 {
+                            display: inline-block;
+                            font-size: 13px;
+                        }
+                        .profile__name {
+                            &:after {
+                                content: ',';
+                            }
+                        }
+                    }
+                    .profile-expand,
+                    .profile-collapse {
+                        font-size: 1.7em;
+                        position: absolute;
+                        color: #bcbec0;
+                        right: 45px;
+                        left: 0;
+                        text-align: right;
+                        top: 1px;
+                        font-family: 'ElegantIcons';
+                        z-index: 80;
+                    }
 
                     .profile {
                         height: auto;
                         opacity: 1;
                         .profile__image {
-                            float:none;
-                            max-width: 100%;
-                            margin: 0;
+                            display: none;
+                        }
+                        .profile__bio {
+                            display: none;
+                            margin-bottom: 0;
+                        }
+                        .profile__header-links {
+                            display: block;
+                        }
+                        &.expanded {
+                            .profile__bio{
+                                display: block;
+                                margin-bottom: 0;
+                            }
+                            .profile__image {
+                                display: block;
+                                float:none;
+                                max-width: 100%;
+                                margin: 0;
+                            }
                         }
                     }
                 }

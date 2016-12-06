@@ -658,6 +658,31 @@ h1.term-name,
   transition: background-color 0.25s;
 }
 
+.arrow-link {
+    cursor: pointer;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    line-height: 110%;
+    padding-bottom: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    &:before {
+        content: '';
+        display: inline-block;
+        border: 5px solid transparent;
+        border-left-color: #ef8200;
+        height: 0;
+        margin-right: 10px;
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+        width: 0;
+    }
+
+}
+
 /* line 328, ../src/scss/_page.scss */
 .section-about-us .field-name-field-menu-block ul li a.active:before,
 .section-about-us .field-name-field-menu-block ul li a:hover:before {
