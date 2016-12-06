@@ -3827,6 +3827,12 @@ select.with-style option[selected="selected"] {
   .menu-block-1 .subcat-collapse {
     pointer-events: none;
   }
+  .menu-block-1 .field-name-field-image img {
+    float: none;
+  }
+  .menu-block-1 .field-name-field-image .field-item {
+    margin-bottom: -15px;
+  }
 
   #block-block-6 {
     display: none;

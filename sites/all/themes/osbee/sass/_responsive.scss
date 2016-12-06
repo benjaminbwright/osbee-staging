@@ -47,6 +47,7 @@ $xlarge: 1024px;
     height: 425px;
 }
 
+
 @media screen and (min-width: 768px)
 {
     .footer-company-info.locations {
@@ -545,6 +546,14 @@ $xlarge: 1024px;
         .subcat-expand,
         .subcat-collapse {
             pointer-events: none;
+        }
+        .field-name-field-image {
+            img {
+                float: none;
+            }
+            .field-item {
+                margin-bottom: -15px;
+            }
         }
     }
 
