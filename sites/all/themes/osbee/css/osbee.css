@@ -3310,6 +3310,18 @@ select.with-style option[selected="selected"] {
     top: 10% !important;
     display: none;
   }
+
+  .views_slideshow_swiper_main .views-field-field-portfolio-image .item-list {
+    position: relative;
+    height: auto;
+  }
+  .views_slideshow_swiper_main .views-field-field-portfolio-image .item-list ul {
+    width: 100% !important;
+  }
+  .views_slideshow_swiper_main .views-field-field-portfolio-image .item-list ul li {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 @media screen and (min-width: 769px) {
   .section-portfolio-page #page .views-field-field-caption {
@@ -3870,6 +3882,14 @@ select.with-style option[selected="selected"] {
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-cycle-main-frame-row .views-field-field-portfolio-image .resume {
     display: none;
+  }
+  .section-portfolio-page .region-content .block-views .views-slideshow-cycle-main-frame-row .views-field-field-portfolio-image ul {
+    width: 100% !important;
+    height: auto;
+  }
+  .section-portfolio-page .region-content .block-views .views-slideshow-cycle-main-frame-row .views-field-field-portfolio-image ul li {
+    width: 100% !important;
+    height: auto;
   }
   .section-portfolio-page .region-content .block-views .views-field-field-caption {
     display: block !important;

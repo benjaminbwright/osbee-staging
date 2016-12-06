@@ -24,11 +24,17 @@
         $(".jcarousel-item-1").trigger("click");
 
 
-        //Pull caption from the active slide and place it under the Page heading.
-       /*$(document).bind('DOMSubtreeModified', function() { 
-           $(".swiper-slide-active .views-field-field-caption").detach(); //.after($(".field-name-field-portfolio-type .term-name"));
-        }*/
-        //$(".field-name-field-portfolio-type .term-name").detach().appendTo($(".swiper-slide-active .views-field-field-caption"));
+        if ($(window).width() < 769) {
+            $(".views-field-field-portfolio-image ul").height($(window).width()/2);
+        }
+
+        $(window).resize(function(){
+            if ($(window).width() < 769) {
+                var top = $(window).width()/2;
+                $(".views-field-field-portfolio-image ul").height($(window).width()/2); 
+            }
+        });
+
 
 
     });

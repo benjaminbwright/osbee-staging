@@ -596,6 +596,14 @@ $xlarge: 1024px;
                 .resume {
                     display: none;
                 }
+                ul {
+                    width: 100% !important;
+                    height: auto;
+                    li {
+                        width: 100% !important;
+                        height: auto;
+                    }
+                }
             }
         }
         .views-field-field-caption {

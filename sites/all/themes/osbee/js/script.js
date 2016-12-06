@@ -5,7 +5,7 @@
     'fastOnEvent': 0,
     'speedOut': 2000,
     'end': function(options)  {
-      var $slideshow = jQuery(this.$cont).parents('.views-field-field-portfolio-image');
+      var $slideshow = jQuery(this.$cont).parents('.views-field-field-portfolio-image .item-list');
       if (! $slideshow.find('.resume').length) {
         $slideshow.append('<div class="resume"></div>');
       }

@@ -57,7 +57,26 @@
         display:none;
     }
 
+
+    // Swiper Slideshow styles
+    .views_slideshow_swiper_main {
+        .views-field-field-portfolio-image {
+            .item-list {
+                position: relative;
+                height: auto;
+                ul {
+                    width: 100% !important;
+                    li {
+                        width: 100% !important;
+                        height: auto !important;
+                    }
+                }
+            }
+        }
+    }
+
 }
+
 
 
 // Portfolio Slideshow Styles 
