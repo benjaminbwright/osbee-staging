@@ -11,6 +11,8 @@
         // Make the parent li of an active link active
         $('#mobile-navigation li.active-trail a.active').parent().toggleClass('active');
         
+        $("#mobile-navigation li.active-trail").first().addClass("first-active");
+
         $('#mobile-navigation .subcat-expand').click(function(){
             // Open/Close Menu Itemw
             if (!$(this).parent().hasClass('active')) {
@@ -21,6 +23,8 @@
                         $(this).find(".subcat-expand").html("&#x33;");
                     }
                 });
+        $("#mobile-navigation .first-active").removeClass("active-trail");
+
                 // Open the new menu item
                 $(this).parent().addClass('active', 400, 'easeOutQuart');
             } else {
