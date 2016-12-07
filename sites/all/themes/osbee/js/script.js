@@ -1,6 +1,6 @@
   Drupal.settings.osbeeCycleOptions = {
     //'nowrap': true,
-    'timeout': 0,
+    'timeout': 1,
     'speedIn': 600,
     'fastOnEvent': 0,
     'speedOut': 600,
