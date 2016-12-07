@@ -1,9 +1,9 @@
   Drupal.settings.osbeeCycleOptions = {
     //'nowrap': true,
     'timeout': 0,
-    'speedIn': 300,
+    'speedIn': 600,
     'fastOnEvent': 0,
-    'speedOut': 300,
+    'speedOut': 600,
     'end': function(options)  {
       var $slideshow = jQuery(this.$cont).parents('.views-field-field-portfolio-image .item-list');
       if (! $slideshow.find('.resume').length) {
