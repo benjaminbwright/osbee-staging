@@ -58,6 +58,13 @@ body {
   font: 12px/1.5 Arial, Helvetica, sans-serif;
 }
 
+#block-block-6 {
+    display: none !important;
+    .addthis_toolbox {
+        display: none !important;
+    }
+}
+
 /* line 6, ../src/scss/_text.scss */
 .prose .narrow-body ul li {
   background: url(../images/bullet.png) no-repeat 3px 50%;

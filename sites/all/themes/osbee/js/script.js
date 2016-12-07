@@ -1,13 +1,13 @@
   Drupal.settings.osbeeCycleOptions = {
-    'nowrap': true,
-    'timeout': 1,
-    'speedIn': 2000,
+    //'nowrap': true,
+    'timeout': 0,
+    'speedIn': 300,
     'fastOnEvent': 0,
-    'speedOut': 2000,
+    'speedOut': 300,
     'end': function(options)  {
       var $slideshow = jQuery(this.$cont).parents('.views-field-field-portfolio-image .item-list');
       if (! $slideshow.find('.resume').length) {
-        $slideshow.append('<div class="resume"></div>');
+        //$slideshow.append('<div class="resume"></div>');
       }
     }
   };

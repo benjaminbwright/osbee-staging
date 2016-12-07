@@ -14,16 +14,17 @@
             if (drawer.hasClass("off-screen")) {
                 setTimeout(function(){drawer.toggleClass("on-screen")},100);
                 overlay.show();
-                $(".toggle-open", this).hide();
-                $(".toggle-close", this).show();
-
+                $(".toggle-open").hide();
+                $(".toggle-close").show();
+                drawer.toggleClass("off-screen");
             } else {
                 drawer.toggleClass("on-screen");
                 overlay.hide();
-                $(".toggle-open", this).show();
-                $(".toggle-close", this).hide();
+                $(".toggle-open").show();
+                $(".toggle-close").hide();
+                drawer.toggleClass("off-screen");
             }
-            drawer.toggleClass("off-screen");
+            
         });
     });
 })(jQuery);

@@ -241,6 +241,10 @@ h1.site-name a {
   position: relative;
 }
 
+#block-block-6 {
+  visibility: hidden;
+}
+
 /* line 19, ../src/scss/_navigation.scss */
 .region-navigation ul.menu li a {
   text-transform: uppercase;
@@ -1698,8 +1702,9 @@ body.node-type-career h1.page-title:before {
   line-height: 25px;
   color: white;
   background: #EA8A1A;
-  padding: 0 8px;
+  padding: 7px 49px 8px 8px;
   font-weight: bold;
+  border-top-left-radius: 3px;
 }
 
 /* line 1048, ../src/scss/_page.scss */
@@ -2277,7 +2282,7 @@ select.with-style option[selected="selected"] {
   /* text-align: center; */
   width: 10px;
   height: 10px;
-  margin: 0 7px;
+  margin: 0 11px;
   background: #ffffff;
   border-radius: 50%;
   /* cursor: pointer; */
@@ -2330,6 +2335,7 @@ select.with-style option[selected="selected"] {
 .swiper-slide-active {
   z-index: 10000;
 }
+.swiper-slide-active .views-field-field-vertical-slide-image img,
 .swiper-slide-active .views-field-field-slide-image img {
   -webkit-backface-visibility: hidden;
   -moz-transform: scale(1.2);
@@ -2338,10 +2344,10 @@ select.with-style option[selected="selected"] {
   transform: scale(1.2);
   -webkit-filter: brightness(1) grayscale(0);
   filter: brightness(1) grayscale(0);
-  -webkit-transition: 3s ease;
-  -moz-transition: 3s ease;
-  -o-transition: 3s ease;
-  transition: 3s ease;
+  -webkit-transition: 5s ease;
+  -moz-transition: 5s ease;
+  -o-transition: 5s ease;
+  transition: 5s ease;
 }
 
 .front.domain-osbee-com #block-block-7 {
@@ -3483,6 +3489,11 @@ select.with-style option[selected="selected"] {
     margin: 0;
   }
 }
+@media screen and (min-width: 769px) {
+  .profile-expand {
+    display: none;
+  }
+}
 .site-slogan {
   display: none;
 }
@@ -4160,7 +4171,7 @@ select.with-style option[selected="selected"] {
   }
   .views_slideshow_swiper_main .views-field-field-slide-caption {
     bottom: 83px !important;
-    font-size: 150% !important;
+    font-size: 200% !important;
   }
 
   #block-block-7 {

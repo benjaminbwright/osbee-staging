@@ -139,3 +139,9 @@
         }
     }    
 }
+
+@media screen and (min-width: 769px) {
+    .profile-expand {
+        display: none;
+    }
+}
