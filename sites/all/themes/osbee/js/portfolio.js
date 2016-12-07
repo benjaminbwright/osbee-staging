@@ -26,12 +26,15 @@
 
         if ($(window).width() < 769) {
             $(".views-field-field-portfolio-image ul").height($(window).width()/2);
+        } else {
+            $(".views-field-field-portfolio-image ul").height(326);
         }
 
         $(window).resize(function(){
             if ($(window).width() < 769) {
                 var top = $(window).width()/2;
                 $(".views-field-field-portfolio-image ul").height($(window).width()/2); 
+                $(".views-field-field-portfolio-image ul").height(326);
             }
         });
 

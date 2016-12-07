@@ -3346,6 +3346,9 @@ select.with-style option[selected="selected"] {
     width: 100% !important;
     height: auto !important;
   }
+  .views_slideshow_swiper_main .views-field-field-slide-caption .field-content {
+    text-shadow: 1px 1px 2px #353535;
+  }
 }
 @media screen and (min-width: 769px) {
   .section-portfolio-page #page .views-field-field-caption {
@@ -3366,6 +3369,12 @@ select.with-style option[selected="selected"] {
 @media screen and (max-width: 768px) {
   .section-about-us .attachment {
     display: none;
+  }
+  .section-about-us .arrow-link {
+    color: #5d86a0;
+  }
+  .section-about-us .arrow-link:before {
+    border-left-color: #5d86a0;
   }
   .section-about-us #block-views-profiles-block .view-content {
     padding: 0;
@@ -3963,6 +3972,13 @@ select.with-style option[selected="selected"] {
   .section-portfolio-page .region-content .block-views .views-field-field-caption .field-content {
     padding: 10px;
   }
+}
+@media screen and (max-width: 768px) and (min-width: 675px) {
+  .section-portfolio-page .region-content .block-views .views-field-field-caption .field-content {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 768px) {
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom,
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-top {
     bottom: -175px;
@@ -3988,8 +4004,9 @@ select.with-style option[selected="selected"] {
   }
 
   .section-portfolio .group-links {
-    bottom: -235px;
+    bottom: -35px;
     z-index: 10000;
+    padding-bottom: 10px;
   }
 
   .section-portfolio-page .jcarousel-container, .section-portfolio-page .jcarousel-clip {
@@ -4057,6 +4074,11 @@ select.with-style option[selected="selected"] {
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+  }
+}
+@media screen and (min-width: 769px) {
+  .swiper-container-horizontal {
+    margin-bottom: 6px;
   }
 }
 @media (orientation: portrait) and (max-width: 768px) {
@@ -4248,6 +4270,7 @@ select.with-style option[selected="selected"] {
 @media (max-width: 768px) {
   .page-node-645 .views-slideshow-swiper-main-frame-row-item {
     position: relative;
+    margin-bottom: 16px;
   }
   .page-node-645 .views-slideshow-swiper-main-frame-row-item ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -4266,7 +4289,7 @@ select.with-style option[selected="selected"] {
     top: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.75);
-    bottom: 6px;
+    bottom: 1px;
     overflow: scroll;
     visibility: hidden;
   }
@@ -4282,7 +4305,7 @@ select.with-style option[selected="selected"] {
     position: absolute;
     z-index: 10000;
     width: 18px;
-    bottom: 6px;
+    bottom: 2px;
     left: 0px;
     padding: 0px 4px 0px 14px;
     color: #ffffff;

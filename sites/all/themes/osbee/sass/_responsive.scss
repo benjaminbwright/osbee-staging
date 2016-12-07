@@ -611,6 +611,9 @@ $xlarge: 1024px;
             // margin-top: 100px;
             .field-content {
                 padding: 10px;
+                @media screen and (min-width: 675px) {
+                    margin-top: 45px;
+                }
             }
         }
         .views-slideshow-controls-bottom,
@@ -641,8 +644,9 @@ $xlarge: 1024px;
         }
     }
     .section-portfolio .group-links {
-        bottom: -235px;
+        bottom: -35px;
         z-index: 10000;
+        padding-bottom: 10px;
     }
 
     .section-portfolio-page .jcarousel-container, .section-portfolio-page .jcarousel-clip {
@@ -711,6 +715,12 @@ $xlarge: 1024px;
         -moz-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;   
+    }
+}
+
+@media screen and (min-width: 769px){
+    .swiper-container-horizontal {
+        margin-bottom: 6px;
     }
 }
 
@@ -937,25 +947,26 @@ $xlarge: 1024px;
 
         .views-slideshow-swiper-main-frame-row-item{
             position: relative;
-                    ::-webkit-scrollbar {
-                        -webkit-appearance: none;
-                        width: 7px;
-                        height: 0;
-                    }
+            margin-bottom: 16px;
+            ::-webkit-scrollbar {
+                -webkit-appearance: none;
+                width: 7px;
+                height: 0;
+            }
 
-                    ::-webkit-scrollbar-thumb {
-                        border: 1px solid #ffffff;
-                        border-radius: 4px;
-                        background-color: rgba(0,0,0,.5);
-                        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-                    }
+            ::-webkit-scrollbar-thumb {
+                border: 1px solid #ffffff;
+                border-radius: 4px;
+                background-color: rgba(0,0,0,.5);
+                -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+            }
             .views-field-field-caption {
                 position: absolute;
                 z-index: 10000;
                 top: 0;
                 width: 100%;
                 background: rgba(0, 0, 0, 0.75);
-                bottom: 6px;
+                bottom: 1px;
                 overflow: scroll;
                 visibility: hidden;
                 .field-content {
@@ -976,7 +987,7 @@ $xlarge: 1024px;
                 position: absolute;
                 z-index: 10000;
                 width: 18px;
-                bottom: 6px;
+                bottom: 2px;
                 left: 0px;
                 padding: 0px 4px 0px 14px;
                 color: #ffffff;
