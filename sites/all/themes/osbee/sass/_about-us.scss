@@ -10,6 +10,13 @@
             display: none;
         }
         
+        .arrow-link {
+            color: $blue;
+            &:before {
+                border-left-color: $blue;
+            }
+        }
+
         #block-views-profiles-block {
             .view-content {
                 padding: 0;
