@@ -1,5 +1,6 @@
 (function($){
     $(document).ready(function(){
+      if (!$("body").hasClass("section-our-process")) {
         // Move main content on main services page
         
         $(".menu-block-1 .active span").after('<ul class="menu menu-subcat"><li><div id="active-content" class="responsive-narrow-body"></div></li></ul>');
@@ -49,7 +50,7 @@
             container.animate({ scrollTop: scrollTo.offset().top},'1200');
         }
 
-        
+      }  
 
     });
 })(jQuery);

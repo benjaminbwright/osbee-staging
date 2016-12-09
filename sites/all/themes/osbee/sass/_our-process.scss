@@ -35,6 +35,14 @@
                         // Remove padding below menu items
                         //padding-bottom: 0;
                         background: $black;
+                        .prose {
+                            p {
+                                text-align: left;
+                            }
+                        }
+                        .subcat-expand {
+                            pointer-events: none;
+                        }
                         a {
                             // Remove spacing below menu items
                             display: block !important;
@@ -72,29 +80,37 @@
                             }
                         }
                         &.active-trail {
-                            background: $light-gray !important;
+                            background: $black!important;
                             a {
                                 background: transparent !important;
-                                color: $black !important;
+                                color: $light-gray !important;
                                 .box-left,
                                 .box-right {
                                     background: $light-gray;
-                                    color: $black;
+                                    color: $light-gray;
                                 }
                                 .box-top {
-                                    color: $black;
+                                    color: $light-gray;
                                 }
                             }
                             .subcat-expand {
-                                color: $black;
+                                color: $black !important;
                             }
                             .menu-subcat {
                                 display: block !important;
                                 margin-bottom: -10px;
                                 margin-top: 10px;
+                                border: none;
                                 #active-content {
-                                    border-top: 1px solid $black;
                                     margin-bottom: 0;
+                                    margin-top: -15px;
+                                    img {
+                                        margin-bottom: 25px;
+                                    }
+                                    .orange2,
+                                    .orange3 {
+                                        color: $blue;
+                                    }
                                     .field-name-field-image .even{
                                         margin-bottom: 0 !important;
                                     }
