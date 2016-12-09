@@ -8,6 +8,15 @@
     display: none;
 }
 
+
+// Defaults for desktop ===================
+
+#block-views-homepage-slideshow-block {
+    width: 100%;
+    overflow: hidden;
+}
+
+
 // Styles for swipe icon overlay
 @media screen and (max-width: $medium) {
     .swipe-icon-overlay {

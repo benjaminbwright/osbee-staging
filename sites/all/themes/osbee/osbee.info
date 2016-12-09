@@ -34,3 +34,4 @@ scripts[] = js/portfolio.js
 scripts[] = js/services.js
 scripts[] = js/swipe-icon.js
 scripts[] = js/swipe-navigation.js
+scripts[] = js/our-process.js

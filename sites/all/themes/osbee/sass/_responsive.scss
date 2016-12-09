@@ -22,25 +22,14 @@ $xlarge: 1024px;
 @import "mobile-navigation";
 @import "swiper-slideshows";
 @import "about-us";
+@import "our-process";
 
 // Mobile Defaults in full screen ===============================================
-
-#drawer-menu-toggle,
-.front #drawer-menu-toggle {
-    //display: none;
-}
-
 
 
 .site-slogan {
     display: none;
 }
-
-#block-views-homepage-slideshow-block {
-    width: 100%;
-    overflow: hidden;
-}
-
 
 .section-portfolio-page .region-content .block-views {
     overflow: hidden;
