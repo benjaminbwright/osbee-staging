@@ -3507,6 +3507,9 @@ select.with-style option[selected="selected"] {
     max-width: 100%;
     overflow-x: hidden;
   }
+  .section-our-process #block-block-8 {
+    left: 0;
+  }
   .section-our-process .field-name-field-small-image-gallery {
     display: none;
   }
