@@ -89,6 +89,9 @@ $xlarge: 1024px;
         
     }
     
+    a {
+        color: $blue;
+    }
 
     span.views-slideshow-controls-text-next,
     span.views-slideshow-controls-text-previous {
@@ -704,6 +707,10 @@ $xlarge: 1024px;
         -moz-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;   
+    }
+
+    .group-prev-next {
+        display: none;
     }
 }
 

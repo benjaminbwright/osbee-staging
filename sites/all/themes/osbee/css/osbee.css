@@ -3561,7 +3561,7 @@ select.with-style option[selected="selected"] {
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a .box-left,
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a .box-right {
-    background: #bcbec0;
+    background: #000000;
     color: #bcbec0;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a .box-top {
@@ -3641,6 +3641,10 @@ select.with-style option[selected="selected"] {
     font-family: MetaOT !important;
     font-size: 16px;
     background: #000000;
+  }
+
+  a {
+    color: #5d86a0;
   }
 
   span.views-slideshow-controls-text-next,
@@ -4177,6 +4181,10 @@ select.with-style option[selected="selected"] {
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+  }
+
+  .group-prev-next {
+    display: none;
   }
 }
 @media screen and (min-width: 769px) {
