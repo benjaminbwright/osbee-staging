@@ -10,18 +10,21 @@
             $(".menu-block-3 .active-trail .menu-link-wrapper").first().after('<ul class="menu menu-subcat"><li><div id="active-content" class="responsive-narrow-body"></div></li></ul>');
             $(".menu-block-3 li .menu-link-wrapper a").after('<span class="fa subcat-expand">&#x33;</span>');
             $(".menu-block-3 .active-trail .subcat-expand").html("&#x32;");
-
+            if (!document.getElementById("active-content")) {
+                $(".field-type-image").after('<div class="under-main-image responsive-narrow-body"></div>');
+            }
 
             var pageContent = $(".narrow-body");
             var pageImage = $(".field-name-field-image");
             var responsiveContent = $(".responsive-narrow-body");
 
-            pageContent.clone().prependTo('.menu-block-3 .responsive-narrow-body');
+            pageContent.clone().prependTo('.responsive-narrow-body');
             pageImage.clone().prependTo('.responsive-narrow-body');
             
             // Toggle between responsive and desktop content
             if ($(window).width() < 769 ){
-                pageContent.hide();
+                //if (!$("body").hasClass("page-node-20")) {
+                    pageContent.hide();
                 pageImage.hide();
                 responsiveContent.show();
             } else {
