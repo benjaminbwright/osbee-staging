@@ -130,5 +130,21 @@
 
         $(".section-about-us .subcat-expand").eq(0).trigger('click');
 
+/*        // CAREERS PAGE ACCORDION MENU
+        
+        // Add the menu-subcat class to the mobile menu elements with children
+        $('.page-careers ul.menu li ul').addClass('menu-subcat');
+        // Add the subcategory toggle element
+        $('.page-careers .menu-subcat').prev('a').after('<span class="fa subcat-expand">&#x33;</span>');
+        // Change the toggle element icon for active elements - if a child page is currently open
+        $('.page-careers li.active-trail .subcat-expand').html("&#x32;");
+        // Only toggle the highlighting on the first element in an active trail
+        $('.page-careers li.active-trail:first').toggleClass('active');
+        // Make the parent li of an active link active
+        $('.page-careers li.active-trail a.active').parent().toggleClass('active');
+        
+        $(".page-careers li.active-trail").first().addClass("first-active");
+        */
+
     });
 })(jQuery);

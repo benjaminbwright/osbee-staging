@@ -1,0 +1,66 @@
+// Careers Page Styles
+
+@media screen and (max-width: $medium) {
+    .page-careers {
+        max-width: 100%;
+        overflow-x: hidden;
+
+        .region-content {
+            .block-content  {
+                a {
+                    margin: 0;
+                }
+                .view-content {
+                    width: auto;
+                    float: none;
+                }
+            }
+        }
+
+        .view-open-positions {
+            .view-header {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .menu {
+                li {
+                    a.ajax-link {
+                        border-bottom: 1px solid #bcbec0;
+                    }
+                    .subcat-expand {
+                        margin-top: -10px !important;
+                    }
+                }
+                .menu-subcat {
+                    display: block !important;
+                    .node-career h3, .node-career .field-label {
+                        font-size: 16px;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+                    .node-career .field-item p {
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+                    #node-career-full-group-additional-info {
+                        padding-bottom: 15px;
+                        .field-item {
+                            padding-right: 10px;
+                            padding-left: 10px;
+                        }
+                    }
+                    .ctools-use-modal {
+                        position: fixed;
+                        bottom: 0;
+                        right: 0; 
+                        width: auto !important;
+                        padding-right: 15px !important;
+                        float: none !important;
+                        padding: 7px 48px 8px 8px !important;
+                        z-index: 85;
+                    }
+                }
+            }
+        }
+    }
+}

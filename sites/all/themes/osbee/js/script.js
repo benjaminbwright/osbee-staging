@@ -96,17 +96,57 @@
 
   Drupal.behaviors.careersPage = {
     attach: function(context, settings) {
-
-      var $ajaxLinks = $('body.page-careers-open-positions .ajax-link');
+      var $ajaxLinks = $('.page-careers-open-positions .ajax-link');
       if($ajaxLinks.length > 0) {
         Drupal.settings['modal-popup-medium'].modalSize.height = 605;
-        // $ajaxLinks.on('click', function(e) {
-        //   var $link = $(this);
-        //   $ajaxLinks.removeClass('ajax-link-processed').removeClass('active');
-        //   $link.addClass('ajax-link-processed').addClass('active');
-        //   $('#career-box').load($link.attr('href') + ' #main-content ');
-        //   return true;
-        // });
+        $ajaxLinks.on('click', function(e) {
+           var $link = $(this);
+           $(".page-careers #main-content .menu-subcat").remove();
+           $ajaxLinks.removeClass('ajax-link-processed').removeClass('active').parent().parent().parent().removeClass("active-trail");
+           $link.addClass('ajax-link-processed').addClass('active').parent().parent().parent().addClass("active-trail");
+           $(".page-careers .view-open-positions .menu a.active").parent().parent().after('<ul class="menu menu-subcat"><li><div id="active-content" class="responsive-narrow-body"></div></li></ul>');
+
+           $(".page-careers #main-content .subcat-expand").html("&#x33;");
+           $(".page-careers #main-content .active-trail .subcat-expand").html("&#x32;");
+
+           $('#career-box').load($link.attr('href') + ' #main-content ', function(){
+                careerBox = $("#career-box #main-content").html();
+                $('#active-content').html(careerBox);
+
+                var pageContent = $("#career-box");
+                var responsiveContent = $("#active-content");
+                
+                // Toggle between responsive and desktop content
+                if ($(window).width() < 769 ){
+                    pageContent.hide();
+                    responsiveContent.show();
+                } else {
+                    pageContent.show();
+                    responsiveContent.hide();
+                }
+
+                $(window).resize(function(){
+                    if ($(window).width() < 769 ){
+                        pageContent.hide();
+                        responsiveContent.show();
+                    } else {
+                        pageContent.show();
+                        responsiveContent.hide();
+                    }
+                });
+
+
+                // Scroll to active menu item
+                var container = $("html,body");
+                var scrollTo = $(".page-careers #main-content .active-trail");
+
+                if (scrollTo.offset() !== null) { 
+                    container.animate({ scrollTop: scrollTo.offset().top},'1200');
+                }
+
+           });
+           return true;
+        });
 
         $ajaxLinks.first().trigger('click');
 

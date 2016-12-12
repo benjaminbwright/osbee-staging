@@ -3594,6 +3594,58 @@ select.with-style option[selected="selected"] {
     margin-bottom: 0 !important;
   }
 }
+@media screen and (max-width: 768px) {
+  .page-careers {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .page-careers .region-content .block-content a {
+    margin: 0;
+  }
+  .page-careers .region-content .block-content .view-content {
+    width: auto;
+    float: none;
+  }
+  .page-careers .view-open-positions .view-header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .page-careers .view-open-positions .menu li a.ajax-link {
+    border-bottom: 1px solid #bcbec0;
+  }
+  .page-careers .view-open-positions .menu li .subcat-expand {
+    margin-top: -10px !important;
+  }
+  .page-careers .view-open-positions .menu .menu-subcat {
+    display: block !important;
+  }
+  .page-careers .view-open-positions .menu .menu-subcat .node-career h3, .page-careers .view-open-positions .menu .menu-subcat .node-career .field-label {
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .page-careers .view-open-positions .menu .menu-subcat .node-career .field-item p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .page-careers .view-open-positions .menu .menu-subcat #node-career-full-group-additional-info {
+    padding-bottom: 15px;
+  }
+  .page-careers .view-open-positions .menu .menu-subcat #node-career-full-group-additional-info .field-item {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .page-careers .view-open-positions .menu .menu-subcat .ctools-use-modal {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+    padding-right: 15px !important;
+    float: none !important;
+    padding: 7px 48px 8px 8px !important;
+    z-index: 85;
+  }
+}
 .site-slogan {
   display: none;
 }
