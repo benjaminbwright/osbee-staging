@@ -3646,6 +3646,16 @@ select.with-style option[selected="selected"] {
     z-index: 85;
   }
 }
+@media screen and (max-width: 768px) {
+  .page-blog .view-archive {
+    display: none;
+  }
+
+  .section-blog #right {
+    width: auto;
+    float: none;
+  }
+}
 .site-slogan {
   display: none;
 }
@@ -4130,6 +4140,7 @@ select.with-style option[selected="selected"] {
   }
   .section-portfolio-page .region-content .block-views .views-field-field-caption {
     display: block !important;
+    margin-top: 92px;
   }
   .section-portfolio-page .region-content .block-views .views-field-field-caption .field-content {
     padding: 10px;
@@ -4144,15 +4155,13 @@ select.with-style option[selected="selected"] {
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom,
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-top {
     bottom: -175px;
-    top: initial !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom {
     width: 100%;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: initial;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal {
-    width: 98% !important;
     margin-left: 2.5% !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item {

@@ -24,6 +24,7 @@ $xlarge: 1024px;
 @import "about-us";
 @import "our-process";
 @import "careers";
+@import "blog";
 
 // Mobile Defaults in full screen ===============================================
 
@@ -601,7 +602,7 @@ $xlarge: 1024px;
         }
         .views-field-field-caption {
             display: block !important;
-            // margin-top: 100px;
+            margin-top: 92px;
             .field-content {
                 padding: 10px;
                 @media screen and (min-width: 675px) {
@@ -614,14 +615,15 @@ $xlarge: 1024px;
          {
             //display: none;
             bottom: -175px;
-            top: initial !important;
+            //top: initial !important;
         }
         .views-slideshow-controls-bottom {
             width: 100%;
-            position: relative;
-            bottom: 0;
+            position: absolute;
+            bottom: initial;
+
             .jcarousel-list-horizontal {
-                width: 98% !important;
+                //width: 98% !important;
                 margin-left: 2.5% !important;
                 .views_slideshow_jcarousel_pager_item {
                     margin-bottom: 15px;

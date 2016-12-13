@@ -1,0 +1,16 @@
+// Blog Styles =================================================
+
+@media screen and (max-width: $medium) {
+    .page-blog {
+        // Hide blog articles from homepage
+        .view-archive {
+            display: none;
+        }
+    }
+    .section-blog {
+        #right {
+            width: auto;
+            float: none;
+        }
+    }
+}
