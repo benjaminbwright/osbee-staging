@@ -1038,14 +1038,14 @@ span.views-slideshow-controls-text-pause {
   bottom: 0;
   right: 0;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.5);
+  background: $blue;
   text-align: center;
   min-width: 15px;
   height: 15px;
   line-height: 15px;
   font-size: 12px;
-  color: #565455;
-  text-shadow: 1px 1px #fff;
+  color: $white;
+  text-shadow: none;
 }
 
 /* line 584, ../src/scss/_page.scss */

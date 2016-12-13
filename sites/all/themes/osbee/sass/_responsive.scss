@@ -633,6 +633,11 @@ $xlarge: 1024px;
                     img {
                         margin: 0 !important;
                     }
+                    .slide-number {
+                        background: $blue !important;
+                        color: $white !important;
+                        text-shadow: none !important;
+                    }
                 }
             }
 
