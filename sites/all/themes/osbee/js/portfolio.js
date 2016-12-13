@@ -23,10 +23,11 @@
         // Slide back to first slide.
         $(".jcarousel-item-1").trigger("click");
 
+        pagerOffset = 64;
 
         if ($(window).width() < 769) {
             $(".views-field-field-portfolio-image ul").height($(window).width()/2);
-            $(".section-portfolio-page .views-slideshow-controls-bottom").css("top", ($(window).width()/2)+164+"px");
+            $(".section-portfolio-page .views-slideshow-controls-bottom").css("top", ($(window).width()/2)+pagerOffset+"px");
         } else {
             $(".views-field-field-portfolio-image ul").height(326);
         }
@@ -35,7 +36,7 @@
             if ($(window).width() < 769) {
                 var top = $(window).width()/2;
                 $(".views-field-field-portfolio-image ul").height($(window).width()/2); 
-                $(".section-portfolio-page .views-slideshow-controls-bottom").css("top", ($(window).width()/2)+164+"px");
+                $(".section-portfolio-page .views-slideshow-controls-bottom").css("top", ($(window).width()/2)+pagerOffset+"px");
             } else {
                 $(".views-field-field-portfolio-image ul").height(326);
             }

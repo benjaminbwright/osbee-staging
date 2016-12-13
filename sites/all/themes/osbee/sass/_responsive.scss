@@ -18,6 +18,8 @@ $large: 1024px;
 // Set this as a min-width;
 $xlarge: 1024px;
 
+// Something new
+
 
 @import "mobile-navigation";
 @import "swiper-slideshows";
@@ -602,7 +604,7 @@ $xlarge: 1024px;
         }
         .views-field-field-caption {
             display: block !important;
-            margin-top: 92px;
+            margin-top: -46px;
             .field-content {
                 padding: 10px;
                 @media screen and (min-width: 675px) {
@@ -621,17 +623,23 @@ $xlarge: 1024px;
             width: 100%;
             position: absolute;
             bottom: initial;
-
+            background: $black;
+            padding-top: 15px;
+            margin-left: 0 !important;
             .jcarousel-list-horizontal {
                 //width: 98% !important;
                 margin-left: 2.5% !important;
                 .views_slideshow_jcarousel_pager_item {
                     margin-bottom: 15px;
                     margin-left: 15px !important;
-                    height: 72px !important;
-                    width: 72px !important;
+                    height: 50px !important;
+                    width: 50px !important;
                     img {
                         margin: 0 !important;
+                    }
+                    .views-content-field-portfolio-image {
+                        width: 50px;
+                        height: 50px;
                     }
                     .slide-number {
                         background: $blue !important;

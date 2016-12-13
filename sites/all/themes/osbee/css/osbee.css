@@ -1142,7 +1142,7 @@ span.views-slideshow-controls-text-pause {
 /* line 593, ../src/scss/_page.scss */
 .section-portfolio-page .jcarousel-container .jcarousel-prev,
 .section-portfolio-page .jcarousel-container .jcarousel-next {
-  height: 72px;
+  height: 50px;
   width: 50px;
   position: absolute;
   background: red;
@@ -4140,7 +4140,7 @@ select.with-style option[selected="selected"] {
   }
   .section-portfolio-page .region-content .block-views .views-field-field-caption {
     display: block !important;
-    margin-top: 92px;
+    margin-top: -46px;
   }
   .section-portfolio-page .region-content .block-views .views-field-field-caption .field-content {
     padding: 10px;
@@ -4160,6 +4160,9 @@ select.with-style option[selected="selected"] {
     width: 100%;
     position: absolute;
     bottom: initial;
+    background: #000000;
+    padding-top: 15px;
+    margin-left: 0 !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal {
     margin-left: 2.5% !important;
@@ -4167,11 +4170,15 @@ select.with-style option[selected="selected"] {
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item {
     margin-bottom: 15px;
     margin-left: 15px !important;
-    height: 72px !important;
-    width: 72px !important;
+    height: 50px !important;
+    width: 50px !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item img {
     margin: 0 !important;
+  }
+  .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item .views-content-field-portfolio-image {
+    width: 50px;
+    height: 50px;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item .slide-number {
     background: #5d86a0 !important;
