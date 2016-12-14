@@ -111,4 +111,25 @@
         display: none !important;
     }
 
+    // Portfolio Carousel Toggle
+    .section-portfolio-page {
+        .toggle-carousel {
+            font-family: 'ElegantIcons';
+            font-size: 8px;
+            position: absolute;
+            padding: 10px 3px;
+            top: -32px;
+            background: $blue;
+            color: $white;
+        }
+        .views-slideshow-controls-bottom {
+            &.collapsed {
+                height: 0 !important;
+                //overflow: hidden;
+                .jcarousel-skin-blank {
+                    display: none;
+                }
+            }
+        }
+    }
 }

@@ -2321,6 +2321,7 @@ select.with-style option[selected="selected"] {
 
 .swiper-container-horizontal {
   overflow: hidden;
+  position: relative;
 }
 
 .swiper-slide .views-field-field-vertical-slide-image a,
@@ -3378,6 +3379,22 @@ select.with-style option[selected="selected"] {
   .section-portfolio-page .slide-caption {
     display: none !important;
   }
+
+  .section-portfolio-page .toggle-carousel {
+    font-family: 'ElegantIcons';
+    font-size: 8px;
+    position: absolute;
+    padding: 10px 3px;
+    top: -32px;
+    background: #5d86a0;
+    color: #ffffff;
+  }
+  .section-portfolio-page .views-slideshow-controls-bottom.collapsed {
+    height: 0 !important;
+  }
+  .section-portfolio-page .views-slideshow-controls-bottom.collapsed .jcarousel-skin-blank {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .section-about-us .attachment {
@@ -4140,7 +4157,7 @@ select.with-style option[selected="selected"] {
   }
   .section-portfolio-page .region-content .block-views .views-field-field-caption {
     display: block !important;
-    margin-top: -46px;
+    margin-top: 0;
   }
   .section-portfolio-page .region-content .block-views .views-field-field-caption .field-content {
     padding: 10px;
@@ -4169,7 +4186,7 @@ select.with-style option[selected="selected"] {
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item {
     margin-bottom: 15px;
-    margin-left: 15px !important;
+    margin-left: 6px !important;
     height: 50px !important;
     width: 50px !important;
   }
@@ -4194,7 +4211,7 @@ select.with-style option[selected="selected"] {
 
   .section-portfolio-page .jcarousel-container, .section-portfolio-page .jcarousel-clip {
     width: 100%;
-    margin-left: -6px;
+    margin-left: -4px;
   }
 
   .section-portfolio-page .jcarousel-container .jcarousel-prev,
