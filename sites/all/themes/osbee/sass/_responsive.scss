@@ -738,6 +738,12 @@ $xlarge: 1024px;
     .group-prev-next {
         display: none;
     }
+
+    span.testimonial-attribution {
+        display: block;
+        padding-top: 10px;
+        font-style: italic;
+    }
 }
 
 @media screen and (min-width: 769px){
