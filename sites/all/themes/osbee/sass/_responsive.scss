@@ -628,6 +628,8 @@ $xlarge: 1024px;
             margin-left: 0 !important;
             .jcarousel-list-horizontal {
                 //width: 98% !important;
+                height: 65px;
+                overflow: hidden;
                 margin-left: 2.5% !important;
                 .views_slideshow_jcarousel_pager_item {
                     margin-bottom: 15px;
@@ -658,8 +660,8 @@ $xlarge: 1024px;
     }
 
     .section-portfolio-page .jcarousel-container, .section-portfolio-page .jcarousel-clip {
-        width: 100%;
-        margin-left: -4px
+        width: 102%;
+        margin-left: -11px
     }
 
     .section-portfolio-page .jcarousel-container {

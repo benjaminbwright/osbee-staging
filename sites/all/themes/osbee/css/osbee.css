@@ -3390,6 +3390,7 @@ select.with-style option[selected="selected"] {
     color: #ffffff;
   }
   .section-portfolio-page .views-slideshow-controls-bottom.collapsed {
+    margin-top: 65px;
     height: 0 !important;
   }
   .section-portfolio-page .views-slideshow-controls-bottom.collapsed .jcarousel-skin-blank {
@@ -4182,6 +4183,8 @@ select.with-style option[selected="selected"] {
     margin-left: 0 !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal {
+    height: 65px;
+    overflow: hidden;
     margin-left: 2.5% !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item {
@@ -4210,8 +4213,8 @@ select.with-style option[selected="selected"] {
   }
 
   .section-portfolio-page .jcarousel-container, .section-portfolio-page .jcarousel-clip {
-    width: 100%;
-    margin-left: -4px;
+    width: 102%;
+    margin-left: -11px;
   }
 
   .section-portfolio-page .jcarousel-container .jcarousel-prev,
