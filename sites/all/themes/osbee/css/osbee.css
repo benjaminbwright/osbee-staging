@@ -4194,6 +4194,12 @@ select.with-style option[selected="selected"] {
 
   .section-portfolio-page .jcarousel-container, .section-portfolio-page .jcarousel-clip {
     width: 100%;
+    margin-left: -6px;
+  }
+
+  .section-portfolio-page .jcarousel-container .jcarousel-prev,
+  .section-portfolio-page .jcarousel-container .jcarousel-next {
+    display: none !important;
   }
 
   #footer {
