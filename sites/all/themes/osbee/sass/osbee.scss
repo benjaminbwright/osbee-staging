@@ -150,7 +150,9 @@ h1.site-name a {
 }
 
 // Hide Share Bar
-#block-block-6 {
+#block-block-6,
+#block-block-9,
+#block-block-10 {
     visibility: hidden;
 }
 

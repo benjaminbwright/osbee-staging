@@ -49,7 +49,7 @@
         Drupal.viewsSlideshow.action({
           'action': 'transitionEnd',
           'slideshowID': Drupal.settings.viewsSlideshowSwiper['#' + swiper.container.attr('id')].vss_id,
-          'slideNum': swiper.activeIndex
+          'slideNum': swiper.activeIndex - 1,
         });
         var slideCaption = $(".swiper-slide-active .views-field-field-caption").html();
         $(".node-content .slide-caption").html(slideCaption).fadeIn('fast');

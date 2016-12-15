@@ -16,6 +16,10 @@
                 }
             }
         }
+        .node-career .field, .node-career h3 {
+            clear: both;
+            color: $white;
+        }
 
         .view-open-positions {
             .view-header {
@@ -33,6 +37,9 @@
                 }
                 .menu-subcat {
                     display: block !important;
+                    #active-content {
+                        margin-top: 60px;
+                    }
                     .node-career h3, .node-career .field-label {
                         font-size: 16px;
                         padding-right: 10px;
@@ -62,5 +69,16 @@
                 }
             }
         }
+    }
+    #webform-client-form-1078 .webform-component-textfield, 
+    #webform-client-form-1078 .webform-component-email, 
+    #webform-client-form-1078 .webform-component-select {
+        float: none;
+        margin-left: 15px;
+    }
+    #edit-submitted-upload-cover-letter-ajax-wrapper,
+    #edit-submitted-upload-resume-ajax-wrapper,
+    .webform-submit {
+        margin-left: 15px;
     }
 }

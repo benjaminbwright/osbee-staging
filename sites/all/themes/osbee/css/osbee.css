@@ -241,7 +241,9 @@ h1.site-name a {
   position: relative;
 }
 
-#block-block-6 {
+#block-block-6,
+#block-block-9,
+#block-block-10 {
   visibility: hidden;
 }
 
@@ -3629,6 +3631,10 @@ select.with-style option[selected="selected"] {
     width: auto;
     float: none;
   }
+  .page-careers .node-career .field, .page-careers .node-career h3 {
+    clear: both;
+    color: #ffffff;
+  }
   .page-careers .view-open-positions .view-header {
     margin-left: 10px;
     margin-right: 10px;
@@ -3641,6 +3647,9 @@ select.with-style option[selected="selected"] {
   }
   .page-careers .view-open-positions .menu .menu-subcat {
     display: block !important;
+  }
+  .page-careers .view-open-positions .menu .menu-subcat #active-content {
+    margin-top: 60px;
   }
   .page-careers .view-open-positions .menu .menu-subcat .node-career h3, .page-careers .view-open-positions .menu .menu-subcat .node-career .field-label {
     font-size: 16px;
@@ -3667,6 +3676,19 @@ select.with-style option[selected="selected"] {
     float: none !important;
     padding: 7px 48px 8px 8px !important;
     z-index: 85;
+  }
+
+  #webform-client-form-1078 .webform-component-textfield,
+  #webform-client-form-1078 .webform-component-email,
+  #webform-client-form-1078 .webform-component-select {
+    float: none;
+    margin-left: 15px;
+  }
+
+  #edit-submitted-upload-cover-letter-ajax-wrapper,
+  #edit-submitted-upload-resume-ajax-wrapper,
+  .webform-submit {
+    margin-left: 15px;
   }
 }
 @media screen and (max-width: 768px) {
