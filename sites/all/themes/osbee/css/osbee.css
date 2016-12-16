@@ -24,7 +24,7 @@ body {
 }
 @font-face {
   font-family: 'MetaOT';
-  src: url("../fonts/MetaOT-Bold.eot");
+  src: url("../fonts/MetaOT-Bold.eot#") format("embedded-opentype");
   src: url("../fonts/MetaOT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MetaOT-Bold.woff") format("woff"), url("../fonts/MetaOT-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -108,7 +108,7 @@ body {
 }
 @font-face {
   font-family: 'Trajan Pro';
-  src: url("TrajanPro-Regular.eot");
+  src: url("TrajanPro-Regular.eot#") format("embedded-opentype");
   src: url("TrajanPro-Regular.eot?#iefix") format("embedded-opentype"), url("TrajanPro-Regular.woff") format("woff"), url("TrajanPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
