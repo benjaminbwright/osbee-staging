@@ -3676,6 +3676,7 @@ select.with-style option[selected="selected"] {
     float: none !important;
     padding: 7px 48px 8px 8px !important;
     z-index: 85;
+    border-top-left-radius: 5px;
   }
 
   #webform-client-form-1078 .webform-component-textfield,
