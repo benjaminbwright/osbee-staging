@@ -133,7 +133,7 @@ function osbee_preprocess_html(&$vars) {
     '#tag' => 'meta',
     '#attributes' => array(
       'name' =>  'viewport',
-      'content' => 'width=device-width, initial-scale=1, user-scalable=no',
+      'content' => 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no',
     ),
   );
   $keywords = array(
