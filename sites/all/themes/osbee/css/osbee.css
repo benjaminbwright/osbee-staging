@@ -118,6 +118,11 @@ body {
   font-family: MetaOT !important;
 }
 
+body {
+  /* IOS page orientation change resize issue*/
+  -webkit-text-size-adjust: none;
+}
+
 /* line 5, ../src/scss/_base.scss */
 a {
   color: #ef8200;
