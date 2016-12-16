@@ -4401,6 +4401,11 @@ select.with-style option[selected="selected"] {
     margin-left: -10px !important;
     margin-right: -10px !important;
   }
+
+  .front.domain-osbee-com .views-field.views-field-field-slide-caption {
+    font-size: 150%;
+    line-height: 1;
+  }
 }
 @media (orientation: landscape) and (max-width: 768px) {
   .front #page {
@@ -4414,7 +4419,7 @@ select.with-style option[selected="selected"] {
     height: auto !important;
   }
   .views_slideshow_swiper_main .views-field-field-slide-caption {
-    bottom: 83px !important;
+    bottom: 75px !important;
     font-size: 200% !important;
   }
 
@@ -4440,6 +4445,11 @@ select.with-style option[selected="selected"] {
   #block-views-vertical-slideshow-block {
     display: none;
   }
+
+  .front.domain-osbee-com .views-field.views-field-field-slide-caption {
+    font-size: 150%;
+    line-height: 1;
+  }
 }
 @media (max-width: 640px) {
   .view-in-page-menu-portfolio-items .views-row {
@@ -4463,6 +4473,16 @@ select.with-style option[selected="selected"] {
   #main-content .view-in-page-menu-portfolio-items .views-row .views-field-title a {
     font-size: 12px !important;
     line-height: 2.5vh;
+  }
+
+  .views_slideshow_swiper_main .views-field-field-slide-image img {
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .views_slideshow_swiper_main .views-field-field-slide-caption {
+    bottom: 145px !important;
+    font-size: 175% !important;
   }
 }
 /*
