@@ -3363,10 +3363,11 @@ select.with-style option[selected="selected"] {
     width: 100% !important;
     height: auto !important;
   }
-  .views_slideshow_swiper_main .views-field-field-slide-caption .field-content {
-    text-shadow: 1px 1px 2px #353535;
-  }
 }
+.views-field-field-slide-caption .field-content {
+  text-shadow: 1px 1px 2px #344762;
+}
+
 @media screen and (min-width: 769px) {
   .section-portfolio-page #page .views-field-field-caption {
     position: absolute;
