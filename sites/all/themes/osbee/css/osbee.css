@@ -3692,6 +3692,13 @@ select.with-style option[selected="selected"] {
   .webform-submit {
     margin-left: 15px;
   }
+
+  .page-modal-forms #main-content {
+    background: #ffffff !important;
+  }
+  .page-modal-forms #main-content label {
+    color: #000000;
+  }
 }
 @media screen and (max-width: 768px) {
   .page-blog .view-archive {

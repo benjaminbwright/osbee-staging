@@ -1,5 +1,8 @@
 // Careers Page Styles
 
+
+// Medium Screens
+// 
 @media screen and (max-width: $medium) {
     .page-careers {
         max-width: 100%;
@@ -81,5 +84,13 @@
     #edit-submitted-upload-resume-ajax-wrapper,
     .webform-submit {
         margin-left: 15px;
+    }
+    .page-modal-forms {
+        #main-content {
+            background: $white !important;
+            label {
+                color: $black;
+            }
+        }
     }
 }
