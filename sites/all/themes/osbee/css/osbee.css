@@ -6776,7 +6776,8 @@ select.with-style option[selected="selected"] {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-company-info.locations {
+  .footer-company-info.locations,
+  .footer-company-info.v-card {
     display: none;
   }
 }
