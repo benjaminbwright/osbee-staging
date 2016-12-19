@@ -80,9 +80,11 @@
     </div></div>
 </div>
 <div id="drawer-menu-toggle" class="toggle-menu" >
+    <div id="drawer-menu-toggle-container">
         <div class="toggle-open">&#x61;</div>
         <div class="toggle-close">&#x4d;</div>
     </div>
+</div>
 <div id="drawer-menu-overlay" class="toggle-menu"></div>
 <div id="back-to-top">&#x32;</div>
 

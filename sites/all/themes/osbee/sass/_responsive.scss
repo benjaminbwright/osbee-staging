@@ -311,23 +311,31 @@ $xlarge: 1024px;
 
         }
             #drawer-menu-toggle {
-                display: inline-block;
                 position: fixed;
-                z-index: 10000;
-                width: 18px;
-                top: 0;
                 right: 0;
-                padding: 0px 13px 0px 8px;
-                color: #ffffff;
-                font-family: 'ElegantIcons';
-                font-size: 24px;
-                background: $blue;
-                .toggle-open {
-                    width: 50px;
-                    span {
-                        font-size: 13px;
-                        position: absolute;
-                        top: 7px;
+                top: 0;
+                width: 50px;
+                height: 50px;
+                z-index: 10000;
+                #drawer-menu-toggle-container {
+                    display: inline-block;
+                    position: absolute;
+                    //z-index: 10000;
+                    width: 18px;
+                    top: 0;
+                    right: 0;
+                    padding: 0px 13px 0px 8px;
+                    color: #ffffff;
+                    font-family: 'ElegantIcons';
+                    font-size: 24px;
+                    background: $blue;
+                    .toggle-open {
+                        width: 50px;
+                        span {
+                            font-size: 13px;
+                            position: absolute;
+                            top: 7px;
+                        }
                     }
                 }
             }
