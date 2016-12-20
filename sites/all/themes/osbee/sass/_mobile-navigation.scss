@@ -37,7 +37,7 @@
             border-top: 1px solid $light-gray;
             
             li.active-trail {
-                background: #a7a9ac;
+                background: $gray-dark;
                 a {
                     color: #ffffff;
                 }
@@ -45,7 +45,7 @@
                     color: #ffffff;
                 }
                 &.active {
-                    background: #a7a9ac;
+                    background: #a7a9ac !important;
                 }
                 li.active-trail {
                     //background: #3a3a3a;
@@ -79,10 +79,15 @@
                     display: block;
                 }
                 ul {
-
+                   li.active {
+                       //background: $gray-dark;
+                   }
                     border: none;
                     a.active {
-                        color: $light-gray;
+                        color: $white;
+                    }
+                    li.persistant-trail {
+                        background: $gray-dark;
                     }
                 }
             }
@@ -91,6 +96,12 @@
                 position: relative;
                 width: 100%;
                 border-bottom: 1px solid $light-gray;
+                &.first-active {
+                    background: $gray-dark;
+                    &.active {
+                        background: $light-gray;
+                    }
+                }
                 &.first {
                     border-top: 1px solid $light-gray;
                 }
@@ -102,7 +113,7 @@
                     right: 10px;
                     left: 0;
                     text-align: right;
-                    top: 1px;
+                    top: 5px;
                     font-family: 'ElegantIcons';
                     z-index: 80;
 
@@ -118,16 +129,19 @@
                 }
                 // Second level menu items
                 .menu-subcat {
-                    display: none;
+                    //display: none;
+                 
                     overflow: hidden;
                     li:last-child {
                         border: none;
                     }
                     li {
+                        //background: $gray-dark;
                         // Hide dropdowns to 3rd level from homepage menu.
                         .subcat-collapse,
                         .subcat-expand {
-                            display: none;
+                            //display: none;
+                            left: 70%;
                         }
                     }
 
@@ -135,8 +149,9 @@
 
                 .active-trail {
                     .menu-subcat {
-                        display: block;
+                        //display: block;
                         li {
+
                             display: block;
                             padding-left: 15px;
                         }
@@ -156,7 +171,7 @@
                                 width: 80%;
                             }
                         }
-                        background: #3a3a3a;
+                        background: $gray-darker;
                         a {
                             padding-left: 35px; 
                             font-size: $menu-child-item-font-size;
@@ -164,13 +179,27 @@
                     }
                     // Third level menu
                     ul {
+                        &.active {
+                            display: block;
+                            li {
+                                display: block !important;
+                            }
+                        }
                         display: none;
                         li {
                             display: none;
-
                             // Fourth level menu
                             ul{
-                                display: none;
+                                //display: none;
+                            }
+                        }
+                    }
+                    .active {
+                        ul {
+                            display: block;
+                            li {
+                                padding-left: 15px;
+                                display: block;
                             }
                         }
                     }

@@ -6229,7 +6229,7 @@ select.with-style option[selected="selected"] {
     border-top: 1px solid #bcbec0;
   }
   #mobile-navigation ul.menu li.active-trail {
-    background: #a7a9ac;
+    background: #595959;
   }
   #mobile-navigation ul.menu li.active-trail a {
     color: #ffffff;
@@ -6238,7 +6238,7 @@ select.with-style option[selected="selected"] {
     color: #ffffff;
   }
   #mobile-navigation ul.menu li.active-trail.active {
-    background: #a7a9ac;
+    background: #a7a9ac !important;
   }
   #mobile-navigation ul.menu li.active-trail li.active-trail.active {
     background: #a7a9ac;
@@ -6272,13 +6272,23 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li.active ul a.active,
   #mobile-navigation ul.menu li.active-menu-item ul a.active {
-    color: #bcbec0;
+    color: #ffffff;
+  }
+  #mobile-navigation ul.menu li.active ul li.persistant-trail,
+  #mobile-navigation ul.menu li.active-menu-item ul li.persistant-trail {
+    background: #595959;
   }
   #mobile-navigation ul.menu li {
     background: #000000;
     position: relative;
     width: 100%;
     border-bottom: 1px solid #bcbec0;
+  }
+  #mobile-navigation ul.menu li.first-active {
+    background: #595959;
+  }
+  #mobile-navigation ul.menu li.first-active.active {
+    background: #bcbec0;
   }
   #mobile-navigation ul.menu li.first {
     border-top: 1px solid #bcbec0;
@@ -6291,7 +6301,7 @@ select.with-style option[selected="selected"] {
     right: 10px;
     left: 0;
     text-align: right;
-    top: 1px;
+    top: 5px;
     font-family: 'ElegantIcons';
     z-index: 80;
   }
@@ -6305,7 +6315,6 @@ select.with-style option[selected="selected"] {
     text-transform: uppercase;
   }
   #mobile-navigation ul.menu li .menu-subcat {
-    display: none;
     overflow: hidden;
   }
   #mobile-navigation ul.menu li .menu-subcat li:last-child {
@@ -6313,10 +6322,7 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li .menu-subcat li .subcat-collapse,
   #mobile-navigation ul.menu li .menu-subcat li .subcat-expand {
-    display: none;
-  }
-  #mobile-navigation ul.menu li .active-trail .menu-subcat {
-    display: block;
+    left: 70%;
   }
   #mobile-navigation ul.menu li .active-trail .menu-subcat li {
     display: block;
@@ -6326,7 +6332,7 @@ select.with-style option[selected="selected"] {
     display: none;
   }
   #mobile-navigation ul.menu li ul li {
-    background: #3a3a3a;
+    background: #292929;
   }
   #mobile-navigation ul.menu li ul li.menu-views {
     padding-left: 35px;
@@ -6344,11 +6350,21 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu li ul ul {
     display: none;
   }
+  #mobile-navigation ul.menu li ul ul.active {
+    display: block;
+  }
+  #mobile-navigation ul.menu li ul ul.active li {
+    display: block !important;
+  }
   #mobile-navigation ul.menu li ul ul li {
     display: none;
   }
-  #mobile-navigation ul.menu li ul ul li ul {
-    display: none;
+  #mobile-navigation ul.menu li ul .active ul {
+    display: block;
+  }
+  #mobile-navigation ul.menu li ul .active ul li {
+    padding-left: 15px;
+    display: block;
   }
   #mobile-navigation ul.menu li:last-child {
     border-bottom: 1px solid #bcbec0;
@@ -6534,7 +6550,7 @@ select.with-style option[selected="selected"] {
   }
   .section-about-us #block-views-profiles-block .view-content .view-group--block.expanded .view-group__content {
     display: block;
-    background: #3a3a3a;
+    background: #595959;
     color: #ffffff;
   }
   .section-about-us #block-views-profiles-block .view-content .view-group--block.expanded .view-group__content p {
@@ -6577,10 +6593,11 @@ select.with-style option[selected="selected"] {
   .section-about-us #block-views-profiles-block .view-content .view-group--block .profile .profile__bio {
     display: none;
     margin-bottom: 0;
+    margin-top: 0;
   }
   .section-about-us #block-views-profiles-block .view-content .view-group--block .profile .profile__header-links {
     display: block;
-    background: #3a3a3a;
+    background: #595959;
   }
   .section-about-us #block-views-profiles-block .view-content .view-group--block .profile.expanded {
     border-bottom: solid 1px #a7a9ac;
