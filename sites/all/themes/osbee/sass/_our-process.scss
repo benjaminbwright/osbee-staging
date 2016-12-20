@@ -6,26 +6,47 @@
 //////////////////////
 
 
+
+@media screen and (min-width: 769px) {
+    .section-our-process {
+        .small_page_image {
+            width: 272px !important;
+            height: auto !important;
+            padding-right: 52px;
+        }
+        .menu-subcat {
+            display: none;
+        }
+    }
+
+}
+
+
 ///////////////////////
 // Responsive Styles //
 ///////////////////////
 
 @media screen and (max-width: $medium) {
+
     .section-our-process {
         max-width: 100%;
         // the page width from being scrollable horizontally
         overflow-x: hidden;
 
-        #block-block-8 {
-            left: 0;
-        }
         // The Image grid
         .field-name-field-small-image-gallery {
             display: none;
         }
 
-        .small_page_image {
-            //display: none;
+
+        #block-block-8 {
+            left: 0;
+            width: 100%;
+            a {
+                &:before {
+                    margin-top: 0;
+                }
+            }
         }
 
         // The main process menu block
@@ -37,7 +58,10 @@
                     li {
                         // Remove padding below menu items
                         //padding-bottom: 0;
+                        //
+
                         background: $black;
+                        text-align: center;
                         .prose {
                             p {
                                 text-align: left;
@@ -51,7 +75,7 @@
                             display: block !important;
                             background: transparent !important;
                             color: $light-gray !important;
-                            padding: 10px 10px 0 !important;
+                            padding: 15px 10px 5px 10px !important;
                             &.orange,
                             &.gray {
                                 background: $black;
@@ -83,6 +107,11 @@
                             }
                         }
                         &.active-trail {
+                                &.hidden {
+                                    .menu-subcat {
+                                        display: none !important;
+                                    }
+                                }
                             background: $black!important;
                             a {
                                 background: transparent !important;
@@ -97,7 +126,7 @@
                                 }
                             }
                             .subcat-expand {
-                                color: $black !important;
+                                color: $light-gray !important;
                             }
                             .menu-subcat {
                                 display: block !important;
@@ -112,7 +141,7 @@
                                     }
                                     .orange2,
                                     .orange3 {
-                                        color: $blue;
+                                        color: $white;
                                     }
                                     .field-name-field-image .even{
                                         margin-bottom: 0 !important;

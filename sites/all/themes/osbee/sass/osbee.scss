@@ -432,7 +432,8 @@ h1.term-name,
 /* line 135, ../src/scss/_page.scss */
 .section-our-process .field-name-field-menu-block {
   width: 174px;
-  padding-right: 127px;
+  //padding-right: 127px;
+  padding-right: 0;
 }
 
 /* line 140, ../src/scss/_page.scss */
@@ -1239,11 +1240,20 @@ span.views-slideshow-controls-text-pause {
 /* line 729, ../src/scss/_page.scss */
 #block-block-8 .block-content a {
   color: #A2A2A2;
-  display: block;
-  padding-left: 44px;
-  background: url(../images/small-pdf.png) no-repeat left top;
-  text-decoration: none;
+  display: flex;
+  //padding-left: 44px;
+  //background: url(../images/small-pdf.png) no-repeat left top;
+  //text-decoration: none;
+  &:before {
+    font-family: 'FontAwesome';
+    content: "\f1c1";
+    width: 50px;
+    font-size: 28px;
+    margin-top: 10px;
+  }
 }
+
+
 
 /* line 737, ../src/scss/_page.scss */
 sup,

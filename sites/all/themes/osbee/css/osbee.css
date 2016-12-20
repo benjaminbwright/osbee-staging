@@ -3570,7 +3570,7 @@ h1.term-name,
 /* line 135, ../src/scss/_page.scss */
 .section-our-process .field-name-field-menu-block {
   width: 174px;
-  padding-right: 127px;
+  padding-right: 0;
 }
 
 /* line 140, ../src/scss/_page.scss */
@@ -4367,10 +4367,14 @@ span.views-slideshow-controls-text-pause {
 /* line 729, ../src/scss/_page.scss */
 #block-block-8 .block-content a {
   color: #A2A2A2;
-  display: block;
-  padding-left: 44px;
-  background: url(../images/small-pdf.png) no-repeat left top;
-  text-decoration: none;
+  display: flex;
+}
+#block-block-8 .block-content a:before {
+  font-family: 'FontAwesome';
+  content: "\f1c1";
+  width: 50px;
+  font-size: 28px;
+  margin-top: 10px;
 }
 
 /* line 737, ../src/scss/_page.scss */
@@ -6247,9 +6251,6 @@ select.with-style option[selected="selected"] {
     background: transparent;
     color: #ffffff;
   }
-  #mobile-navigation ul.menu li.active-trail li.active-trail li.active-trail {
-    padding-left: 10px;
-  }
   #mobile-navigation ul.menu li.active,
   #mobile-navigation ul.menu li.active-menu-item {
     background: #a7a9ac;
@@ -6304,6 +6305,9 @@ select.with-style option[selected="selected"] {
     top: 5px;
     font-family: 'ElegantIcons';
     z-index: 80;
+  }
+  #mobile-navigation ul.menu li.first-active > .subcat-expand, #mobile-navigation ul.menu li.first-active > .subcat-collapse {
+    top: 7px;
   }
   #mobile-navigation ul.menu li a {
     display: inline-block;
@@ -6619,22 +6623,37 @@ select.with-style option[selected="selected"] {
   }
 }
 /* Our Process Page Styles ============================================================*/
+@media screen and (min-width: 769px) {
+  .section-our-process .small_page_image {
+    width: 272px !important;
+    height: auto !important;
+    padding-right: 52px;
+  }
+  .section-our-process .menu-subcat {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .section-our-process {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .section-our-process #block-block-8 {
-    left: 0;
-  }
   .section-our-process .field-name-field-small-image-gallery {
     display: none;
+  }
+  .section-our-process #block-block-8 {
+    left: 0;
+    width: 100%;
+  }
+  .section-our-process #block-block-8 a:before {
+    margin-top: 0;
   }
   .section-our-process .field-name-field-menu-block {
     padding-right: 0;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li {
     background: #000000;
+    text-align: center;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li .prose p {
     text-align: left;
@@ -6646,7 +6665,7 @@ select.with-style option[selected="selected"] {
     display: block !important;
     background: transparent !important;
     color: #bcbec0 !important;
-    padding: 10px 10px 0 !important;
+    padding: 15px 10px 5px 10px !important;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li a.orange, .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li a.gray {
     background: #000000;
@@ -6675,6 +6694,9 @@ select.with-style option[selected="selected"] {
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail {
     background: #000000 !important;
   }
+  .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail.hidden .menu-subcat {
+    display: none !important;
+  }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a {
     background: transparent !important;
     color: #bcbec0 !important;
@@ -6688,7 +6710,7 @@ select.with-style option[selected="selected"] {
     color: #bcbec0;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .subcat-expand {
-    color: #000000 !important;
+    color: #bcbec0 !important;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat {
     display: block !important;
@@ -6705,7 +6727,7 @@ select.with-style option[selected="selected"] {
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat #active-content .orange2,
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat #active-content .orange3 {
-    color: #5d86a0;
+    color: #ffffff;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat #active-content .field-name-field-image .even {
     margin-bottom: 0 !important;
@@ -7204,7 +7226,7 @@ select.with-style option[selected="selected"] {
     display: inline-block;
     text-decoration: none;
     color: #bcbec0;
-    padding: 10px 10px;
+    padding: 13px 10px;
     font-size: 18px;
     text-transform: uppercase;
     width: 97%;

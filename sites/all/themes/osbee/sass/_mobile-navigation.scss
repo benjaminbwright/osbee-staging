@@ -56,13 +56,6 @@
                         background: transparent;
                         color: #ffffff;
                     }
-                    li.active-trail {
-                        //background: #3a3a3a;
-                        padding-left: 10px;
-                        &.active {
-
-                        }
-                    }
                 }
             }
             li.active,
@@ -117,6 +110,12 @@
                     font-family: 'ElegantIcons';
                     z-index: 80;
 
+                }
+                &.first-active {
+                    & > .subcat-expand,
+                    & > .subcat-collapse {
+                        top: 7px;   
+                    }
                 }
                 a {
                     display: inline-block;

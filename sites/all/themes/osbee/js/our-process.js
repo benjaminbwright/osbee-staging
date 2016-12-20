@@ -1,6 +1,6 @@
 /////////////////////
 //Our Process Menu //
-/////////////////////
+///////////////////// 
 
 (function($){
     $(document).ready(function(){
@@ -13,6 +13,16 @@
             if (!document.getElementById("active-content")) {
                 $(".field-type-image").after('<div class="under-main-image responsive-narrow-body"></div>');
             }
+
+            $("a.active-trail").click(function(event){
+                event.preventDefault();
+                $(this).parent().parent().toggleClass("hidden");
+                if ($(this).parent().parent().hasClass("hidden")){
+                    $(".menu-block-3 .active .subcat-expand").html("&#x33;");
+                } else {
+                    $(".menu-block-3 .active .subcat-expand").html("&#x32;");
+                }
+            });
 
             var pageContent = $(".narrow-body");
             var pageImage = $(".field-name-field-image");
