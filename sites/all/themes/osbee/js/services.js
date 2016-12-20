@@ -18,6 +18,17 @@
         pageContent.clone().appendTo('.responsive-narrow-body');
         pageImage.clone().prependTo('.responsive-narrow-body');
 
+        $("a.active").click(function(event){
+            event.preventDefault();
+            $(this).parent().parent().toggleClass("hidden");
+            if ($(this).parent().parent().hasClass("hidden")){
+                $(".menu-block-1 .active .subcat-expand").html("&#x33;");
+            } else {
+                $(".menu-block-1 .active .subcat-expand").html("&#x32;");
+            }
+        });
+
+
         // Toggle between responsive and desktop content
         if ($(window).width() < 769 ){
             pageContent.hide();

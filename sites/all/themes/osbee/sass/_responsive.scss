@@ -566,6 +566,11 @@ $xlarge: 1024px;
                 margin-bottom: -15px;
             }
         }
+        .hidden {
+            .menu-subcat {
+                display: none !important;
+            }
+        }
     }
 
     // Mobile Portfolio

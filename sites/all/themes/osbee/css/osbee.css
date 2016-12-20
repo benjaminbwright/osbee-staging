@@ -6247,6 +6247,9 @@ select.with-style option[selected="selected"] {
     background: transparent;
     color: #ffffff;
   }
+  #mobile-navigation ul.menu li.active-trail li.active-trail li.active-trail {
+    padding-left: 10px;
+  }
   #mobile-navigation ul.menu li.active,
   #mobile-navigation ul.menu li.active-menu-item {
     background: #a7a9ac;
@@ -6317,6 +6320,7 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li .active-trail .menu-subcat li {
     display: block;
+    padding-left: 15px;
   }
   #mobile-navigation ul.menu li ul {
     display: none;
@@ -7227,6 +7231,9 @@ select.with-style option[selected="selected"] {
   }
   .menu-block-1 .field-name-field-image .field-item {
     margin-bottom: -15px;
+  }
+  .menu-block-1 .hidden .menu-subcat {
+    display: none !important;
   }
 
   #block-block-6 {
