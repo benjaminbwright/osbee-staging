@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.4//EN
+N:;;;;
+FN:Osbee Industries\, Inc.
+ORG:Osbee Industries\, Inc.;
+item1.EMAIL;type=INTERNET;type=pref:info@osbee.com
+item1.X-ABLabel:Info
+TEL;type=MAIN;type=pref:914-777-6611
+item2.ADR;type=pref:;;99 Calvert Street;Harrison;NY;10528;US
+item2.X-ABLabel:Headquarters
+item3.URL;type=pref:www.osbee.com
+item3.X-ABLabel:_$!<HomePage>!$_
+X-ABShowAs:COMPANY
+UID:b19b416d-f540-4400-9224-2d04a4df8259
+X-ABUID:B19B416D-F540-4400-9224-2D04A4DF8259:ABPerson
+END:VCARD
