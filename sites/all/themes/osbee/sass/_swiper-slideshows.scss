@@ -120,19 +120,32 @@
         .toggle-carousel {
             font-family: 'ElegantIcons';
             font-size: 8px;
-            position: absolute;
+            position: fixed;
             padding: 10px 3px;
-            top: -32px;
+            top: 47px;
+            right: 0;
             background: $blue;
             color: $white;
+            z-index: 1000;
         }
+        $portfolio-items-ease: .5s;
         .views-slideshow-controls-bottom {
+            -webkit-transition: $portfolio-items-ease ease;
+            -moz-transition: $portfolio-items-ease ease;
+            -o-transition: $portfolio-items-ease ease;
+            transition: $portfolio-items-ease ease;
             &.collapsed {
-                margin-top: 65px;
+                margin-top: 100vh;
                 height: 0 !important;
                 //overflow: hidden;
+                background: $black;
+                -webkit-transition: $portfolio-items-ease ease;
+                -moz-transition: $portfolio-items-ease ease;
+                -o-transition: $portfolio-items-ease ease;
+                transition: $portfolio-items-ease ease;
                 .jcarousel-skin-blank {
-                    display: none;
+                    //display: none;
+                    background: $black;
                 }
             }
         }
