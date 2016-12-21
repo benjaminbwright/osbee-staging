@@ -7591,6 +7591,10 @@ select.with-style option[selected="selected"] {
     font-family: 'MetaOT';
   }
 
+  .page-node-2 a {
+    color: #E6E6E6;
+  }
+
   .page-node-1079 .field-name-body {
     padding-left: 0;
   }
