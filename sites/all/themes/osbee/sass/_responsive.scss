@@ -759,6 +759,62 @@ $xlarge: 1024px;
         padding-top: 10px;
         font-style: italic;
     }
+
+
+
+    ///////////////////
+    // LOCATION PAGE //
+    ///////////////////
+
+    .page-node-36 {
+        .field-name-body {
+            .field-item {
+                div, p {
+                    float: none !important;
+                    padding-left: 10px !important;
+                }
+                ul {
+                    //list-style-type: none;
+                    margin-left: 0;
+                    li {
+                        list-style-type: none;
+                        margin-left: 10px;
+                        padding: 0;
+                        margin-top: 5px !important;
+                    }
+                }
+            }
+        }
+        .call,
+        .email,
+        .vcard,
+        .directions {
+            &:before {
+                font-family: "FontAwesome";
+                margin-right: 5px;
+            }
+            
+        }
+        .call:before {
+            content: "\f098";
+        }
+        .email:before {
+            content: "\f0e0";
+        }
+        .vcard:before {
+            content: "\f2bc";
+        }
+        .directions:before {
+            background: url(../images/directions.png) no-repeat;
+            background-size: 107%;
+            width: 16px;
+            height: 16px;
+            display: block;
+            display: inline-block;
+            content: '';
+        }
+    }
+
 }
 
 @media screen and (min-width: 769px){
@@ -816,7 +872,10 @@ $xlarge: 1024px;
         left: 4px;
     }
 
-    // Careers Page
+    //////////////////
+    // Careers Page //
+    //////////////////
+
     .page-node-1079 {
         .field-name-body {
             padding-left: 0;
@@ -842,10 +901,15 @@ $xlarge: 1024px;
         }
     }
 
-.front.domain-osbee-com .views-field.views-field-field-slide-caption {
-    font-size: 150%;
-    line-height: 1;
-}
+
+    .orange2 {
+        color: $white;
+    }
+
+    .front.domain-osbee-com .views-field.views-field-field-slide-caption {
+        font-size: 150%;
+        line-height: 1;
+    }
 
 }
 
@@ -944,141 +1008,5 @@ $xlarge: 1024px;
             font-size: 175% !important;
         }
 
-    }
-}
-/*
-@media (max-width: 710px) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 24%;
-    }
-}
-
-@media (max-width: $small) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 23%;
-    }
-}
-
-@media (max-width: 580px) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 20%;
-    }
-}
-
-@media (max-width: 483px) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 18%;
-    }
-}
-
-@media (max-width: $xsmall) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 16%;
-    }
-}
-
-@media (max-width: 375px) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 14%;
-    }
-}
-
-@media (max-width: 340px) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 12%;
-    }
-}
-
-@media (max-width: 310px) {
-    .section-portfolio-page #page .views_slideshow_controls_text_previous,
-    .section-portfolio-page #page .views_slideshow_controls_text_next {
-        top: 10%;
-    }
-}
-*/
-// Everything to do with the touch overlays on portfolio items.
-@media (max-width: $medium) {
-    .page-node-645 {
-        // make it possible to absolutely position the caption
-        // Constrain the size of the slide
-        // Position the text over the slide image
-
-        .views-slideshow-swiper-main-frame-row-item{
-            position: relative;
-            margin-bottom: 16px;
-            ::-webkit-scrollbar {
-                -webkit-appearance: none;
-                width: 7px;
-                height: 0;
-            }
-
-            ::-webkit-scrollbar-thumb {
-                border: 1px solid #ffffff;
-                border-radius: 4px;
-                background-color: rgba(0,0,0,.5);
-                -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-            }
-            .views-field-field-caption {
-                position: absolute;
-                z-index: 10000;
-                top: 0;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.75);
-                bottom: 1px;
-                overflow: scroll;
-                visibility: hidden;
-                .field-content {
-                    padding-left: 50px !important;
-                    padding-right: 50px !important;
-
-                }
-                &.caption-expanded {
-                    visibility: visible;
-                }
-
-                
-
-
-            }
-            .caption-expand {
-                display: inline-block;
-                position: absolute;
-                z-index: 10000;
-                width: 18px;
-                bottom: 2px;
-                left: 0px;
-                padding: 0px 4px 0px 14px;
-                color: #ffffff;
-                font-size: 24px;
-                background: #5d86a0;
-                pointer-events: s
-            }
-            .caption-close {
-                font-family: 'ElegantIcons' !important;
-                width: 26px;
-                padding: 0px 4px 0px 6px;
-            }
-        }       
-        // Set the background color of the text overlay
-        // Show trigger to close the overlay
-        .views-slideshow-controls-bottom, 
-        .views-slideshow-controls-top {
-            bottom: -175px;
-            top: initial !important;
-            position: relative !important;
-        }
-
-        .views_slideshow_controls_text_previous,
-        .views_slideshow_controls_text_next {
-            top:10% !important;
-            display:none;
-        }
     }
 }

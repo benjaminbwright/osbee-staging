@@ -3,7 +3,8 @@
       if (!$("body").hasClass("section-our-process")) {
         // Move main content on main services page
         
-        $(".menu-block-1 .active span").after('<ul class="menu menu-subcat"><li><div id="active-content" class="responsive-narrow-body"></div></li></ul>');
+        $(".menu-block-1 .active-trail").addClass("active");
+        $(".menu-block-1 a.active").parent().after('<ul class="menu menu-subcat"><li><div id="active-content" class="responsive-narrow-body"></div></li></ul>');
         if (!document.getElementById("active-content")) {
             $(".field-type-image").after('<div class="under-main-image responsive-narrow-body"></div>');
         }
