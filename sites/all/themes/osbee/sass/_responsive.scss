@@ -815,6 +815,46 @@ $xlarge: 1024px;
         }
     }
 
+    //////////////////////////
+    // AFFILIATIONS SECTION //
+    //////////////////////////
+
+    .page-node-37,
+    .page-node-38,
+    .page-node-39 {
+        .orangelink {
+            font-weight: normal;
+            color: $lighter-gray;
+        }
+        .field-name-body ul {
+            border-bottom: 1px #ffffff solid;
+            li {
+                    cursor: pointer;
+                    display: block;
+                    font-size: 110%;
+                    font-weight: normal;
+                    line-height: 110%;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    padding-left: 10px !important;
+                    background: none !important;
+                    width: 105% !important;
+                    margin: 0px -3px 0 -10px;
+                    border-top: 1px #ffffff solid;
+                    margin: 0 !important;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                }
+                &:before {
+                    border-left-color: $white;
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 769px){
