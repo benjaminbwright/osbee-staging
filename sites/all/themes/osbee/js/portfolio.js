@@ -58,9 +58,11 @@
         });
 
         $(".views-slideshow-controls-bottom").addClass("collapsed");
-        $(".section-portfolio-page .views-slideshow-controls-bottom").prepend('<div class="toggle-carousel">O</div>');
+        $(".section-portfolio-page .views-slideshow-controls-bottom").prepend('<div class="toggle-carousel icon icon-icon-portfolio-carousel-base3-multipler1"></div>');
         $(".toggle-carousel").click(function(){
             $(".views-slideshow-controls-bottom").toggleClass("collapsed");
+            $(this).toggleClass("icon-icon-portfolio-carousel-base3-multipler1");
+            $(this).toggleClass("icon-icon-portfolio-carousel-base3-single");
         });
 
         $(".section-portfolio-page .views-content-field-portfolio-image").click(function(){
