@@ -1,0 +1,46 @@
+////////////////////////////////////
+// Mobile Defaults in full screen //
+////////////////////////////////////
+
+// Hide the pre-existing site-slogan
+.site-slogan {
+    display: none;
+}
+
+
+.section-portfolio-page .region-content .block-views {
+    overflow: hidden;
+    height: 425px;
+}
+
+.menu-block-1 {
+    .active-trail ul.menu-subcat {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    // Hide vCard when not on mobile
+    // ToDo: vCard not showing up on ipad in portrait
+    .footer-company-info.locations,
+    .footer-company-info.v-card {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    #block-views-vertical-slideshow-block {
+        display: none;
+    }
+
+    #block-block-7--2 {
+        display: none;
+    }
+
+    .subcat-expand,
+    .subcat-collapse {
+        display: none;
+    }
+}

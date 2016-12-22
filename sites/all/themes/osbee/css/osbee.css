@@ -6499,7 +6499,7 @@ select.with-style option[selected="selected"] {
 }
 .views-field-field-slide-caption .field-content {
   text-shadow: 1px 1px 2px #344762;
-  padding: 20px;
+  padding: 40px;
 }
 
 @media screen and (min-width: 769px) {
@@ -6884,6 +6884,25 @@ select.with-style option[selected="selected"] {
   .page-modal-forms #main-content label {
     color: #000000;
   }
+
+  .page-node-1079 .field-name-body {
+    padding-left: 0;
+  }
+  .page-node-1079 .field-name-body .field-item p a.button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .page-node-1079 .field-name-body .field-item p img {
+    position: static;
+    width: auto !important;
+  }
+  .page-node-1079 .field-name-body .field-item p img.dave {
+    width: 105% !important;
+    height: auto !important;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .page-blog .view-archive {
@@ -6908,7 +6927,7 @@ select.with-style option[selected="selected"] {
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .footer-company-info.locations,
   .footer-company-info.v-card {
     display: none;
@@ -7677,25 +7696,6 @@ select.with-style option[selected="selected"] {
 
   .page-node-2 a {
     color: #E6E6E6;
-  }
-
-  .page-node-1079 .field-name-body {
-    padding-left: 0;
-  }
-  .page-node-1079 .field-name-body .field-item p a.button {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
-  .page-node-1079 .field-name-body .field-item p img {
-    position: static;
-    width: auto !important;
-  }
-  .page-node-1079 .field-name-body .field-item p img.dave {
-    width: 105% !important;
-    height: auto !important;
-    margin-left: -10px !important;
-    margin-right: -10px !important;
   }
 
   .orange2 {
