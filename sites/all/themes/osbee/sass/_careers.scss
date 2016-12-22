@@ -74,6 +74,9 @@
             }
         }
     }
+
+    // Form Styles 
+    
     #webform-client-form-1078 .webform-component-textfield, 
     #webform-client-form-1078 .webform-component-email, 
     #webform-client-form-1078 .webform-component-select {
@@ -93,4 +96,32 @@
             }
         }
     }
+
+
+    .page-node-1079 {
+        .field-name-body {
+            padding-left: 0;
+            .field-item {
+                p {
+                    a.button {
+                        position: fixed;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    img {
+                        position: static;
+                        width: auto !important;
+                        &.dave {
+                            width: 105% !important;
+                            height: auto !important;
+                            margin-left: -10px !important;
+                            margin-right: -10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 }

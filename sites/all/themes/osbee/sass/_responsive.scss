@@ -1,74 +1,17 @@
 // Responsive Styles for Osbee ===================================================
 
-// Breakpoints
-
-// xsmall = 0 - 400
-$xsmall: 400px; 
-
-// small = 400 - 640
-$small: 640px;
- 
-// medium = 640 - 768
-$medium: 768px;
- 
-// large = 768 - 1024
-$large: 1024px;
-
-// xlarge = 1024 +
-// Set this as a min-width;
-$xlarge: 1024px;
 
 // Something new
 
-
+@import "breakpoints";
 @import "mobile-navigation";
 @import "swiper-slideshows";
 @import "about-us";
 @import "our-process";
 @import "careers";
 @import "blog";
+@import "fullscreen-defaults";
 
-// Mobile Defaults in full screen ===============================================
-
-
-.site-slogan {
-    display: none;
-}
-
-.section-portfolio-page .region-content .block-views {
-    overflow: hidden;
-    height: 425px;
-}
-
-.menu-block-1 {
-    .active-trail ul.menu-subcat {
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 768px)
-{
-    .footer-company-info.locations,
-    .footer-company-info.v-card {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 769px) {
-    #block-views-vertical-slideshow-block {
-        display: none;
-    }
-
-    #block-block-7--2 {
-        display: none;
-    }
-
-    .subcat-expand,
-    .subcat-collapse {
-        display: none;
-    }
-}
 
 @media screen and (max-width: $medium) and (orientation: landscape) {
     #block-block-7--2 {
@@ -573,6 +516,7 @@ $xlarge: 1024px;
         }
     }
 
+
     // Mobile Portfolio
     
     #block-block-6 {
@@ -922,34 +866,6 @@ $xlarge: 1024px;
         }
     }
 
-    //////////////////
-    // Careers Page //
-    //////////////////
-
-    .page-node-1079 {
-        .field-name-body {
-            padding-left: 0;
-            .field-item {
-                p {
-                    a.button {
-                        position: fixed;
-                        bottom: 0;
-                        right: 0;
-                    }
-                    img {
-                        position: static;
-                        width: auto !important;
-                        &.dave {
-                            width: 105% !important;
-                            height: auto !important;
-                            margin-left: -10px !important;
-                            margin-right: -10px !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
 
     .orange2 {
