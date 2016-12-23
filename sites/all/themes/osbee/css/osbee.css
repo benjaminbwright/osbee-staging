@@ -7762,6 +7762,10 @@ select.with-style option[selected="selected"] {
     font-size: 150%;
     line-height: 1;
   }
+
+  #main-content .view-in-page-menu-portfolio-items .views-row .views-field-title a {
+    line-height: 5.5vh;
+  }
 }
 @media (max-width: 640px) {
   .view-in-page-menu-portfolio-items .views-row {
