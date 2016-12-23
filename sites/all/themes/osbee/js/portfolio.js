@@ -1,13 +1,15 @@
 (function($){
-    $(document).load(function(){
-        
-    });
     $(document).ready(function(){
 
-        // Portfolio Overlay 
+        // Portfolio Overlay - Deprecated (remove)
+        // This is only for a test version of the portfolio where the captions appeared over the images
+        // Page node for the portfolio
         page = $(".page-node-645");
+        // The caption under the image
         portfolioCaption = $(".page-node-645 .views-field-field-caption");
+        // The specific caption
         thisCaption = $(".views-field-field-caption");
+        // The caption expand trigger
         captionExpand = $(".caption-expand");
 
         portfolioCaption.after('<div class="caption-expand">i</div>');
@@ -22,7 +24,10 @@
             }
         });
 
-        // Slide back to first slide.
+        
+
+        // Slide back to first slide after the page is loaded.
+        // This resolves conflicts between and swiper.js slider and the jcarousel pager generating thumbnails.
         $(".jcarousel-item-1").trigger("click");
 
         pagerOffset = 50;
@@ -54,7 +59,5 @@
         });
 
     });
-
-
-      
+   
 })(jQuery);
