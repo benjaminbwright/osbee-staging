@@ -3056,8 +3056,8 @@
 
 @font-face {
   font-family: "osbee-icons";
-  src: url("fonts/osbee-icons.eot");
-  src: url("fonts/osbee-icons.eot?#iefix") format("embedded-opentype"), url("fonts/osbee-icons.woff") format("woff"), url("fonts/osbee-icons.ttf") format("truetype"), url("fonts/osbee-icons.svg#osbee-icons") format("svg");
+  src: url("../fonts/osbee-icons.eot");
+  src: url("../fonts/osbee-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/osbee-icons.woff") format("woff"), url("../fonts/osbee-icons.ttf") format("truetype"), url("../fonts/osbee-icons.svg#osbee-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
