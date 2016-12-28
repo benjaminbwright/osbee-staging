@@ -398,6 +398,8 @@
 
 
         // First Level of menu
+        #block-views-latest-posts-block ul,
+        #block-views-latest-posts-block-1 ul,
         ul.menu {
             border-top: 1px solid $light-gray;
             &.active,
@@ -940,10 +942,18 @@
         display: none;
     }
 
-.front.domain-osbee-com .views-field.views-field-field-slide-caption {
-    font-size: 150%;
-    line-height: 1;
-}
+    .front.domain-osbee-com .views-field.views-field-field-slide-caption {
+        font-size: 150%;
+        line-height: 1;
+    }
+
+    #main-content .view-in-page-menu-portfolio-items .views-row {
+        .views-field-title {
+            a {
+                line-height: 5.5vh;
+            }
+        }
+    }
 
     
 }
