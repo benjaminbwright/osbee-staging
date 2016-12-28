@@ -882,6 +882,11 @@
 }
 
 @media (orientation: landscape) and (max-width: $medium) {
+
+    #drawer-menu {
+        position: absolute;
+    }
+    
     .front #page {
         max-height: 100vh;
         overflow: hidden;
