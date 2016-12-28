@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 /*!
  * Osbee theme
  * @author DNL Omnimedia
@@ -6931,6 +6930,50 @@ select.with-style option[selected="selected"] {
   }
 }
 @media screen and (max-width: 768px) {
+  .page-node-36 .field-name-body .field-item div, .page-node-36 .field-name-body .field-item p {
+    float: none !important;
+    padding-left: 10px !important;
+  }
+  .page-node-36 .field-name-body .field-item ul {
+    margin-left: 0;
+  }
+  .page-node-36 .field-name-body .field-item ul li {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+    margin-top: 5px !important;
+  }
+  .page-node-36 .call:before,
+  .page-node-36 .email:before,
+  .page-node-36 .vcard:before,
+  .page-node-36 .directions:before {
+    font-family: "FontAwesome";
+    margin-right: 5px;
+  }
+  .page-node-36 .call:before {
+    content: "\f098";
+  }
+  .page-node-36 .email:before {
+    content: "\f0e0";
+  }
+  .page-node-36 .vcard:before {
+    content: "\f2bc";
+  }
+  .page-node-36 .directions:before {
+    background: url(../images/directions.png) no-repeat;
+    background-size: 107%;
+    width: 16px;
+    height: 16px;
+    display: block;
+    display: inline-block;
+    content: '';
+  }
+
+  iframe {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .page-blog .view-archive {
     display: none;
   }
@@ -6994,7 +7037,8 @@ select.with-style option[selected="selected"] {
   }
 
   a {
-    color: #5d86a0;
+    color: #E6E6E6;
+    font-weight: normal;
   }
 
   span.views-slideshow-controls-text-next,
@@ -7679,6 +7723,10 @@ select.with-style option[selected="selected"] {
     content: '';
   }
 
+  iframe {
+    display: none;
+  }
+
   .page-node-37 .orangelink,
   .page-node-38 .orangelink,
   .page-node-39 .orangelink {
@@ -7880,78 +7928,3 @@ select.with-style option[selected="selected"] {
 }
 
 /*# sourceMappingURL=osbee.css.map */
-=======
-/*
-Error: Invalid CSS after "  src:": expected "{", was "url("../fonts/o..."
-        on line 6 of sass/_osbee-font.scss
-        from line 14 of sass/osbee.scss
-
-1: @charset "UTF-8";
-2: 
-3: @font-face {
-4:   font-family: "osbee-icons";
-5: <<<<<<< HEAD
-6:   src:url("../fonts/osbee-icons.eot");
-7:   src:url("../fonts/osbee-icons.eot?#iefix") format("embedded-opentype"),
-8:     url("../fonts/osbee-icons.woff") format("woff"),
-9:     url("../fonts/osbee-icons.ttf") format("truetype"),
-10:     url("../fonts/osbee-icons.svg#osbee-icons") format("svg");
-11: =======
-
-Backtrace:
-sass/_osbee-font.scss:6
-sass/osbee.scss:14
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:213:in `directive_body'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:205:in `directive'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:391:in `run'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/Users/benjaminwright/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/Users/benjaminwright/.rbenv/versions/2.3.0/bin/sass:22:in `load'
-/Users/benjaminwright/.rbenv/versions/2.3.0/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  src:\": expected \"{\", was \"url(\"../fonts/o...\"\A         on line 6 of sass/_osbee-font.scss\A         from line 14 of sass/osbee.scss\A \A 1: @charset \"UTF-8\";\A 2: \A 3: @font-face {\A 4:   font-family: \"osbee-icons\";\A 5: <<<<<<< HEAD\A 6:   src:url(\"../fonts/osbee-icons.eot\");\A 7:   src:url(\"../fonts/osbee-icons.eot?#iefix\") format(\"embedded-opentype\"),\A 8:     url(\"../fonts/osbee-icons.woff\") format(\"woff\"),\A 9:     url(\"../fonts/osbee-icons.ttf\") format(\"truetype\"),\A 10:     url(\"../fonts/osbee-icons.svg#osbee-icons\") format(\"svg\");\A 11: ======="; }
->>>>>>> Stashed changes

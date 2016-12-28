@@ -1,0 +1,65 @@
+////////////////////
+// Locations Page //
+////////////////////
+
+//Desktop defaults.
+
+
+
+// Mobile Styles
+@media screen and (max-width: $medium) {
+
+    .page-node-36 {
+        .field-name-body {
+            .field-item {
+                div, p {
+                    float: none !important;
+                    padding-left: 10px !important;
+                }
+                ul {
+                    //list-style-type: none;
+                    margin-left: 0;
+                    li {
+                        list-style-type: none;
+                        margin-left: 10px;
+                        padding: 0;
+                        margin-top: 5px !important;
+                    }
+                }
+            }
+        }
+        .call,
+        .email,
+        .vcard,
+        .directions {
+            &:before {
+                font-family: "FontAwesome";
+                margin-right: 5px;
+            }
+            
+        }
+        .call:before {
+            content: "\f098";
+        }
+        .email:before {
+            content: "\f0e0";
+        }
+        .vcard:before {
+            content: "\f2bc";
+        }
+        .directions:before {
+            background: url(../images/directions.png) no-repeat;
+            background-size: 107%;
+            width: 16px;
+            height: 16px;
+            display: block;
+            display: inline-block;
+            content: '';
+        }
+    }
+
+    iframe {
+        display: none;
+    }
+
+}

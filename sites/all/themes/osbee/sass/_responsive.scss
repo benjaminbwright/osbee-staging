@@ -9,6 +9,7 @@
 @import "about-us";
 @import "our-process";
 @import "careers";
+@import "locations";
 @import "blog";
 @import "fullscreen-defaults";
 
@@ -39,7 +40,8 @@
     }
     
     a {
-        color: $blue;
+        color: $lighter-gray;
+        font-weight: normal;
     }
 
     span.views-slideshow-controls-text-next,
