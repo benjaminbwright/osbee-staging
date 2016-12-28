@@ -111,7 +111,17 @@
                 $(this).html("&#x33;");
             }
 
+            // Scroll to active menu item
+            var container = $("html,body");
+            var scrollTo = $(".profile.expanded");
+            //var scrollTo = $("#node-page-full-group-prev-next");
+
+            if (scrollTo.offset() !== null) { 
+                container.animate({ scrollTop: scrollTo.offset().top},'1200');
+            }
+
         });
+
 
 
 
@@ -143,6 +153,15 @@
                 $(this).html("&#x33;");
             }
 
+            // Scroll to active menu item
+            var container = $("html,body");
+            var scrollTo = $(".profile.expanded");
+            //var scrollTo = $("#node-page-full-group-prev-next");
+
+            if (scrollTo.offset() !== null) { 
+                container.animate({ scrollTop: scrollTo.offset().top},'1200');
+            }
+
         });
 
         // Expand the first profile in each group
@@ -155,6 +174,7 @@
         });
 
         $(".section-about-us .subcat-expand").eq(0).trigger('click');
+
 
     });
 })(jQuery);

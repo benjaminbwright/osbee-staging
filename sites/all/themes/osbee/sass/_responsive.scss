@@ -398,6 +398,8 @@
 
 
         // First Level of menu
+        #block-views-latest-posts-block ul,
+        #block-views-latest-posts-block-1 ul,
         ul.menu {
             border-top: 1px solid $light-gray;
             &.active,
