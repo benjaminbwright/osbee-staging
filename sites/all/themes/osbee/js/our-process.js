@@ -14,7 +14,7 @@
                 $(".field-type-image").after('<div class="under-main-image responsive-narrow-body"></div>');
             }
 
-            $("a.active-trail").click(function(event){
+            $(".menu-block-3 a.active-trail").click(function(event){
                 event.preventDefault();
                 $(this).parent().parent().toggleClass("hidden");
                 if ($(this).parent().parent().hasClass("hidden")){
