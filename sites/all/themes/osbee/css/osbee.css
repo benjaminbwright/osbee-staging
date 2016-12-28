@@ -6313,7 +6313,7 @@ select.with-style option[selected="selected"] {
     color: #ffffff;
   }
   #mobile-navigation ul.menu li.active-trail.active {
-    background: #a7a9ac !important;
+    background: #a7a9ac;
   }
   #mobile-navigation ul.menu li.active-trail li.active-trail.active {
     background: #a7a9ac;
@@ -6334,21 +6334,24 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu li.active-menu-item .subcat-expand {
     color: #ffffff;
   }
-  #mobile-navigation ul.menu li.active .menu-subcat,
-  #mobile-navigation ul.menu li.active-menu-item .menu-subcat {
+  #mobile-navigation ul.menu li.active > .menu-subcat,
+  #mobile-navigation ul.menu li.active-menu-item > .menu-subcat {
     display: block;
   }
   #mobile-navigation ul.menu li.active ul,
   #mobile-navigation ul.menu li.active-menu-item ul {
     border: none;
   }
+  #mobile-navigation ul.menu li.active ul li.active,
+  #mobile-navigation ul.menu li.active-menu-item ul li.active {
+    background: #595959;
+  }
   #mobile-navigation ul.menu li.active ul a.active,
   #mobile-navigation ul.menu li.active-menu-item ul a.active {
     color: #ffffff;
   }
-  #mobile-navigation ul.menu li.active ul li.persistant-trail,
-  #mobile-navigation ul.menu li.active-menu-item ul li.persistant-trail {
-    background: #595959;
+  #mobile-navigation ul.menu li.active-page {
+    background: #5d86a0 !important;
   }
   #mobile-navigation ul.menu li {
     background: #000000;
@@ -6420,7 +6423,11 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li ul li a {
     padding-left: 35px;
+    width: 89%;
     font-size: 13px;
+  }
+  #mobile-navigation ul.menu li ul li ul li {
+    background: #595959;
   }
   #mobile-navigation ul.menu li ul ul {
     display: none;
@@ -6433,6 +6440,7 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li ul ul li {
     display: none;
+    padding-left: 15px;
   }
   #mobile-navigation ul.menu li ul .active ul {
     display: block;
@@ -6794,25 +6802,25 @@ select.with-style option[selected="selected"] {
     margin-left: 3px;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail {
-    background: #000000 !important;
+    background: #bcbec0 !important;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail.hidden .menu-subcat {
     display: none !important;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a {
     background: transparent !important;
-    color: #bcbec0 !important;
+    color: #000000 !important;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a .box-left,
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a .box-right {
     background: #000000;
-    color: #bcbec0;
+    color: #000000;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail a .box-top {
-    color: #bcbec0;
+    color: #000000;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .subcat-expand {
-    color: #bcbec0 !important;
+    color: #000000 !important;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat {
     display: block !important;
@@ -6820,9 +6828,13 @@ select.with-style option[selected="selected"] {
     margin-top: 10px;
     border: none;
   }
+  .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat li {
+    background: #292929 !important;
+  }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat #active-content {
     margin-bottom: 0;
     margin-top: -15px;
+    background: #292929;
   }
   .section-our-process .field-name-field-menu-block .menu-block-wrapper ul.menu li.active-trail .menu-subcat #active-content img {
     margin-bottom: 25px;
@@ -7183,7 +7195,7 @@ select.with-style option[selected="selected"] {
   }
 
   #drawer-menu-toggle {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: 50px;
@@ -7358,7 +7370,7 @@ select.with-style option[selected="selected"] {
     font-size: 1.7em;
     position: absolute;
     color: #bcbec0;
-    right: 10px;
+    right: 45px;
     top: 4px;
     text-align: right;
     padding: 10px 10px;
@@ -7394,10 +7406,34 @@ select.with-style option[selected="selected"] {
   #main-content ul.menu li .menu-subcat li:last-child {
     border: none;
   }
+  #main-content #block-views-latest-posts-block ul li.active,
+  #main-content #block-views-latest-posts-block-1 ul li.active,
+  #main-content ul.menu li.active {
+    background: #292929;
+  }
   #main-content #block-views-latest-posts-block ul li.active .menu-subcat,
   #main-content #block-views-latest-posts-block-1 ul li.active .menu-subcat,
   #main-content ul.menu li.active .menu-subcat {
     display: block;
+  }
+  #main-content #block-views-latest-posts-block ul li.active .narrow-body,
+  #main-content #block-views-latest-posts-block-1 ul li.active .narrow-body,
+  #main-content ul.menu li.active .narrow-body {
+    background: #292929;
+  }
+  #main-content #block-views-latest-posts-block ul li.active a,
+  #main-content #block-views-latest-posts-block-1 ul li.active a,
+  #main-content ul.menu li.active a {
+    background: #E6E6E6;
+    color: #000000;
+  }
+  #main-content #block-views-latest-posts-block ul li.active .subcat-expand,
+  #main-content #block-views-latest-posts-block ul li.active .subcat-collapse,
+  #main-content #block-views-latest-posts-block-1 ul li.active .subcat-expand,
+  #main-content #block-views-latest-posts-block-1 ul li.active .subcat-collapse,
+  #main-content ul.menu li.active .subcat-expand,
+  #main-content ul.menu li.active .subcat-collapse {
+    color: #000000;
   }
   #main-content #block-views-latest-posts-block ul li ul li a,
   #main-content #block-views-latest-posts-block-1 ul li ul li a,

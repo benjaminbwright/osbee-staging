@@ -15,6 +15,8 @@
         $('#mobile-navigation li.active-trail:first').toggleClass('active');
         // Make the parent li of an active link active
         $('#mobile-navigation li.active-trail a.active').parent().addClass('active');
+        $('#mobile-navigation li.active-trail:not(:has(li.active-trail))').addClass('active-page');
+        $('#mobile-navigation li.active-page').parent().addClass('active');
         // Highlight the first active-trail item.
         $("#mobile-navigation li.active-trail").first().addClass("first-active");
 
@@ -26,8 +28,11 @@
                     if ($(this).hasClass('active')) {
                         $(this).removeClass('active');
                         $(this).find(".subcat-expand").html("&#x33;");
+                        
                     }
                 });
+               $(this).next(".menu-subcat.active").removeClass("active");
+
                 $("#mobile-navigation .first-active").removeClass("active-trail");
                 
                 // Open the new menu item
@@ -39,13 +44,13 @@
                 
                 $(this).find('a.active-trail').parent().addClass('active-trail');
 
-
             } else {
                 // Only close the current menu item
                 $(this).parent().removeClass('active');
+                //$(this).parent().next("ul.menu-subcat").addClass('active');
             }
 
-            $('#mobile-navigation a.active').parent().addClass('active');
+            //$('#mobile-navigation .active-trail a.active').parent().addClass('active');
 
             if ($(this).parent().hasClass('active')) {
                 $(this).html("&#x32;");

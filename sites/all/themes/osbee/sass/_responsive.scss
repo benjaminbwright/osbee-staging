@@ -254,7 +254,7 @@
 
         }
             #drawer-menu-toggle {
-                position: absolute;
+                position: fixed;
                 right: 0;
                 top: 0;
                 width: 50px;
@@ -429,7 +429,7 @@
                     font-size: 1.7em;
                     position: absolute;
                     color: #bcbec0;
-                    right: 10px;
+                    right: 45px;
                     //left: 100%;
                     top: 4px;
                     text-align: right;
@@ -462,8 +462,23 @@
                     }
                 }
                 &.active {
+                    background: $gray-darker;
                     .menu-subcat {
                         display: block;
+                    }
+                    .narrow-body { 
+                        background: $gray-darker;
+
+                    }
+                    a {
+                        background: $lighter-gray;
+                        color: $black;
+                    }
+
+                    .subcat-expand,
+                    .subcat-collapse {
+                        color: $black;
+                        
                     }
                 }
 

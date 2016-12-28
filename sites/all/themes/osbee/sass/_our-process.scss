@@ -107,35 +107,40 @@
                             }
                         }
                         &.active-trail {
+                            
                                 &.hidden {
                                     .menu-subcat {
                                         display: none !important;
                                     }
                                 }
-                            background: $black!important;
+                            background: $light-gray !important;
                             a {
                                 background: transparent !important;
-                                color: $light-gray !important;
+                                color: $black !important;
                                 .box-left,
                                 .box-right {
                                     background: $black;
-                                    color: $light-gray;
+                                    color: $black;
                                 }
                                 .box-top {
-                                    color: $light-gray;
+                                    color: $black;
                                 }
                             }
                             .subcat-expand {
-                                color: $light-gray !important;
+                                color: $black !important;
                             }
                             .menu-subcat {
                                 display: block !important;
                                 margin-bottom: -10px;
                                 margin-top: 10px;
                                 border: none;
+                                li {
+                                    background: $gray-darker !important;
+                                }
                                 #active-content {
                                     margin-bottom: 0;
                                     margin-top: -15px;
+                                    background: $gray-darker;
                                     img {
                                         margin-bottom: 25px;
                                     }
