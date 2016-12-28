@@ -6309,7 +6309,7 @@ select.with-style option[selected="selected"] {
     color: #ffffff;
   }
   #mobile-navigation ul.menu li.active-trail.active {
-    background: #a7a9ac !important;
+    background: #a7a9ac;
   }
   #mobile-navigation ul.menu li.active-trail li.active-trail.active {
     background: #a7a9ac;
@@ -6330,21 +6330,24 @@ select.with-style option[selected="selected"] {
   #mobile-navigation ul.menu li.active-menu-item .subcat-expand {
     color: #ffffff;
   }
-  #mobile-navigation ul.menu li.active .menu-subcat,
-  #mobile-navigation ul.menu li.active-menu-item .menu-subcat {
+  #mobile-navigation ul.menu li.active > .menu-subcat,
+  #mobile-navigation ul.menu li.active-menu-item > .menu-subcat {
     display: block;
   }
   #mobile-navigation ul.menu li.active ul,
   #mobile-navigation ul.menu li.active-menu-item ul {
     border: none;
   }
+  #mobile-navigation ul.menu li.active ul li.active,
+  #mobile-navigation ul.menu li.active-menu-item ul li.active {
+    background: #595959;
+  }
   #mobile-navigation ul.menu li.active ul a.active,
   #mobile-navigation ul.menu li.active-menu-item ul a.active {
     color: #ffffff;
   }
-  #mobile-navigation ul.menu li.active ul li.persistant-trail,
-  #mobile-navigation ul.menu li.active-menu-item ul li.persistant-trail {
-    background: #595959;
+  #mobile-navigation ul.menu li.active-page {
+    background: #5d86a0 !important;
   }
   #mobile-navigation ul.menu li {
     background: #000000;
@@ -6418,6 +6421,9 @@ select.with-style option[selected="selected"] {
     padding-left: 35px;
     font-size: 13px;
   }
+  #mobile-navigation ul.menu li ul li ul li {
+    background: #595959;
+  }
   #mobile-navigation ul.menu li ul ul {
     display: none;
   }
@@ -6429,6 +6435,7 @@ select.with-style option[selected="selected"] {
   }
   #mobile-navigation ul.menu li ul ul li {
     display: none;
+    padding-left: 15px;
   }
   #mobile-navigation ul.menu li ul .active ul {
     display: block;
@@ -7166,7 +7173,7 @@ select.with-style option[selected="selected"] {
   }
 
   #drawer-menu-toggle {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: 50px;
