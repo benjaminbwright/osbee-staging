@@ -911,9 +911,13 @@
 }
 
 @media (orientation: landscape) and (max-width: $medium) {
+    body {
+        position: relative;
+    }
 
     #drawer-menu {
         position: absolute;
+        bottom: -25px;
     }
     
     .front #page {
