@@ -6,6 +6,9 @@ sites/*/settings*.php
 sites/default/settings.php
 >>>>>>> develop
 
+# Ignore Sass cacheing
+
+
 # Ignore paths that contain user-generated content.
 # sites/*/files
 # sites/*/private

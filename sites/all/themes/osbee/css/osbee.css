@@ -7782,6 +7782,10 @@ select.with-style option[selected="selected"] {
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {
+  #drawer-menu {
+    position: absolute;
+  }
+
   .front #page {
     max-height: 100vh;
     overflow: hidden;
