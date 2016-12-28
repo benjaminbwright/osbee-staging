@@ -18,9 +18,9 @@
                 event.preventDefault();
                 $(this).parent().parent().toggleClass("hidden");
                 if ($(this).parent().parent().hasClass("hidden")){
-                    $(".menu-block-3 .active .subcat-expand").html("&#x33;");
+                    $(".menu-block-3 .active-trail .subcat-expand").html("&#x33;");
                 } else {
-                    $(".menu-block-3 .active .subcat-expand").html("&#x32;");
+                    $(".menu-block-3 .active-trail .subcat-expand").html("&#x32;");
                 }
             });
 
