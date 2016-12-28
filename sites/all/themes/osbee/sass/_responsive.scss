@@ -580,27 +580,41 @@
         }
         .views-slideshow-controls-bottom {
             width: 100%;
-            position: absolute;
             bottom: initial;
-            background: $black;
-            padding-top: 15px;
             margin-left: 0 !important;
+            position: fixed;
+            top: 118px !important;
+            bottom: 0 !important;
+            background: $black;
+            z-index: 100 !important;
+            padding-top: 2%;
+            overflow-y: scroll;
+            min-height: 100vh;
             .jcarousel-list-horizontal {
                 //width: 98% !important;
-                height: 65px;
+                left: 0 !important;
+                height: auto;
                 overflow: hidden;
-                margin-left: 2.5% !important;
+                margin-left: 5% !important;
+                width: 95% !important;
                 .views_slideshow_jcarousel_pager_item {
                     margin-bottom: 15px;
-                    margin-left: 6px !important;
-                    height: 50px !important;
-                    width: 50px !important;
+                    margin-left: 1.5% !important;
+                    margin-right: 1.5% !important;
+                    height: 29.5% !important;
+                    width: 29.5% !important;
                     img {
                         margin: 0 !important;
                     }
+                    .views-field-field-portfolio-image {
+                        margin: 0;
+                        float: none !important;
+                        height: auto;
+                        width: 100% !important;
+                    }
                     .views-content-field-portfolio-image {
-                        width: 50px;
-                        height: 50px;
+                        width: 100%;
+                        height: 100%;
                     }
                     .slide-number {
                         background: $blue !important;
@@ -614,7 +628,7 @@
     }
     .section-portfolio .group-links {
         bottom: -35px;
-        z-index: 10000;
+        z-index: 75;
         padding-bottom: 10px;
     }
 
