@@ -6281,6 +6281,10 @@ select.with-style option[selected="selected"] {
   display: none;
 }
 
+.statistics_counter {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   #navigation {
     display: none;
@@ -6541,20 +6545,33 @@ select.with-style option[selected="selected"] {
   }
 
   .section-portfolio-page .toggle-carousel {
-    font-family: 'ElegantIcons';
-    font-size: 8px;
-    position: absolute;
-    padding: 10px 3px;
-    top: -32px;
+    font-family: 'osbee-icons';
+    font-size: 19px;
+    position: fixed;
+    padding: 5px 10px;
+    top: 47px;
+    right: 0;
     background: #5d86a0;
     color: #ffffff;
+    z-index: 1000;
+  }
+  .section-portfolio-page .views-slideshow-controls-bottom {
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   .section-portfolio-page .views-slideshow-controls-bottom.collapsed {
-    margin-top: 65px;
+    margin-top: 100vh;
     height: 0 !important;
+    background: #000000;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   .section-portfolio-page .views-slideshow-controls-bottom.collapsed .jcarousel-skin-blank {
-    display: none;
+    background: #000000;
   }
 }
 #node-1141 .field-name-field-image {
@@ -7578,29 +7595,43 @@ select.with-style option[selected="selected"] {
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom {
     width: 100%;
-    position: absolute;
     bottom: initial;
-    background: #000000;
-    padding-top: 15px;
     margin-left: 0 !important;
+    position: fixed;
+    top: 118px !important;
+    bottom: 0 !important;
+    background: #000000;
+    z-index: 100 !important;
+    padding-top: 2%;
+    overflow-y: scroll;
+    min-height: 100vh;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal {
-    height: 65px;
+    left: 0 !important;
+    height: auto;
     overflow: hidden;
-    margin-left: 2.5% !important;
+    margin-left: 5% !important;
+    width: 95% !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item {
     margin-bottom: 15px;
-    margin-left: 6px !important;
-    height: 50px !important;
-    width: 50px !important;
+    margin-left: 1.5% !important;
+    margin-right: 1.5% !important;
+    height: 29.5% !important;
+    width: 29.5% !important;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item img {
     margin: 0 !important;
   }
+  .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image {
+    margin: 0;
+    float: none !important;
+    height: auto;
+    width: 100% !important;
+  }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item .views-content-field-portfolio-image {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
   }
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom .jcarousel-list-horizontal .views_slideshow_jcarousel_pager_item .slide-number {
     background: #5d86a0 !important;
@@ -7610,7 +7641,7 @@ select.with-style option[selected="selected"] {
 
   .section-portfolio .group-links {
     bottom: -35px;
-    z-index: 10000;
+    z-index: 75;
     padding-bottom: 10px;
   }
 

@@ -12,7 +12,7 @@
         // The caption expand trigger
         captionExpand = $(".caption-expand");
 
-        portfolioCaption.after('<div class="caption-expand">i</div>');
+        //portfolioCaption.after('<div class="caption-expand">i</div>');
         $(".caption-expand").click(function(){
             $(this).prev().toggleClass('caption-expanded');
             if ($(this).prev().hasClass('caption-expanded')) {
@@ -39,8 +39,13 @@
             } else {
                 $(".section-portfolio-page .views-slideshow-controls-bottom").css("top", ($(window).width()/2)+pagerOffset+65+"px");
             }
+
+            // Resize portfolio image heights
+            $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", ($(window).width()*.29)+1+"px");
         } else {
             $(".views-field-field-portfolio-image ul").height(326);
+            // Resize portfolio image heights
+            $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", "72px");
         }
 
         $(window).resize(function(){
@@ -48,15 +53,30 @@
                 var top = $(window).width()/2;
                 $(".views-field-field-portfolio-image ul").height($(window).width()/2); 
                 $(".section-portfolio-page .views-slideshow-controls-bottom").css("top", ($(window).width()/2)+pagerOffset+"px");
+            
+                 // Resize portfolio image heights
+                $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", ($(window).width()*.29)+1+"px");
             } else {
                 $(".views-field-field-portfolio-image ul").height(326);
+                $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", "72px");
             }
         });
 
-        $(".section-portfolio-page .views-slideshow-controls-bottom").prepend('<div class="toggle-carousel">&#x5e;&#x5e;&#x5e;</div>');
+        $(".views-slideshow-controls-bottom").addClass("collapsed");
+        $(".section-portfolio-page .views-slideshow-controls-bottom").before('<div class="toggle-carousel icon icon-icon-portfolio-carousel-base3-multipler1"></div>');
         $(".toggle-carousel").click(function(){
             $(".views-slideshow-controls-bottom").toggleClass("collapsed");
+            $(this).toggleClass("icon-icon-portfolio-carousel-base3-multipler1");
+            $(this).toggleClass("icon-icon-portfolio-carousel-base3-single");
         });
+
+        $(".section-portfolio-page .views-content-field-portfolio-image").click(function(){
+            $(".views-slideshow-controls-bottom").toggleClass("collapsed");
+        });
+        
+
+
+
 
     });
    
