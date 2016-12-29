@@ -21,9 +21,29 @@
     }
 }
 
-
+<<<<<<< Updated upstream
+@media screen and (min-width: 796px) {
+=======
+@media screen and (min-width: 769px) {
+>>>>>>> Stashed changes
+    .mobile-only {
+        display: none;
+    }
+}
 
 @media (max-width: $medium) {
+
+    .desktop-only {
+        display: none;
+    }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+    .mobile-only {
+        display: block;
+    }
+
     .front.domain-osbee-com #block-views-homepage-slideshow-block, 
     .front.domain-osbee-com #block-block-9, 
     .front.domain-osbee-com #block-block-10, 
