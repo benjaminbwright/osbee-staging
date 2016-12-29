@@ -6861,13 +6861,14 @@ select.with-style option[selected="selected"] {
   }
 }
 @media screen and (max-width: 768px) {
+  .signature.mobile-only {
+    max-width: 125px;
+    height: auto;
+  }
+
   .page-careers {
     max-width: 100%;
     overflow-x: hidden;
-  }
-  .page-careers .signature.mobile-only {
-    max-width: 125px;
-    height: auto;
   }
   .page-careers .region-content .block-content a {
     margin: 0;
