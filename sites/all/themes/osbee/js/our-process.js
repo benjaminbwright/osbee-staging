@@ -34,7 +34,7 @@
             // Toggle between responsive and desktop content
             if ($(window).width() < 769 ){
                 //if (!$("body").hasClass("page-node-20")) {
-                    pageContent.hide();
+                pageContent.hide();
                 pageImage.hide();
                 responsiveContent.show();
             } else {
