@@ -21,9 +21,21 @@
     }
 }
 
-
+@media screen and (min-width: 796px) {
+    .mobile-only {
+        display: none;
+    }
+}
 
 @media (max-width: $medium) {
+
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display; block;
+    }
+
     .front.domain-osbee-com #block-views-homepage-slideshow-block, 
     .front.domain-osbee-com #block-block-9, 
     .front.domain-osbee-com #block-block-10, 
