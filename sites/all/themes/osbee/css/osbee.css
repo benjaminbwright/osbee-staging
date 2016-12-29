@@ -6847,6 +6847,19 @@ select.with-style option[selected="selected"] {
     margin-bottom: 0 !important;
   }
 }
+.mobile-pm-more {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .pm-read-more-link {
+    display: none;
+  }
+
+  .mobile-pm-more {
+    display: block;
+  }
+}
 @media screen and (max-width: 768px) {
   .page-careers {
     max-width: 100%;
@@ -7715,49 +7728,6 @@ select.with-style option[selected="selected"] {
     font-style: italic;
   }
 
-  .page-node-36 .field-name-body .field-item div, .page-node-36 .field-name-body .field-item p {
-    float: none !important;
-    padding-left: 10px !important;
-  }
-  .page-node-36 .field-name-body .field-item ul {
-    margin-left: 0;
-  }
-  .page-node-36 .field-name-body .field-item ul li {
-    list-style-type: none;
-    margin-left: 10px;
-    padding: 0;
-    margin-top: 5px !important;
-  }
-  .page-node-36 .call:before,
-  .page-node-36 .email:before,
-  .page-node-36 .vcard:before,
-  .page-node-36 .directions:before {
-    font-family: "FontAwesome";
-    margin-right: 5px;
-  }
-  .page-node-36 .call:before {
-    content: "\f098";
-  }
-  .page-node-36 .email:before {
-    content: "\f0e0";
-  }
-  .page-node-36 .vcard:before {
-    content: "\f2bc";
-  }
-  .page-node-36 .directions:before {
-    background: url(../images/directions.png) no-repeat;
-    background-size: 107%;
-    width: 16px;
-    height: 16px;
-    display: block;
-    display: inline-block;
-    content: '';
-  }
-
-  iframe {
-    display: none;
-  }
-
   .page-node-37 .orangelink,
   .page-node-38 .orangelink,
   .page-node-39 .orangelink {
@@ -7864,6 +7834,15 @@ select.with-style option[selected="selected"] {
   .front.domain-osbee-com .views-field.views-field-field-slide-caption {
     font-size: 150%;
     line-height: 1;
+  }
+
+  #block-block-4 {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  #block-block-4 .orange {
+    color: #E6E6E6;
+    font-size: 16px;
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {

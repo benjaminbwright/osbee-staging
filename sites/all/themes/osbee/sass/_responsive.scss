@@ -8,6 +8,7 @@
 @import "swiper-slideshows";
 @import "about-us";
 @import "our-process";
+@import "project-management";
 @import "careers";
 @import "locations";
 @import "blog";
@@ -739,62 +740,6 @@
 
 
 
-    ///////////////////
-    // LOCATION PAGE //
-    ///////////////////
-
-    .page-node-36 {
-        .field-name-body {
-            .field-item {
-                div, p {
-                    float: none !important;
-                    padding-left: 10px !important;
-                }
-                ul {
-                    //list-style-type: none;
-                    margin-left: 0;
-                    li {
-                        list-style-type: none;
-                        margin-left: 10px;
-                        padding: 0;
-                        margin-top: 5px !important;
-                    }
-                }
-            }
-        }
-        .call,
-        .email,
-        .vcard,
-        .directions {
-            &:before {
-                font-family: "FontAwesome";
-                margin-right: 5px;
-            }
-            
-        }
-        .call:before {
-            content: "\f098";
-        }
-        .email:before {
-            content: "\f0e0";
-        }
-        .vcard:before {
-            content: "\f2bc";
-        }
-        .directions:before {
-            background: url(../images/directions.png) no-repeat;
-            background-size: 107%;
-            width: 16px;
-            height: 16px;
-            display: block;
-            display: inline-block;
-            content: '';
-        }
-    }
-
-    iframe {
-        display: none;
-    }
 
     //////////////////////////
     // AFFILIATIONS SECTION //
@@ -912,6 +857,19 @@
     .front.domain-osbee-com .views-field.views-field-field-slide-caption {
         font-size: 150%;
         line-height: 1;
+    }
+
+    //////////////////////////////
+    // Computer Consulting Page //
+    //////////////////////////////
+    ///
+    #block-block-4 {
+        margin-left: 10px;
+        font-size: 16px;
+        .orange {
+            color: $lighter-gray;
+            font-size: 16px;
+        }
     }
 
 }
