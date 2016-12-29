@@ -6865,6 +6865,10 @@ select.with-style option[selected="selected"] {
     max-width: 100%;
     overflow-x: hidden;
   }
+  .page-careers .signature.mobile-only {
+    max-width: 125px;
+    height: auto;
+  }
   .page-careers .region-content .block-content a {
     margin: 0;
   }
@@ -7053,16 +7057,16 @@ select.with-style option[selected="selected"] {
 }
 @media screen and (min-width: 769px) {
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 768px) {
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 
   .mobile-only {
-    display: block;
+    display: block !important;
   }
 
   .front.domain-osbee-com #block-views-homepage-slideshow-block,
