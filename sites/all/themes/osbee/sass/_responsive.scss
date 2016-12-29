@@ -25,17 +25,17 @@
 
 @media screen and (min-width: 769px) {
     .mobile-only {
-        display: none;
+        display: none !important;
     }
 }
 
 @media (max-width: $medium) {
 
     .desktop-only {
-        display: none;
+        display: none !important;
     }
     .mobile-only {
-        display: block;
+        display: block !important;
     }
 
     .front.domain-osbee-com #block-views-homepage-slideshow-block, 

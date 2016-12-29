@@ -8,6 +8,11 @@
         max-width: 100%;
         overflow-x: hidden;
 
+        .signature.mobile-only {
+            max-width: 125px;
+            height: auto;
+        }
+
         .region-content {
             .block-content  {
                 a {
