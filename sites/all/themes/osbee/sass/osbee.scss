@@ -1108,8 +1108,11 @@ span.views-slideshow-controls-text-pause {
   margin-left: -25px;
   padding-left: 25px;
   height: 20px;
-  line-height: 20px;
+  line-height: 20px; 
   color: #49758F;
+  @media screen and (max-width: 768px) {
+    color: $lighter-gray; 
+  }
   font-size: 12px;
   background-position: left center;
   background-repeat: no-repeat;

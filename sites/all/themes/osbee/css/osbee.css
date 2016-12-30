@@ -4305,6 +4305,12 @@ span.views-slideshow-controls-text-pause {
   background-position: left center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .section-portfolio .field-type-link-field,
+  .section-portfolio-page .field-type-link-field {
+    color: #E6E6E6;
+  }
+}
 
 /* line 632, ../src/scss/_page.scss */
 .section-portfolio .field-type-link-field.field-label-hidden,
@@ -7110,7 +7116,7 @@ select.with-style option[selected="selected"] {
   }
 
   a {
-    color: #E6E6E6;
+    color: #E6E6E6 !important;
     font-weight: normal;
   }
 
