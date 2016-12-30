@@ -6534,7 +6534,6 @@ select.with-style option[selected="selected"] {
   }
   .views_slideshow_controls_text_previous,
   .views_slideshow_controls_text_next {
-    top: 10% !important;
     display: none;
   }
 
@@ -6603,6 +6602,10 @@ select.with-style option[selected="selected"] {
   }
   .section-portfolio-page .views-slideshow-controls-bottom.collapsed .jcarousel-skin-blank {
     background: #000000;
+  }
+  .section-portfolio-page .views_slideshow_controls_text_previous,
+  .section-portfolio-page .views_slideshow_controls_text_next {
+    display: block;
   }
 }
 #node-1141 .field-name-field-image {

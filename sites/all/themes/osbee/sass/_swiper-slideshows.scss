@@ -62,7 +62,7 @@
     // Hide swiper slideshow arrows on mobile.
      .views_slideshow_controls_text_previous,
     .views_slideshow_controls_text_next {
-        top:10% !important;
+        //top:10% !important;
         display:none;
     }
 
@@ -149,5 +149,10 @@
                 }
             }
         }
+        // Hide swiper slideshow arrows on mobile.
+        .views_slideshow_controls_text_previous,
+        .views_slideshow_controls_text_next {
+            display: block;
+        } 
     }
 }
