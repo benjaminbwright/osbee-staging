@@ -1108,8 +1108,11 @@ span.views-slideshow-controls-text-pause {
   margin-left: -25px;
   padding-left: 25px;
   height: 20px;
-  line-height: 20px;
+  line-height: 20px; 
   color: #49758F;
+  @media screen and (max-width: 768px) {
+    color: $lighter-gray; 
+  }
   font-size: 12px;
   background-position: left center;
   background-repeat: no-repeat;
@@ -1137,19 +1140,41 @@ span.views-slideshow-controls-text-pause {
 /* line 647, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-architect,
 .section-portfolio-page .field-name-field-architect {
-  background-image: url(../images/icons/architect-icon.png);
+  .field-item:before {
+    content: 'd';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 651, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-builder,
 .section-portfolio-page .field-name-field-builder {
-  background-image: url(../images/icons/builder-icon.png);
+  //background-image: url(../images/icons/builder-icon.png);
+  .field-item:before {
+    content: 'b';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 655, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-interior-decorator,
 .section-portfolio-page .field-name-field-interior-decorator {
-  background-image: url(../images/icons/decorator-icon.png);
+  .field-item:before {
+    content: 'a';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 659, ../src/scss/_page.scss */
@@ -1167,19 +1192,34 @@ span.views-slideshow-controls-text-pause {
 /* line 667, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-pdf,
 .section-portfolio-page .field-name-field-pdf {
-  background-image: url(../images/icons/pdf-icon.png);
+  .field-item:before {
+    content: "\f1c1";
+    font-family: 'FontAwesome';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 671, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-press,
 .section-portfolio-page .field-name-field-press {
   background-image: url(../images/icons/press-icon.png);
+
 }
 
 /* line 675, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-awards,
 .section-portfolio-page .field-name-field-awards {
-  background-image: url(../images/icons/awards-icon.png);
+  .field-item:before {
+    content: 'c';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 680, ../src/scss/_page.scss */
