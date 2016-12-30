@@ -112,7 +112,6 @@
            $('#career-box').load($link.attr('href') + ' #main-content ', function(){
                 careerBox = $("#career-box #main-content").html();
                 $('#active-content').html(careerBox);
-
                 var pageContent = $("#career-box");
                 var responsiveContent = $("#active-content");
                 
