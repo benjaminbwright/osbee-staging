@@ -7781,6 +7781,7 @@ select.with-style option[selected="selected"] {
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
+    padding-right: 90%;
   }
   .page-node-37 .field-name-body ul li:before,
   .page-node-38 .field-name-body ul li:before,
