@@ -7959,6 +7959,23 @@ select.with-style option[selected="selected"] {
     color: #E6E6E6;
     font-size: 16px;
   }
+
+  #node-52 .field-name-body .field-item div {
+    float: none !important;
+  }
+  #node-52 .field-name-body .field-item .orange2 {
+    font-weight: normal !important;
+  }
+  #node-52 .field-name-body .field-item a {
+    font-weight: normal;
+    font-size: 100%;
+  }
+  #node-52 .field-name-body .field-item table {
+    margin-left: 10px;
+  }
+  #node-52 .field-name-body .field-item table p {
+    padding-left: 0 !important;
+  }
 }
 @media (orientation: landscape) and (max-width: 768px) {
   body {

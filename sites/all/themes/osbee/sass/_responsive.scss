@@ -887,6 +887,32 @@
         }
     }
 
+    ///////////////////
+    // Contacts Page //
+    ///////////////////
+
+    #node-52 {
+        .field-name-body {
+            .field-item {
+                div {
+                    float: none !important;
+                }
+                .orange2 {
+                    font-weight: normal !important;
+                }
+                a {
+                    font-weight: normal;
+                    font-size: 100%;
+                }
+                table {
+                    margin-left: 10px;
+                    p {
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (orientation: landscape) and (max-width: $medium) {
