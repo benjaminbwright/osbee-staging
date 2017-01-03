@@ -8,6 +8,72 @@
         }
     }
     .section-blog {
+        max-width: 100%;
+        overflow-x: hidden;
+        #main-content {
+            width: 100%;
+        }
+        #content {
+            width: 100%;
+        }
+
+        h1.page-title {
+            margin-left: 10px;
+        }
+        .node-submitted {
+            margin-left: 10px;
+        }
+
+        .block-title {
+            
+        }
+
+        #block-views-latest-posts-block,
+        #block-views-latest-posts-block-1 {
+            border-top: 1px solid $lighter-gray;
+            margin-bottom: -1px !important;
+            .block-title {
+                display: block !important;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: normal;
+                padding: 8px 0;
+                margin: 0 10px;
+            }
+            .view-latest-posts {
+                ul {
+                    li {
+                        padding-left: 0;
+                        background: $gray-darker !important;
+                        a {
+                            font-size: 13px !important;
+                            text-transform: capitalize !important;
+                            text-decoration: underline !important;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            padding-left: 0 !important;
+                            width: 90% !important;
+                        }
+                        span {
+                            font-size: 13px;
+                            font-family: 'MetaOT', sans-serif;
+                            margin-left: 15px;
+                            width: 90%;
+                        }
+                        .views-field-created {
+                            padding-top: 0;
+                            span {
+                                padding-top: 0;
+                                margin-top: 0;
+                            }
+                        }
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+
         #right {
             width: auto;
             float: none;
