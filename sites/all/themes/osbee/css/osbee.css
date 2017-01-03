@@ -6429,6 +6429,7 @@ select.with-style option[selected="selected"] {
     margin-top: -4px;
     font-size: 18px;
     text-transform: uppercase;
+    width: 100%;
   }
   #mobile-navigation ul.menu li .menu-subcat {
     overflow: hidden;
@@ -7049,6 +7050,12 @@ select.with-style option[selected="selected"] {
     display: none;
   }
 }
+@media screen and (min-width: 769px) {
+  .section-blog .view-latest-posts .views-field-created,
+  .section-blog .view-latest-posts .views-field-field-image {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .page-blog .view-archive {
     display: none;
@@ -7074,6 +7081,7 @@ select.with-style option[selected="selected"] {
   .section-blog #block-views-latest-posts-block-1 {
     border-top: 1px solid #E6E6E6;
     margin-bottom: -1px !important;
+    border-bottom: 1px solid #E6E6E6;
   }
   .section-blog #block-views-latest-posts-block .block-title,
   .section-blog #block-views-latest-posts-block-1 .block-title {
@@ -7083,6 +7091,25 @@ select.with-style option[selected="selected"] {
     font-weight: normal;
     padding: 8px 0;
     margin: 0 10px;
+  }
+  .section-blog #block-views-latest-posts-block .subcat-expand,
+  .section-blog #block-views-latest-posts-block .subcat-collapse,
+  .section-blog #block-views-latest-posts-block-1 .subcat-expand,
+  .section-blog #block-views-latest-posts-block-1 .subcat-collapse {
+    font-size: 1.7em;
+    position: absolute;
+    color: #bcbec0;
+    right: 60px;
+    top: 0;
+    text-align: right;
+    padding: 10px 10px;
+    margin-top: -4px;
+    font-family: 'ElegantIcons';
+    z-index: 80;
+  }
+  .section-blog #block-views-latest-posts-block .view-latest-posts,
+  .section-blog #block-views-latest-posts-block-1 .view-latest-posts {
+    display: none;
   }
   .section-blog #block-views-latest-posts-block .view-latest-posts ul li,
   .section-blog #block-views-latest-posts-block-1 .view-latest-posts ul li {
@@ -7116,9 +7143,30 @@ select.with-style option[selected="selected"] {
     padding-top: 0;
     margin-top: 0;
   }
+  .section-blog .active-menu-item {
+    background: #E6E6E6;
+    color: #000000;
+  }
+  .section-blog .active-menu-item span {
+    color: #E6E6E6;
+  }
+  .section-blog .active-menu-item .subcat-expand,
+  .section-blog .active-menu-item .subcat-collapse {
+    color: #000000 !important;
+  }
+  .section-blog .active-menu-item .view-latest-posts {
+    display: block !important;
+  }
   .section-blog #right {
     width: auto;
     float: none;
+  }
+  .section-blog #block-block-14,
+  .section-blog #postscript {
+    margin: 10px;
+  }
+  .section-blog .field-name-field-tags {
+    margin-left: 10px;
   }
 }
 .site-slogan {

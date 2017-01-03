@@ -1,5 +1,20 @@
 // Blog Styles =================================================
 
+// Desktop Defaults
+
+@media screen and (min-width: 769px) {
+    .section-blog {
+        .view-latest-posts {
+            .views-field-created,
+            .views-field-field-image {
+                display: none;
+            }
+        }   
+    }
+}
+
+// Mobile Styles
+
 @media screen and (max-width: $medium) {
     .page-blog {
         // Hide blog articles from homepage
@@ -32,6 +47,7 @@
         #block-views-latest-posts-block-1 {
             border-top: 1px solid $lighter-gray;
             margin-bottom: -1px !important;
+            border-bottom: 1px solid $lighter-gray;
             .block-title {
                 display: block !important;
                 font-size: 18px;
@@ -39,8 +55,27 @@
                 font-weight: normal;
                 padding: 8px 0;
                 margin: 0 10px;
+                
             }
+
+            .subcat-expand,
+            .subcat-collapse {
+                font-size: 1.7em;
+                position: absolute;
+                color: #bcbec0;
+                right: 60px;
+                //left: 100%;
+                top: 0;
+                text-align: right;
+                padding: 10px 10px;
+                margin-top: -4px;
+                font-family: 'ElegantIcons';
+                z-index: 80;
+            }
+            
+            // Mobile defaults for latest posts blocks
             .view-latest-posts {
+                display: none;
                 ul {
                     li {
                         padding-left: 0;
@@ -72,11 +107,35 @@
                 }
             }
         }
-
+        
+        // Toggleable latest post styles
+        .active-menu-item {
+            background: $lighter-gray;
+            color: $black;
+            span {
+                color: $lighter-gray;
+            }
+            .subcat-expand,
+            .subcat-collapse {
+                color: $black !important;
+            }
+            .view-latest-posts {
+                display: block !important;
+            }
+        }
 
         #right {
             width: auto;
             float: none;
+        }
+
+        #block-block-14,
+        #postscript {
+                margin: 10px;
+        }
+
+        .field-name-field-tags {
+            margin-left: 10px;
         }
     }
 }
