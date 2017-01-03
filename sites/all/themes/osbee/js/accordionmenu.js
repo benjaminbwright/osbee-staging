@@ -77,7 +77,41 @@
         });
 
 
+        //////////////////////////////
+        // BLOG PAGE ACCORDION MENU //
+        //////////////////////////////
 
+        // Add expander button to each post list block
+        $('.section-blog #block-views-latest-posts-block-1 h2').after('<span class="fa subcat-expand">&#x33;</span>');
+        $('.section-blog #block-views-latest-posts-block h2').after('<span class="fa subcat-expand">&#x33;</span>');
+
+        // Expand collapse lists of blog links
+        $('.section-blog .subcat-expand').click(function(){
+            if ($(this).parent().hasClass('active-menu-item')) {
+                $('.active-menu-item').removeClass('active-menu-item');
+            } else { 
+                $('.active-menu-item').removeClass('active-menu-item');
+                $(this).parent().toggleClass('active-menu-item');
+            }
+            
+
+            
+            if ($(this).parent().parent().hasClass('active-menu-item')) {
+                $(this).html("&#x32;");
+            } else {
+                $(this).html("&#x33;");
+            }
+
+            // Scroll to active menu item
+            var container = $("html,body");
+            var scrollTo = $(this).parent();
+            //var scrollTo = $("#node-page-full-group-prev-next");
+
+            if (scrollTo.offset() !== null) { 
+                container.animate({ scrollTop: scrollTo.offset().top},'1200');
+            }
+
+        });
 
         //////////////////////////////
         // TEAM PAGE ACCORDION MENU //
