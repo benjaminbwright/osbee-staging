@@ -948,6 +948,13 @@ span.views-slideshow-controls-text-pause {
   cursor: pointer;
   position: relative;
   opacity: 1;
+  .views-content-field-portfolio-image {
+    overflow: hidden;
+    img.portfolio_thumb {
+        width: 100%;
+        height: auto;
+    }
+  }
 }
 
 /* line 498, ../src/scss/_page.scss */

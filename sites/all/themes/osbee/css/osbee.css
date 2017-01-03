@@ -4152,6 +4152,13 @@ span.views-slideshow-controls-text-pause {
   position: relative;
   opacity: 1;
 }
+.section-portfolio-page #page .views_slideshow_jcarousel_pager_item .views-content-field-portfolio-image {
+  overflow: hidden;
+}
+.section-portfolio-page #page .views_slideshow_jcarousel_pager_item .views-content-field-portfolio-image img.portfolio_thumb {
+  width: 100%;
+  height: auto;
+}
 
 /* line 498, ../src/scss/_page.scss */
 .section-portfolio-page #page .views_slideshow_jcarousel_pager_item:hover,
