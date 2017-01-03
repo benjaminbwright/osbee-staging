@@ -947,7 +947,7 @@ span.views-slideshow-controls-text-pause {
   margin-left: 6px;
   cursor: pointer;
   position: relative;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /* line 498, ../src/scss/_page.scss */
@@ -1108,8 +1108,11 @@ span.views-slideshow-controls-text-pause {
   margin-left: -25px;
   padding-left: 25px;
   height: 20px;
-  line-height: 20px;
+  line-height: 20px; 
   color: #49758F;
+  @media screen and (max-width: 768px) {
+    color: $lighter-gray; 
+  }
   font-size: 12px;
   background-position: left center;
   background-repeat: no-repeat;
@@ -1137,19 +1140,41 @@ span.views-slideshow-controls-text-pause {
 /* line 647, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-architect,
 .section-portfolio-page .field-name-field-architect {
-  background-image: url(../images/icons/architect-icon.png);
+  .field-item:before {
+    content: 'd';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 651, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-builder,
 .section-portfolio-page .field-name-field-builder {
-  background-image: url(../images/icons/builder-icon.png);
+  //background-image: url(../images/icons/builder-icon.png);
+  .field-item:before {
+    content: 'b';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 655, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-interior-decorator,
 .section-portfolio-page .field-name-field-interior-decorator {
-  background-image: url(../images/icons/decorator-icon.png);
+  .field-item:before {
+    content: 'a';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 659, ../src/scss/_page.scss */
@@ -1167,19 +1192,34 @@ span.views-slideshow-controls-text-pause {
 /* line 667, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-pdf,
 .section-portfolio-page .field-name-field-pdf {
-  background-image: url(../images/icons/pdf-icon.png);
+  .field-item:before {
+    content: "\f1c1";
+    font-family: 'FontAwesome';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 671, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-press,
 .section-portfolio-page .field-name-field-press {
   background-image: url(../images/icons/press-icon.png);
+
 }
 
 /* line 675, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-awards,
 .section-portfolio-page .field-name-field-awards {
-  background-image: url(../images/icons/awards-icon.png);
+  .field-item:before {
+    content: 'c';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
+  }
 }
 
 /* line 680, ../src/scss/_page.scss */
@@ -2848,6 +2888,7 @@ $swiper-slide-ease: 5s;
   -webkit-flex-direction: column;
   flex-direction: column;
   margin-bottom: 15px;
+  margin-right: 4%;
   text-align: center;
   width: 28.5%;
 }
@@ -2889,8 +2930,8 @@ $swiper-slide-ease: 5s;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 /* line 59, ../src/scss/_profile.scss */
@@ -2934,6 +2975,7 @@ $swiper-slide-ease: 5s;
   height: auto;
   margin-bottom: 5px;
   max-width: 100%;
+  border: 1px solid $gray-darker; 
 }
 
 /* line 104, ../src/scss/_profile.scss */
@@ -2958,7 +3000,7 @@ $swiper-slide-ease: 5s;
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 102%;
 }
 /* line 128, ../src/scss/_profile.scss */
 .profile__image .profile__link:hover::after, .profile__image .profile__link.active::after {

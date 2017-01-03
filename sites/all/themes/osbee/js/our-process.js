@@ -14,13 +14,13 @@
                 $(".field-type-image").after('<div class="under-main-image responsive-narrow-body"></div>');
             }
 
-            $("a.active-trail").click(function(event){
+            $(".menu-block-3 a.active-trail").click(function(event){
                 event.preventDefault();
                 $(this).parent().parent().toggleClass("hidden");
                 if ($(this).parent().parent().hasClass("hidden")){
-                    $(".menu-block-3 .active .subcat-expand").html("&#x33;");
+                    $(".menu-block-3 .active-trail .subcat-expand").html("&#x33;");
                 } else {
-                    $(".menu-block-3 .active .subcat-expand").html("&#x32;");
+                    $(".menu-block-3 .active-trail .subcat-expand").html("&#x32;");
                 }
             });
 
@@ -34,7 +34,7 @@
             // Toggle between responsive and desktop content
             if ($(window).width() < 769 ){
                 //if (!$("body").hasClass("page-node-20")) {
-                    pageContent.hide();
+                pageContent.hide();
                 pageImage.hide();
                 responsiveContent.show();
             } else {

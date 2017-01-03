@@ -1,13 +1,15 @@
 (function($){
-    $(document).load(function(){
-        
-    });
     $(document).ready(function(){
 
-        // Portfolio Overlay 
+        // Portfolio Overlay - Deprecated (remove)
+        // This is only for a test version of the portfolio where the captions appeared over the images
+        // Page node for the portfolio
         page = $(".page-node-645");
+        // The caption under the image
         portfolioCaption = $(".page-node-645 .views-field-field-caption");
+        // The specific caption
         thisCaption = $(".views-field-field-caption");
+        // The caption expand trigger
         captionExpand = $(".caption-expand");
 
         //portfolioCaption.after('<div class="caption-expand">i</div>');
@@ -22,7 +24,10 @@
             }
         });
 
-        // Slide back to first slide.
+        
+
+        // Slide back to first slide after the page is loaded.
+        // This resolves conflicts between and swiper.js slider and the jcarousel pager generating thumbnails.
         $(".jcarousel-item-1").trigger("click");
 
         pagerOffset = 50;
@@ -63,18 +68,43 @@
             $(".views-slideshow-controls-bottom").toggleClass("collapsed");
             $(this).toggleClass("icon-icon-portfolio-carousel-base3-multipler1");
             $(this).toggleClass("icon-icon-portfolio-carousel-base3-single");
+            if ($(".views-slideshow-controls-bottom").hasClass("collapsed")) {
+                $("body").css("overflow", "visible");
+            } else {
+                if (!landscape.matches) {
+                    // Scroll to active menu item
+                    var container = $("html,body");
+                    var scrollTo = $("#main-content");
+                    //var scrollTo = $("#node-page-full-group-prev-next");
+
+                    if (scrollTo.offset() !== null) { 
+                        container.animate({ scrollTop: scrollTo.offset().top},'1200');
+                    }
+                }
+                $("body").css("overflow", "hidden");
+            }
         });
 
         $(".section-portfolio-page .views-content-field-portfolio-image").click(function(){
             $(".views-slideshow-controls-bottom").toggleClass("collapsed");
         });
         
-
-
+        //Scroll to top of portfolio slideshow in landscape.
+        var landscape = window.matchMedia("(orientation: landscape)");
+        if (landscape.matches) {
+            // Scroll to active menu item
+            var container = $("html,body");
+            var scrollTo = $("#views_slideshow_swiper_main_portfolio_individual_items-block_1");
+            setInterval(function(){ 
+                 if (scrollTo.offset() !== null) {
+                    if ($(this).scrollTop() < 200) {
+                        container.animate({ scrollTop: scrollTo.offset().top},'1200');
+                    }
+                }
+            }, 3000);
+        }
 
 
     });
-
-
-      
+   
 })(jQuery);

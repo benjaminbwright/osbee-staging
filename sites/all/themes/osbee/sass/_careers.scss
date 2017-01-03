@@ -4,6 +4,11 @@
 // Medium Screens
 // 
 @media screen and (max-width: $medium) {
+    .signature.mobile-only {
+        max-width: 125px;
+        height: auto;
+    } 
+    
     .page-careers {
         max-width: 100%;
         overflow-x: hidden;

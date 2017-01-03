@@ -62,7 +62,7 @@
     // Hide swiper slideshow arrows on mobile.
      .views_slideshow_controls_text_previous,
     .views_slideshow_controls_text_next {
-        top:10% !important;
+        //top:10% !important;
         display:none;
     }
 
@@ -89,7 +89,7 @@
 .views-field-field-slide-caption {
     .field-content {
         text-shadow: 1px 1px 2px #344762;
-        padding: 40px;
+        padding: 0 40px; 
     }
 }
 
@@ -149,5 +149,10 @@
                 }
             }
         }
+        // Hide swiper slideshow arrows on mobile.
+        .views_slideshow_controls_text_previous,
+        .views_slideshow_controls_text_next {
+            display: block;
+        } 
     }
 }

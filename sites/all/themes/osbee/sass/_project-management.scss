@@ -1,0 +1,21 @@
+/////////////////////////////
+// Project Management Page //
+/////////////////////////////
+
+
+// Desktop Defaults
+.mobile-pm-more {
+    display: none;
+}
+
+
+// Mobile
+@media screen and (max-width: $medium) {
+    .pm-read-more-link {
+        display: none;
+    }
+
+    .mobile-pm-more {
+        display: block;
+    }
+}

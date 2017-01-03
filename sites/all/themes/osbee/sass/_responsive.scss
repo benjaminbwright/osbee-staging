@@ -8,7 +8,9 @@
 @import "swiper-slideshows";
 @import "about-us";
 @import "our-process";
+@import "project-management";
 @import "careers";
+@import "locations";
 @import "blog";
 @import "fullscreen-defaults";
 
@@ -21,7 +23,21 @@
 
 
 
+@media screen and (min-width: 769px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+
 @media (max-width: $medium) {
+
+    .desktop-only {
+        display: none !important;
+    }
+    .mobile-only {
+        display: block !important;
+    }
+
     .front.domain-osbee-com #block-views-homepage-slideshow-block, 
     .front.domain-osbee-com #block-block-9, 
     .front.domain-osbee-com #block-block-10, 
@@ -39,7 +55,8 @@
     }
     
     a {
-        color: $blue;
+        color: $lighter-gray !important;
+        font-weight: normal;
     }
 
     span.views-slideshow-controls-text-next,
@@ -398,6 +415,8 @@
 
 
         // First Level of menu
+        #block-views-latest-posts-block ul,
+        #block-views-latest-posts-block-1 ul,
         ul.menu {
             border-top: 1px solid $light-gray;
             &.active,
@@ -427,7 +446,7 @@
                     font-size: 1.7em;
                     position: absolute;
                     color: #bcbec0;
-                    right: 10px;
+                    right: 45px;
                     //left: 100%;
                     top: 4px;
                     text-align: right;
@@ -460,8 +479,23 @@
                     }
                 }
                 &.active {
+                    background: $gray-darker;
                     .menu-subcat {
                         display: block;
+                    }
+                    .narrow-body { 
+                        background: $gray-darker;
+
+                    }
+                    a {
+                        background: $lighter-gray;
+                        color: $black;
+                    }
+
+                    .subcat-expand,
+                    .subcat-collapse {
+                        color: $black;
+                        
                     }
                 }
 
@@ -589,7 +623,7 @@
             z-index: 100 !important;
             padding-top: 2%;
             overflow-y: scroll;
-            min-height: 100vh;
+            min-height: 50vh;
             .jcarousel-list-horizontal {
                 //width: 98% !important;
                 left: 0 !important;
@@ -720,58 +754,6 @@
 
 
 
-    ///////////////////
-    // LOCATION PAGE //
-    ///////////////////
-
-    .page-node-36 {
-        .field-name-body {
-            .field-item {
-                div, p {
-                    float: none !important;
-                    padding-left: 10px !important;
-                }
-                ul {
-                    //list-style-type: none;
-                    margin-left: 0;
-                    li {
-                        list-style-type: none;
-                        margin-left: 10px;
-                        padding: 0;
-                        margin-top: 5px !important;
-                    }
-                }
-            }
-        }
-        .call,
-        .email,
-        .vcard,
-        .directions {
-            &:before {
-                font-family: "FontAwesome";
-                margin-right: 5px;
-            }
-            
-        }
-        .call:before {
-            content: "\f098";
-        }
-        .email:before {
-            content: "\f0e0";
-        }
-        .vcard:before {
-            content: "\f2bc";
-        }
-        .directions:before {
-            background: url(../images/directions.png) no-repeat;
-            background-size: 107%;
-            width: 16px;
-            height: 16px;
-            display: block;
-            display: inline-block;
-            content: '';
-        }
-    }
 
     //////////////////////////
     // AFFILIATIONS SECTION //
@@ -805,6 +787,7 @@
                     text-decoration: none;
                     text-transform: uppercase;
                     vertical-align: middle;
+                    padding-right: 90%; 
                 }
                 &:before {
                     border-left-color: $white;
@@ -891,9 +874,57 @@
         line-height: 1;
     }
 
+    //////////////////////////////
+    // Computer Consulting Page //
+    //////////////////////////////
+    ///
+    #block-block-4 {
+        margin-left: 10px;
+        font-size: 16px;
+        .orange {
+            color: $lighter-gray;
+            font-size: 16px;
+        }
+    }
+
+    ///////////////////
+    // Contacts Page //
+    ///////////////////
+
+    #node-52 {
+        .field-name-body {
+            .field-item {
+                div {
+                    float: none !important;
+                }
+                .orange2 {
+                    font-weight: normal !important;
+                }
+                a {
+                    font-weight: normal;
+                    font-size: 100%;
+                }
+                table {
+                    margin-left: 10px;
+                    p {
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (orientation: landscape) and (max-width: $medium) {
+    body {
+        position: relative;
+    }
+
+    #drawer-menu {
+        position: absolute;
+        bottom: -25px;
+    }
+    
     .front #page {
         max-height: 100vh;
         overflow: hidden;
@@ -914,7 +945,9 @@
         }
 
     }
-
+    .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom {
+        top: 0 !important;
+    }
     // Logo placement on homepage slideshow
     #block-block-7 {
         bottom: 250px !important; 
@@ -940,10 +973,18 @@
         display: none;
     }
 
-.front.domain-osbee-com .views-field.views-field-field-slide-caption {
-    font-size: 150%;
-    line-height: 1;
-}
+    .front.domain-osbee-com .views-field.views-field-field-slide-caption {
+        font-size: 150%;
+        line-height: 1;
+    }
+
+    #main-content .view-in-page-menu-portfolio-items .views-row {
+        .views-field-title {
+            a {
+                line-height: 5.5vh;
+            }
+        }
+    }
 
     
 }
