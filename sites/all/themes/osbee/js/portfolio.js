@@ -71,7 +71,7 @@
             if ($(".views-slideshow-controls-bottom").hasClass("collapsed")) {
                 $("body").css("overflow", "visible");
             } else {
-                if (!landscape.matches) {
+                if (portrait.matches) {
                     // Scroll to active menu item
                     var container = $("html,body");
                     var scrollTo = $("#main-content");
@@ -90,19 +90,36 @@
         });
         
         //Scroll to top of portfolio slideshow in landscape.
-        var landscape = window.matchMedia("(orientation: landscape)");
-        if (landscape.matches) {
+        //var portrait = window.matchMedia("(orientation: portrait)");
+        $(window).on("orientationchange load resize", function(){
+            var portrait = window.matchMedia("(orientation: portrait)");
+            if (!portrait.matches) {
+                // Scroll to active menu item
+                var container = $("html,body");
+                var scrollTo = $("#views_slideshow_swiper_main_portfolio_individual_items-block_1");
+                setInterval(function(){ 
+                     if (scrollTo.offset() == null) {
+                        if ($(this).scrollTop() < 100) {
+                            container.animate({ scrollTop: scrollTo.offset().top},'1200');
+                        }
+                    }
+                }, 3000);
+            }
+        });
+        /*if (!portrait.matches) {
             // Scroll to active menu item
             var container = $("html,body");
             var scrollTo = $("#views_slideshow_swiper_main_portfolio_individual_items-block_1");
             setInterval(function(){ 
-                 if (scrollTo.offset() !== null) {
-                    if ($(this).scrollTop() < 200) {
+                 if (scrollTo.offset() == null) {
+                    if ($(this).scrollTop() < 100) {
                         container.animate({ scrollTop: scrollTo.offset().top},'1200');
                     }
                 }
             }, 3000);
-        }
+        }*/
+
+
 
 
     });
