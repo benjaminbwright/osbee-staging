@@ -3,7 +3,52 @@
 ////////////////////
 
 //Desktop defaults.
+.page-node-36 {
+    .field-name-body {
+        .field-item {
 
+            ul {
+                //list-style-type: none;
+                margin-left: 0;
+                li {
+                    list-style-type: none;
+                    margin-left: 0;
+                    padding: 0;
+                    margin-top: 5px !important;
+                    color: $orange;
+                }
+            }
+        }
+    }
+    .call,
+    .email,
+    .vcard,
+    .directions {
+        &:before {
+            font-family: "FontAwesome";
+            margin-right: 5px;
+        }
+
+    }
+    .call:before {
+        content: "\f098";
+    }
+    .email:before {
+        content: "\f0e0";
+    }
+    .vcard:before {
+        content: "\f2bc";
+    }
+    .directions:before {
+        background: url(../images/directions.png) no-repeat;
+        background-size: 107%;
+        width: 16px;
+        height: 16px;
+        display: block;
+        display: inline-block;
+        content: '';
+    }
+}
 
 
 // Mobile Styles
