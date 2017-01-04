@@ -7090,6 +7090,7 @@ select.with-style option[selected="selected"] {
     border-top: 1px solid #E6E6E6;
     margin-bottom: -1px !important;
     border-bottom: 1px solid #E6E6E6;
+    position: relative;
   }
   .section-blog #block-views-latest-posts-block .block-title,
   .section-blog #block-views-latest-posts-block-1 .block-title {
