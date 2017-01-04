@@ -7081,6 +7081,7 @@ select.with-style option[selected="selected"] {
   }
   .section-blog #custom-search-blocks-form-1 input.form-submit {
     float: left;
+    margin-left: 5px;
   }
   .section-blog #custom-search-blocks-form-1 .form-actions {
     clear: none;
