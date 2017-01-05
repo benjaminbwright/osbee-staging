@@ -7017,7 +7017,6 @@ select.with-style option[selected="selected"] {
   margin-left: 0;
   padding: 0;
   margin-top: 5px !important;
-  color: #ef8200;
 }
 .page-node-36 .call:before,
 .page-node-36 .email:before,
@@ -7036,13 +7035,9 @@ select.with-style option[selected="selected"] {
   content: "\f2bc";
 }
 .page-node-36 .directions:before {
-  background: url(../images/directions.png) no-repeat;
-  background-size: 107%;
-  width: 16px;
-  height: 16px;
-  display: block;
-  display: inline-block;
-  content: '';
+  margin-right: 5px;
+  font-family: "osbee-icons";
+  content: "e";
 }
 
 @media screen and (max-width: 768px) {
@@ -7706,7 +7701,7 @@ select.with-style option[selected="selected"] {
   #main-content #block-views-latest-posts-block-1 ul li.active a,
   #main-content ul.menu li.active a {
     background: #E6E6E6;
-    color: #000000;
+    color: #000000 !important;
   }
   #main-content #block-views-latest-posts-block ul li.active .subcat-expand,
   #main-content #block-views-latest-posts-block ul li.active .subcat-collapse,
