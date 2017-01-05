@@ -7151,6 +7151,7 @@ select.with-style option[selected="selected"] {
     margin-top: -4px;
     font-family: 'ElegantIcons';
     z-index: 80;
+    width: 100%;
   }
   .section-blog #block-views-latest-posts-block .view-latest-posts,
   .section-blog #block-views-latest-posts-block-1 .view-latest-posts {
