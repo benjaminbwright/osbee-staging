@@ -790,6 +790,11 @@
             font-weight: normal;
             color: $lighter-gray;
         }
+        table {
+            td {
+                vertical-align: top;
+            }
+        }
         .field-name-body ul {
             border-bottom: 1px #ffffff solid;
             li {
