@@ -6316,6 +6316,10 @@ select.with-style option[selected="selected"] {
   font-family: 'MetaOT';
 }
 
+.page-node-38 table td {
+  vertical-align: top;
+}
+
 #mobile-navigation {
   display: none;
 }
