@@ -90,20 +90,22 @@
         });
         
         //Scroll to top of portfolio slideshow in landscape.
-        //var portrait = window.matchMedia("(orientation: portrait)");
+        var portrait = window.matchMedia("(orientation: portrait)");
         $(window).on("orientationchange load resize", function(){
-            var portrait = window.matchMedia("(orientation: portrait)");
+            portrait = window.matchMedia("(orientation: portrait)");
             if (!portrait.matches) {
                 // Scroll to active menu item
                 var container = $("html,body");
                 var scrollTo = $("#views_slideshow_swiper_main_portfolio_individual_items-block_1");
-                setInterval(function(){ 
-                     if (scrollTo.offset() == null) {
-                        if ($(this).scrollTop() < 100) {
+                
+                 if (scrollTo.offset() !== null) {
+                    if ($(this).scrollTop() < 10) {
+                        setInterval(function(){ 
                             container.animate({ scrollTop: scrollTo.offset().top},'1200');
-                        }
+                        }, 3000);
                     }
-                }, 3000);
+                }
+            
             }
         });
         /*if (!portrait.matches) {
