@@ -15,9 +15,11 @@
         var pageContent = $(".narrow-body");
         var pageImage = $(".field-name-field-image");
         var responsiveContent = $(".responsive-narrow-body");
+        var footerBlock = $("#block-block-3 .block-content");
 
         pageContent.clone().appendTo('.responsive-narrow-body');
         pageImage.clone().prependTo('.responsive-narrow-body');
+        footerBlock.clone().appendTo('.responsive-narrow-body .narrow-body');
 
         $("#main-content a.active").click(function(event){
             event.preventDefault();

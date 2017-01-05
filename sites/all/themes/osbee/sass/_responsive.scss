@@ -29,6 +29,20 @@
     }
 }
 
+
+@media screen and (min-width: 769px) {
+    #active-content {
+        .responsive-narrow-body {
+            .narrow-body {
+                #block-block-3 {
+                    display: none; 
+                }
+            }
+        }
+    }
+}
+
+
 @media (max-width: $medium) {
 
     .mobile-blue {
@@ -65,6 +79,10 @@
     span.views-slideshow-controls-text-next,
     span.views-slideshow-controls-text-previous {
         pointer-events: none;
+    }
+
+    #block-block-3 {
+        display: none;
     }
 
     div#page {
@@ -116,6 +134,9 @@
         #active-content {
             .narrow-body {
                 float: none;
+                #block-block-3 {
+                    display: block;
+                }
             }
         }
     }

@@ -23,6 +23,7 @@
         }
     }
     .section-blog {
+        #main-content {
         max-width: 100%;
         overflow-x: hidden;
         #main-content {
@@ -150,5 +151,6 @@
         .field-name-field-tags {
             margin-left: 10px;
         }
+        } 
     }
 }

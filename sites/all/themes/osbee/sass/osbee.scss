@@ -314,6 +314,8 @@ h1.term-name,
 /* line 38, ../src/scss/_page.scss */
 .field-name-field-image img.small_page_image {
   margin: 0 32px 0 -73px;
+  width: 375px;
+  height: auto;
 }
 
 /* line 41, ../src/scss/_page.scss */
@@ -338,7 +340,7 @@ h1.term-name,
 
 /* line 57, ../src/scss/_page.scss */
 .field-name-field-menu-block .even {
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
 }
 
 /* line 60, ../src/scss/_page.scss */
