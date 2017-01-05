@@ -19,7 +19,7 @@
         pageContent.clone().appendTo('.responsive-narrow-body');
         pageImage.clone().prependTo('.responsive-narrow-body');
 
-        $("a.active").click(function(event){
+        $("#main-content a.active").click(function(event){
             event.preventDefault();
             $(this).parent().parent().toggleClass("hidden");
             if ($(this).parent().parent().hasClass("hidden")){

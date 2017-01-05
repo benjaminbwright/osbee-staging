@@ -15,7 +15,6 @@
                     margin-left: 0;
                     padding: 0;
                     margin-top: 5px !important;
-                    color: $orange;
                 }
             }
         }
@@ -40,13 +39,9 @@
         content: "\f2bc";
     }
     .directions:before {
-        background: url(../images/directions.png) no-repeat;
-        background-size: 107%;
-        width: 16px;
-        height: 16px;
-        display: block;
-        display: inline-block;
-        content: '';
+        margin-right: 5px;
+        font-family: "osbee-icons";
+        content: "e";
     }
 }
 
