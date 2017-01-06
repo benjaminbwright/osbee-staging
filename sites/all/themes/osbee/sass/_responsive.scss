@@ -820,6 +820,22 @@
             }
         }
     }
+
+    //////////////////////////////
+    // Computer Consulting Page //
+    //////////////////////////////
+    ///
+    #block-block-4 {
+        margin-left: 10px;
+        font-size: 16px;
+        .orange {
+            color: $lighter-gray;
+            font-size: 16px;
+        }
+    }
+
+
+
 }
 
 @media screen and (min-width: 769px){
@@ -897,18 +913,6 @@
         line-height: 1;
     }
 
-    //////////////////////////////
-    // Computer Consulting Page //
-    //////////////////////////////
-    ///
-    #block-block-4 {
-        margin-left: 10px;
-        font-size: 16px;
-        .orange {
-            color: $lighter-gray;
-            font-size: 16px;
-        }
-    }
 
     ///////////////////
     // Contacts Page //
