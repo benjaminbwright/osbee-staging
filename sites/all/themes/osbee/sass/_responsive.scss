@@ -790,11 +790,6 @@
             font-weight: normal;
             color: $lighter-gray;
         }
-        table {
-            td {
-                vertical-align: top;
-            }
-        }
         .field-name-body ul {
             border-bottom: 1px #ffffff solid;
             li {
@@ -938,6 +933,22 @@
             }
         }
     }
+
+    ////////////////////
+    // Help Desk Page //
+    ////////////////////
+
+    .page-node-17 {
+        table {
+            td {
+                img {
+                    min-width: 30px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (orientation: landscape) and (max-width: $medium) {

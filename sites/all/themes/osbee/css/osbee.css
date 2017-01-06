@@ -7967,11 +7967,6 @@ select.with-style option[selected="selected"] {
     font-weight: normal;
     color: #E6E6E6;
   }
-  .page-node-37 table td,
-  .page-node-38 table td,
-  .page-node-39 table td {
-    vertical-align: top;
-  }
   .page-node-37 .field-name-body ul,
   .page-node-38 .field-name-body ul,
   .page-node-39 .field-name-body ul {
@@ -8096,6 +8091,11 @@ select.with-style option[selected="selected"] {
   }
   #node-52 .field-name-body .field-item table p {
     padding-left: 0 !important;
+  }
+
+  .page-node-17 table td img {
+    min-width: 30px;
+    padding-left: 10px;
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {
