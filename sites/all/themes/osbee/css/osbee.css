@@ -8093,6 +8093,9 @@ select.with-style option[selected="selected"] {
     padding-left: 0 !important;
   }
 
+  .page-node-17 table {
+    margin-left: 10px;
+  }
   .page-node-17 table td img {
     min-width: 30px;
     padding-left: 10px;
