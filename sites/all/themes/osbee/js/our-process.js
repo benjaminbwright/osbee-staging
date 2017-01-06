@@ -22,6 +22,16 @@
                 } else {
                     $(".menu-block-3 .active-trail .subcat-expand").html("&#x32;");
                 }
+
+                // Scroll to active menu item
+                var container = $("html,body");
+                var scrollTo = $(this);
+                //var scrollTo = $("#node-page-full-group-prev-next");
+
+                if (scrollTo.offset() !== null) { 
+                    container.animate({ scrollTop: scrollTo.offset().top},'1200');
+                }
+
             });
 
             var pageContent = $(".narrow-body");
