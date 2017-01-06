@@ -8021,6 +8021,24 @@ select.with-style option[selected="selected"] {
     min-width: 30px;
     padding-left: 10px;
   }
+
+  #node-52 .field-name-body .field-item div {
+    float: none !important;
+  }
+  #node-52 .field-name-body .field-item a {
+    font-weight: normal;
+    font-size: 100%;
+  }
+  #node-52 .field-name-body .field-item table {
+    margin-left: 10px;
+  }
+  #node-52 .field-name-body .field-item table p {
+    padding-left: 0 !important;
+  }
+
+  .orange2 {
+    color: #ffffff;
+  }
 }
 @media screen and (min-width: 769px) {
   .swiper-container-horizontal {
@@ -8078,27 +8096,9 @@ select.with-style option[selected="selected"] {
     color: #E6E6E6;
   }
 
-  .orange2 {
-    color: #ffffff;
-  }
-
   .front.domain-osbee-com .views-field.views-field-field-slide-caption {
     font-size: 150%;
     line-height: 1;
-  }
-
-  #node-52 .field-name-body .field-item div {
-    float: none !important;
-  }
-  #node-52 .field-name-body .field-item a {
-    font-weight: normal;
-    font-size: 100%;
-  }
-  #node-52 .field-name-body .field-item table {
-    margin-left: 10px;
-  }
-  #node-52 .field-name-body .field-item table p {
-    padding-left: 0 !important;
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {

@@ -850,6 +850,34 @@
         }
     }
 
+    ///////////////////
+    // Contacts Page //
+    ///////////////////
+
+    #node-52 {
+        .field-name-body {
+            .field-item {
+                div {
+                    float: none !important;
+                } 
+                a {
+                    font-weight: normal;
+                    font-size: 100%;
+                }
+                table {
+                    margin-left: 10px;
+                    p {
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .orange2 {
+        color: $white;
+    }
+
 }
 
 @media screen and (min-width: 769px){
@@ -919,38 +947,14 @@
 
 
 
-    .orange2 {
-        color: $white;
-    }
+
     .front.domain-osbee-com .views-field.views-field-field-slide-caption {
         font-size: 150%;
         line-height: 1;
     }
 
 
-    ///////////////////
-    // Contacts Page //
-    ///////////////////
 
-    #node-52 {
-        .field-name-body {
-            .field-item {
-                div {
-                    float: none !important;
-                } 
-                a {
-                    font-weight: normal;
-                    font-size: 100%;
-                }
-                table {
-                    margin-left: 10px;
-                    p {
-                        padding-left: 0 !important;
-                    }
-                }
-            }
-        }
-    }
 
 
 
