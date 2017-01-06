@@ -6152,7 +6152,7 @@ select.with-style option[selected="selected"] {
   height: auto;
   margin-bottom: 5px;
   max-width: 100%;
-  border: 1px solid #292929;
+  border: 1px solid #bcbec0;
 }
 
 /* line 104, ../src/scss/_profile.scss */

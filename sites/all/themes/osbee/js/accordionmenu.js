@@ -208,11 +208,11 @@
             if ($(".expanded") > 0){
 
             } else {
-                $(".profile", this).eq(0).addClass('expanded');
+                //$(".profile", this).eq(0).addClass('expanded');
             }
         });
 
-        $(".section-about-us .subcat-expand").eq(0).trigger('click');
+        //$(".section-about-us .subcat-expand").eq(0).trigger('click');
 
 
     });
