@@ -152,7 +152,7 @@
 
             // Scroll to active menu item
             var container = $("html,body");
-            var scrollTo = $(".profile.expanded");
+            var scrollTo = $(this);
             //var scrollTo = $("#node-page-full-group-prev-next");
 
             if (scrollTo.offset() !== null) { 
@@ -184,6 +184,15 @@
             } else {
                 // Only close the current menu item
                 $(this).parent().parent().removeClass('expanded');
+
+                // Scroll to active menu item
+                var container = $("html,body");
+                var scrollTo = $(this).parent().parent().parent().parent().parent();
+                //var scrollTo = $("#node-page-full-group-prev-next");
+
+                if (scrollTo.offset() !== null) { 
+                    container.animate({ scrollTop: scrollTo.offset().top},'1200');
+                }
             }
 
             if ($(this).parent().parent().hasClass('expanded')) {
