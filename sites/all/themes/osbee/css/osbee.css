@@ -8013,6 +8013,14 @@ select.with-style option[selected="selected"] {
     color: #E6E6E6;
     font-size: 16px;
   }
+
+  .page-node-17 table {
+    margin-left: 10px;
+  }
+  .page-node-17 table td img {
+    min-width: 30px;
+    padding-left: 10px;
+  }
 }
 @media screen and (min-width: 769px) {
   .swiper-container-horizontal {
@@ -8091,14 +8099,6 @@ select.with-style option[selected="selected"] {
   }
   #node-52 .field-name-body .field-item table p {
     padding-left: 0 !important;
-  }
-
-  .page-node-17 table {
-    margin-left: 10px;
-  }
-  .page-node-17 table td img {
-    min-width: 30px;
-    padding-left: 10px;
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {
