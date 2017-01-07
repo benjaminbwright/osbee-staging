@@ -81,6 +81,15 @@
         pointer-events: none;
     }
 
+    #widget_pager_bottom_vertical_slideshow-block, 
+    .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block {
+        bottom: 100px;
+    }
+
+    .front.domain-osbee-com .views-field.views-field-field-slide-caption {
+        bottom: 125px;
+    }
+
     #block-block-3,
     #block-block-2 {
         display: none;

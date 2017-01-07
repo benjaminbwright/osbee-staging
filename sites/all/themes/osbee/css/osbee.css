@@ -3364,6 +3364,10 @@ h1.site-name a {
   visibility: hidden;
 }
 
+#block-block-6 {
+  display: none !important;
+}
+
 /* line 19, ../src/scss/_navigation.scss */
 .region-navigation ul.menu li a {
   text-transform: uppercase;
@@ -4478,8 +4482,8 @@ span.views-slideshow-controls-text-pause {
   font-family: 'FontAwesome';
   content: "\f1c1";
   width: 50px;
-  font-size: 28px;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-top: 4px;
 }
 
 /* line 737, ../src/scss/_page.scss */
@@ -5429,7 +5433,7 @@ select.with-style option[selected="selected"] {
 .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block {
   display: inline-block;
   position: absolute;
-  bottom: 100px;
+  bottom: 55px;
   right: 0;
   left: 0;
   width: 100%;
@@ -5456,7 +5460,7 @@ select.with-style option[selected="selected"] {
 .front.domain-osbee-com .views-field.views-field-field-slide-caption {
   position: absolute;
   z-index: 500;
-  bottom: 125px;
+  bottom: 90px;
   width: 100%;
   text-align: center;
   color: #ffffff;
@@ -7301,6 +7305,15 @@ select.with-style option[selected="selected"] {
   span.views-slideshow-controls-text-next,
   span.views-slideshow-controls-text-previous {
     pointer-events: none;
+  }
+
+  #widget_pager_bottom_vertical_slideshow-block,
+  .front.domain-osbee-com #widget_pager_bottom_homepage_slideshow-block {
+    bottom: 100px;
+  }
+
+  .front.domain-osbee-com .views-field.views-field-field-slide-caption {
+    bottom: 125px;
   }
 
   #block-block-3,
