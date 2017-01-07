@@ -16,10 +16,12 @@
         var pageImage = $(".field-name-field-image");
         var responsiveContent = $(".responsive-narrow-body");
         var footerBlock = $("#block-block-3 .block-content");
+        var footerBlock2 = $("#block-block-2 .block-content");
 
         pageContent.clone().appendTo('.responsive-narrow-body');
         pageImage.clone().prependTo('.responsive-narrow-body');
         footerBlock.clone().appendTo('.responsive-narrow-body .narrow-body');
+        footerBlock2.clone().appendTo('.responsive-narrow-body .narrow-body');
 
         $("#main-content a.active").click(function(event){
             event.preventDefault();
