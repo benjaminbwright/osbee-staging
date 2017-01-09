@@ -930,6 +930,11 @@ span.views-slideshow-controls-text-previous {
 
 span.views-slideshow-controls-text-next {
     right: 10px;
+    height: 100px;
+    width: 55px;
+    a {
+      margin-left: -45px;
+    }
     a:after {
         visibility: visible;
         content: '5';
@@ -938,6 +943,8 @@ span.views-slideshow-controls-text-next {
 
 span.views-slideshow-controls-text-previous {
     left: 10px;
+    height: 100px;
+    width: 55px;
     a:before {
         visibility: visible;
         content: '4';
@@ -966,6 +973,15 @@ span.views-slideshow-controls-text-pause {
     }
   }
 
+}
+
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal {
+    margin-top: 10px;
+}
+
+.jcarousel-next-horizontal {
+    margin-right: -13px;
 }
 
 /* line 498, ../src/scss/_page.scss */
@@ -1048,6 +1064,7 @@ span.views-slideshow-controls-text-pause {
 /* line 558, ../src/scss/_page.scss */
 .section-portfolio-page .jcarousel-clip {
   overflow: hidden;
+  margin-left: 25px; 
 }
 
 /* line 562, ../src/scss/_page.scss */
@@ -1064,7 +1081,7 @@ span.views-slideshow-controls-text-pause {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-weight: bold;
+  font-weight: normal;
   background: $blue;
   text-align: center;
   min-width: 15px;
@@ -1095,7 +1112,7 @@ span.views-slideshow-controls-text-pause {
   right: -50px;
   top: 0;
   cursor: pointer;
-  visibility: hidden;
+  //visibility: hidden;
 }
 
 /* line 604, ../src/scss/_page.scss */
@@ -1146,7 +1163,6 @@ span.views-slideshow-controls-text-pause {
 .section-portfolio .field-type-link-field a,
 .section-portfolio-page .field-type-link-field a {
   color: #49758F;
-  text-decoration: none;
 }
 
 /* line 642, ../src/scss/_page.scss */
@@ -3158,4 +3174,4 @@ $swiper-slide-ease: 5s;
     }
 }
 
-@import "responsive"
+@import "responsive";

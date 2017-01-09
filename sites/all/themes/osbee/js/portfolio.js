@@ -12,6 +12,10 @@
         // The caption expand trigger
         captionExpand = $(".caption-expand");
 
+        // Make Portfolio Link Active
+        $(".section-portfolio #mobile-navigation ul li a.portfolio").parent().addClass('active-trail').addClass('active').addClass('active-page');
+
+
         //portfolioCaption.after('<div class="caption-expand">i</div>');
         $(".caption-expand").click(function(){
             $(this).prev().toggleClass('caption-expanded');
@@ -42,10 +46,19 @@
 
             // Resize portfolio image heights
             $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", ($(window).width()*.29)+1+"px");
+
+            // Position arrows in middle of portfolio image 
+            $(".section-portfolio-page #page .views_slideshow_controls_text_next").css("top", ($(window).width()*.125)+"px");
+            $(".section-portfolio-page #page .views_slideshow_controls_text_previous").css("top", ($(window).width()*.125)+"px");
         } else {
             $(".views-field-field-portfolio-image ul").height(326);
             // Resize portfolio image heights
             $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", "72px");
+        
+            // Position arrows in middle of portfolio image 
+            $(".section-portfolio-page #page .views_slideshow_controls_text_next").css("top", "110px");
+            $(".section-portfolio-page #page .views_slideshow_controls_text_previous").css("top", "110px");
+
         }
 
         $(window).resize(function(){
@@ -56,9 +69,18 @@
             
                  // Resize portfolio image heights
                 $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", ($(window).width()*.29)+1+"px");
+            
+                // Position arrows in middle of portfolio image 
+                $(".section-portfolio-page #page .views_slideshow_controls_text_next").css("top", ($(window).width()*.125)+"px");
+                $(".section-portfolio-page #page .views_slideshow_controls_text_previous").css("top", ($(window).width()*.125)+"px");
             } else {
                 $(".views-field-field-portfolio-image ul").height(326);
                 $('.section-portfolio-page .views-slideshow-controls-bottom .views_slideshow_jcarousel_pager_item .views-field-field-portfolio-image').css("height", "72px");
+
+                // Position arrows in middle of portfolio image 
+                $(".section-portfolio-page #page .views_slideshow_controls_text_next").css("top", "110px");
+                $(".section-portfolio-page #page .views_slideshow_controls_text_previous").css("top", "110px");
+
             }
         });
 
@@ -71,7 +93,7 @@
             if ($(".views-slideshow-controls-bottom").hasClass("collapsed")) {
                 $("body").css("overflow", "visible");
             } else {
-                if (portrait.matches) {
+                if ($(window).width() < $(window).height()) {
                     // Scroll to active menu item
                     var container = $("html,body");
                     var scrollTo = $("#main-content");
@@ -87,26 +109,30 @@
 
         $(".section-portfolio-page .views-content-field-portfolio-image").click(function(){
             $(".views-slideshow-controls-bottom").toggleClass("collapsed");
+            $(".toggle-carousel").toggleClass("icon-icon-portfolio-carousel-base3-multipler1");
+            $(".toggle-carousel").toggleClass("icon-icon-portfolio-carousel-base3-single");
         });
         
         //Scroll to top of portfolio slideshow in landscape.
-        var portrait = window.matchMedia("(orientation: portrait)");
-        $(window).on("orientationchange load resize", function(){
-            portrait = window.matchMedia("(orientation: portrait)");
-            if (!portrait.matches) {
+        $(window).on("load resize", function(){
+            var scrolled = false;
+            if ($(window).width() > $(window).height()) {
                 // Scroll to active menu item
                 var container = $("html,body");
                 var scrollTo = $("#views_slideshow_swiper_main_portfolio_individual_items-block_1");
                 
-                 if (scrollTo.offset() !== null) {
+                if (!scrolled) {
                     if ($(this).scrollTop() < 10) {
-                        setInterval(function(){ 
+                        setTimeout(function(){ 
                             container.animate({ scrollTop: scrollTo.offset().top},'1200');
-                        }, 3000);
+                        }, 2000);
                     }
+                    scrolled = true;
                 }
-            
-            }
+
+            } else {
+                container.animate({});
+            } 
         });
         /*if (!portrait.matches) {
             // Scroll to active menu item

@@ -4130,6 +4130,11 @@ span.views-slideshow-controls-text-previous a:after {
 
 span.views-slideshow-controls-text-next {
   right: 10px;
+  height: 100px;
+  width: 55px;
+}
+span.views-slideshow-controls-text-next a {
+  margin-left: -45px;
 }
 span.views-slideshow-controls-text-next a:after {
   visibility: visible;
@@ -4138,6 +4143,8 @@ span.views-slideshow-controls-text-next a:after {
 
 span.views-slideshow-controls-text-previous {
   left: 10px;
+  height: 100px;
+  width: 55px;
 }
 span.views-slideshow-controls-text-previous a:before {
   visibility: visible;
@@ -4164,6 +4171,15 @@ span.views-slideshow-controls-text-pause {
 .section-portfolio-page #page .views_slideshow_jcarousel_pager_item .views-content-field-portfolio-image img.portfolio_thumb {
   width: 100%;
   height: auto;
+}
+
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal {
+  margin-top: 10px;
+}
+
+.jcarousel-next-horizontal {
+  margin-right: -13px;
 }
 
 /* line 498, ../src/scss/_page.scss */
@@ -4234,6 +4250,7 @@ span.views-slideshow-controls-text-pause {
 /* line 558, ../src/scss/_page.scss */
 .section-portfolio-page .jcarousel-clip {
   overflow: hidden;
+  margin-left: 25px;
 }
 
 /* line 562, ../src/scss/_page.scss */
@@ -4250,7 +4267,7 @@ span.views-slideshow-controls-text-pause {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-weight: bold;
+  font-weight: normal;
   background: #5d86a0;
   text-align: center;
   min-width: 15px;
@@ -4281,7 +4298,6 @@ span.views-slideshow-controls-text-pause {
   right: -50px;
   top: 0;
   cursor: pointer;
-  visibility: hidden;
 }
 
 /* line 604, ../src/scss/_page.scss */
@@ -4335,7 +4351,6 @@ span.views-slideshow-controls-text-pause {
 .section-portfolio .field-type-link-field a,
 .section-portfolio-page .field-type-link-field a {
   color: #49758F;
-  text-decoration: none;
 }
 
 /* line 642, ../src/scss/_page.scss */
@@ -6554,6 +6569,10 @@ select.with-style option[selected="selected"] {
     display: none;
   }
 
+  .view-portfolio-individual-items {
+    position: relative;
+  }
+
   .views_slideshow_swiper_main .views-field-field-portfolio-image .item-list {
     position: relative;
     height: auto;
@@ -7300,11 +7319,6 @@ select.with-style option[selected="selected"] {
   a {
     color: #E6E6E6 !important;
     font-weight: normal;
-  }
-
-  span.views-slideshow-controls-text-next,
-  span.views-slideshow-controls-text-previous {
-    pointer-events: none;
   }
 
   #widget_pager_bottom_vertical_slideshow-block,
