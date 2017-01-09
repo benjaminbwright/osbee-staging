@@ -91,8 +91,8 @@
             $(this).toggleClass("icon-icon-portfolio-carousel-base3-multipler1");
             $(this).toggleClass("icon-icon-portfolio-carousel-base3-single");
             if ($(".views-slideshow-controls-bottom").hasClass("collapsed")) {
-                $("body").css("overflow-y", "visible");
-                $("body").css("max-height", "100vh");
+                $("body").css("overflow", "visible");
+                $("#main-content .field-name-field-portfolio-type").css("position", "relative").css("z-index", "10000");
             } else {
                 if ($(window).width() < $(window).height()) {
                     // Scroll to active menu item

@@ -651,7 +651,8 @@
             bottom: initial;
             margin-left: 0 !important;
             position: fixed;
-            top: 118px !important;
+            top: 0 !important;
+            padding-top: 118px !important;
             bottom: 0 !important;
             background: $black;
             z-index: 100 !important;
