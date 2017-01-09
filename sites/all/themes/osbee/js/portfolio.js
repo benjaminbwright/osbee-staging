@@ -84,6 +84,19 @@
             }
         });
 
+        $(".section-portfolio-page #page .views-slideshow-controls-bottom").scroll(function() {
+
+            if ($(this).scrollTop() > 50 )
+             {
+                $("#main-content .field-name-field-portfolio-type").css("z-index", "25");
+                $("#page #main-content .prose h1.term-name").css("z-index", "25");
+             } else if ($(this).scrollTop() < 50 ) {
+                $("#main-content .field-name-field-portfolio-type").css("z-index", "95");
+                $("#page #main-content .prose h1.term-name").css("z-index", "95");
+             }
+
+         });
+
         $(".views-slideshow-controls-bottom").addClass("collapsed");
         $(".section-portfolio-page .views-slideshow-controls-bottom").before('<div class="toggle-carousel icon icon-icon-portfolio-carousel-base3-multipler1"></div>');
         $(".toggle-carousel").click(function(){
