@@ -108,6 +108,7 @@
                 $("#main-content .field-name-field-portfolio-type").css("z-index", "25");
                 $("#page #main-content .prose h1.term-name").css("z-index", "25");
                 
+                $(".section-portfolio-page #page .views-slideshow-controls-bottom").scrollTop(0);
             } else {
                 if ($(window).width() < $(window).height()) {
                     // Scroll to active menu item
@@ -121,7 +122,7 @@
                 }
                 $("body").css("overflow", "hidden");
                 $("#main-content .field-name-field-portfolio-type").css("z-index", "95").css("position", "relative");
-                $("#page #main-content .prose h1.term-name").css("z-index", "95").css("position", "relative");
+                $("#page #main-content .prose h1.term-name").css("z-index", "95").css("position", "relative");    
             }
         });
 
