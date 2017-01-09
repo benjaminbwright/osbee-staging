@@ -1239,7 +1239,13 @@ span.views-slideshow-controls-text-pause {
 /* line 671, ../src/scss/_page.scss */
 .section-portfolio .field-name-field-press,
 .section-portfolio-page .field-name-field-press {
-  background-image: url(../images/icons/press-icon.png);
+  //background-image: url(../images/icons/press-icon.png);
+    content: 'f';
+    font-family: 'osbee-icons';
+    padding: 0;
+    position:absolute;
+    left: -25px;
+    font-size: 18px;
 
 }
 
