@@ -92,6 +92,7 @@
             $(this).toggleClass("icon-icon-portfolio-carousel-base3-single");
             if ($(".views-slideshow-controls-bottom").hasClass("collapsed")) {
                 $("body").css("overflow-y", "visible");
+                $("body").css("max-height", "100vh");
             } else {
                 if ($(window).width() < $(window).height()) {
                     // Scroll to active menu item
@@ -104,6 +105,7 @@
                     }
                 }
                 $("body").css("overflow-y", "hidden");
+                $("body").css("max-height", "none");
             }
         });
 
