@@ -8158,6 +8158,8 @@ select.with-style option[selected="selected"] {
 
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom {
     top: 0 !important;
+    padding-top: 15px !important;
+    z-index: 100 !important;
   }
 
   #block-block-7 {

@@ -1003,7 +1003,11 @@
     }
     .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom {
         top: 0 !important;
+        padding-top: 15px !important;
+        z-index: 100 !important;
     }
+
+
     // Logo placement on homepage slideshow
     #block-block-7 {
         bottom: 250px !important; 
