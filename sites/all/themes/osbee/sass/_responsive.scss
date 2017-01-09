@@ -655,7 +655,7 @@
             padding-top: 118px !important;
             bottom: 0 !important;
             background: $black;
-            z-index: 100 !important;
+            z-index: 90 !important; 
             padding-top: 2%;
             overflow-y: scroll;
             min-height: 50vh;
@@ -1082,7 +1082,7 @@
         }
         .views-field-field-slide-caption {
             bottom: 145px !important;
-            font-size: 175% !important;
+            font-size: 175% !important; 
         }
 
     }

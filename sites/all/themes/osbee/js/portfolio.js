@@ -92,7 +92,9 @@
             $(this).toggleClass("icon-icon-portfolio-carousel-base3-single");
             if ($(".views-slideshow-controls-bottom").hasClass("collapsed")) {
                 $("body").css("overflow", "visible");
-                $("#main-content .field-name-field-portfolio-type").css("position", "relative").css("z-index", "10000");
+                $("#main-content .field-name-field-portfolio-type").css("z-index", "25");
+                $("#page #main-content .prose h1.term-name").css("z-index", "25");
+                
             } else {
                 if ($(window).width() < $(window).height()) {
                     // Scroll to active menu item
@@ -104,8 +106,9 @@
                         container.animate({ scrollTop: scrollTo.offset().top},'1200');
                     }
                 }
-                $("body").css("overflow-y", "hidden");
-                $("body").css("max-height", "none");
+                $("body").css("overflow", "hidden");
+                $("#main-content .field-name-field-portfolio-type").css("z-index", "95").css("position", "relative");
+                $("#page #main-content .prose h1.term-name").css("z-index", "95").css("position", "relative");
             }
         });
 
