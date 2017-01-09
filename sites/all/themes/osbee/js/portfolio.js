@@ -129,6 +129,8 @@
             $(".views-slideshow-controls-bottom").toggleClass("collapsed");
             $(".toggle-carousel").toggleClass("icon-icon-portfolio-carousel-base3-multipler1");
             $(".toggle-carousel").toggleClass("icon-icon-portfolio-carousel-base3-single");
+            $("#main-content .field-name-field-portfolio-type").css("z-index", "25");
+            $("#page #main-content .prose h1.term-name").css("z-index", "25");
         });
         
         //Scroll to top of portfolio slideshow in landscape.
