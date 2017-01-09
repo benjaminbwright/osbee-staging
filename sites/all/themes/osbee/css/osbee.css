@@ -7860,10 +7860,11 @@ select.with-style option[selected="selected"] {
     bottom: initial;
     margin-left: 0 !important;
     position: fixed;
-    top: 118px !important;
+    top: 0 !important;
+    padding-top: 118px !important;
     bottom: 0 !important;
     background: #000000;
-    z-index: 100 !important;
+    z-index: 90 !important;
     padding-top: 2%;
     overflow-y: scroll;
     min-height: 50vh;
@@ -8157,6 +8158,8 @@ select.with-style option[selected="selected"] {
 
   .section-portfolio-page .region-content .block-views .views-slideshow-controls-bottom {
     top: 0 !important;
+    padding-top: 15px !important;
+    z-index: 100 !important;
   }
 
   #block-block-7 {
