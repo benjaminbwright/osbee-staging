@@ -3276,6 +3276,10 @@ table {
   position: relative;
 }
 
+.page-modal-forms #main-content {
+  height: auto;
+}
+
 /* line 1, ../src/scss/_text.scss */
 body {
   color: #555554;
@@ -6957,21 +6961,44 @@ select.with-style option[selected="selected"] {
     clear: both;
     color: #ffffff;
   }
+  .page-careers .node-career .field-name-body {
+    padding-top: 10px;
+  }
   .page-careers .view-open-positions .view-header {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .page-careers .view-open-positions .menu {
+    border-top: none !important;
+  }
+  .page-careers .view-open-positions .menu li {
+    margin-top: -1px;
+    border-bottom: none !important;
+  }
   .page-careers .view-open-positions .menu li a.ajax-link {
+    border-top: 1px solid #bcbec0;
+    border-bottom: 1px solid #bcbec0;
+    margin-top: -1px;
+  }
+  .page-careers .view-open-positions .menu li a.ajax-link.active {
+    background: #bcbec0;
+    color: #000000 !important;
+  }
+  .page-careers .view-open-positions .menu li a.ajax-link:last-child {
     border-bottom: 1px solid #bcbec0;
   }
   .page-careers .view-open-positions .menu li .subcat-expand {
-    margin-top: -10px !important;
+    margin-top: -4px !important;
+    pointer-events: none;
+  }
+  .page-careers .view-open-positions .menu li .field-type-text:last-child {
+    padding-bottom: 10px;
   }
   .page-careers .view-open-positions .menu .menu-subcat {
     display: block !important;
   }
   .page-careers .view-open-positions .menu .menu-subcat #active-content {
-    margin-top: 60px;
+    margin-top: 54px;
   }
   .page-careers .view-open-positions .menu .menu-subcat .node-career h3, .page-careers .view-open-positions .menu .menu-subcat .node-career .field-label {
     font-size: 16px;
@@ -6981,9 +7008,6 @@ select.with-style option[selected="selected"] {
   .page-careers .view-open-positions .menu .menu-subcat .node-career .field-item p {
     padding-right: 10px;
     padding-left: 10px;
-  }
-  .page-careers .view-open-positions .menu .menu-subcat #node-career-full-group-additional-info {
-    padding-bottom: 15px;
   }
   .page-careers .view-open-positions .menu .menu-subcat #node-career-full-group-additional-info .field-item {
     padding-right: 10px;
@@ -7147,6 +7171,10 @@ ul.magazine-articles li ul li.first a img {
     display: block;
     margin: auto;
     text-align: center;
+  }
+
+  .view-id-news_press_awards .view-header {
+    margin-left: 15px;
   }
 
   .view-id-news_press_awards .view-content {

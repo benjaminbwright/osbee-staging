@@ -29,24 +29,44 @@
             color: $white;
         }
 
+        .node-career .field-name-body {
+            padding-top: 10px;
+        }
+
         .view-open-positions {
             .view-header {
                 margin-left: 10px;
                 margin-right: 10px;
             }
             .menu {
+                border-top: none !important;
                 li {
+                    margin-top: -1px;
+                    border-bottom: none !important;
                     a.ajax-link {
+                        border-top: 1px solid #bcbec0;
                         border-bottom: 1px solid #bcbec0;
+                        margin-top: -1px;
+                        &.active {
+                            background: $light-gray;
+                            color: $black !important;
+                        }
+                        &:last-child {
+                            border-bottom: 1px solid #bcbec0;
+                        }
                     }
                     .subcat-expand {
-                        margin-top: -10px !important;
+                        margin-top: -4px !important;
+                        pointer-events: none;
+                    }
+                    .field-type-text:last-child {
+                        padding-bottom: 10px;
                     }
                 }
                 .menu-subcat {
                     display: block !important;
                     #active-content {
-                        margin-top: 60px;
+                        margin-top: 54px;
                     }
                     .node-career h3, .node-career .field-label {
                         font-size: 16px;
@@ -58,7 +78,7 @@
                         padding-left: 10px;
                     }
                     #node-career-full-group-additional-info {
-                        padding-bottom: 15px;
+                        //padding-bottom: 15px;
                         .field-item {
                             padding-right: 10px;
                             padding-left: 10px;
