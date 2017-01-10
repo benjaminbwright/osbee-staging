@@ -7148,6 +7148,11 @@ ul.magazine-articles li ul li.first a img {
     margin: auto;
     text-align: center;
   }
+
+  .view-id-news_press_awards .view-content {
+    margin-left: 15px;
+    height: auto;
+  }
 }
 @media screen and (min-width: 769px) {
   .section-blog .view-latest-posts .views-field-created,
