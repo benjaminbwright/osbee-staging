@@ -18,18 +18,13 @@
 * {
     //-webkit-overflow-scrolling: touch;
 }
-html {
-    position: absolute;
-    height: 100%;
-    overflow: hidden;
-}
+
 
 body {
   //background: #555454;
   background: #000000;
   font-family: MetaOT !important;
-  height: 100%;
-  overflow: auto;
+
 }
 
 body { /* IOS page orientation change resize issue*/
