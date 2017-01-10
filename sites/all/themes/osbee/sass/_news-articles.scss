@@ -8,9 +8,10 @@ ul.magazine-articles {
         float: left;
         display: inline-block;
         height: 200px;
+        width: 14%;
     }
     li {
-        width: 14%;
+        
         .views-field {
 
         }
@@ -54,5 +55,10 @@ ul.magazine-articles {
                 }
             }
         }
+    }
+
+    .view-id-news_press_awards .view-content {
+        margin-left: 15px;
+        height: auto;
     }
 }

@@ -7119,8 +7119,6 @@ ul.magazine-articles > li {
   float: left;
   display: inline-block;
   height: 200px;
-}
-ul.magazine-articles li {
   width: 14%;
 }
 ul.magazine-articles li ul li {
@@ -7149,6 +7147,11 @@ ul.magazine-articles li ul li.first a img {
     display: block;
     margin: auto;
     text-align: center;
+  }
+
+  .view-id-news_press_awards .view-content {
+    margin-left: 15px;
+    height: auto;
   }
 }
 @media screen and (min-width: 769px) {
