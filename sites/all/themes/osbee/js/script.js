@@ -147,7 +147,7 @@
            return true;
         });
 
-        //$ajaxLinks.first().trigger('click');
+        $ajaxLinks.first().trigger('click');
 
         var positionName = '';
 
