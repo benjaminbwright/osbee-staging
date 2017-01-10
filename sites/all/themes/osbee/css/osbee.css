@@ -8216,6 +8216,13 @@ ul.magazine-articles li ul li.first a img {
     bottom: -25px;
   }
 
+  #drawer-menu-toggle {
+    top: 1px;
+  }
+  #drawer-menu-toggle #drawer-menu-toggle-container {
+    top: -1px;
+  }
+
   .front #page {
     max-height: 100vh;
     overflow: hidden;

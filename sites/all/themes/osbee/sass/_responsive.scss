@@ -981,6 +981,13 @@
         position: absolute;
         bottom: -25px;
     }
+
+    #drawer-menu-toggle {
+        top: 1px;
+        #drawer-menu-toggle-container {
+            top: -1px;
+        }
+    }
     
     .front #page {
         max-height: 100vh;
