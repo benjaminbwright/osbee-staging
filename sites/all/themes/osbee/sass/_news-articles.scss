@@ -1,0 +1,58 @@
+/////////////////////////////
+// News & Articles Styles  //
+///////////////////////////////
+
+// Desktop Defaults
+ul.magazine-articles {
+    & > li {
+        float: left;
+        display: inline-block;
+        height: 200px;
+    }
+    li {
+        width: 14%;
+        .views-field {
+
+        }
+        ul {
+            li {
+                display: none;
+                &.first {
+                    display: block;
+                    a {
+                        img {
+                            border: solid 1px $light-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+// Responsive 
+@media screen and (max-width: $medium) {
+    ul.magazine-articles {
+        li {
+            padding-top: 10px;
+            display: block;
+            width: 90%;
+            height: auto;
+            margin: auto !important;
+            float: none;
+            ul {
+
+            }
+            div {
+                margin: auto;
+                .field-content {
+                    display: block;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
