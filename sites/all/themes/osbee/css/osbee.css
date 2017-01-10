@@ -7591,6 +7591,7 @@ ul.magazine-articles li ul li.first a img {
 
   #drawer-menu-toggle {
     position: fixed;
+    position: device-fixed !important;
     right: 0;
     top: 0;
     width: 50px;
