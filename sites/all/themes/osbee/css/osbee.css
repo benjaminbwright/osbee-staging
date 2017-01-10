@@ -8217,6 +8217,7 @@ ul.magazine-articles li ul li.first a img {
   }
 
   #drawer-menu-toggle {
+    -webkit-transform: translateZ(10000);
     top: 1px;
   }
   #drawer-menu-toggle #drawer-menu-toggle-container {
