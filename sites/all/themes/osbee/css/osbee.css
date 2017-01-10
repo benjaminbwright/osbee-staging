@@ -7119,8 +7119,6 @@ ul.magazine-articles > li {
   float: left;
   display: inline-block;
   height: 200px;
-}
-ul.magazine-articles li {
   width: 14%;
 }
 ul.magazine-articles li ul li {
