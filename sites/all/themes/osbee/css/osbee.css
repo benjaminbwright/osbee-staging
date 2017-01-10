@@ -6987,8 +6987,11 @@ select.with-style option[selected="selected"] {
   .page-careers .view-open-positions .menu li a.ajax-link:last-child {
     border-bottom: 1px solid #bcbec0;
   }
+  .page-careers .view-open-positions .menu li.active-trail .subcat-expand {
+    color: #000000 !important;
+  }
   .page-careers .view-open-positions .menu li .subcat-expand {
-    margin-top: -4px !important;
+    margin-top: 0 !important;
     pointer-events: none;
   }
   .page-careers .view-open-positions .menu li .field-type-text:last-child {

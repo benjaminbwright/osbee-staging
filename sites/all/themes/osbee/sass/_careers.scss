@@ -55,8 +55,13 @@
                             border-bottom: 1px solid #bcbec0;
                         }
                     }
+                    &.active-trail {
+                        .subcat-expand {
+                            color: $black !important; 
+                        }
+                    }
                     .subcat-expand {
-                        margin-top: -4px !important;
+                        margin-top: 0 !important;
                         pointer-events: none;
                     }
                     .field-type-text:last-child {
