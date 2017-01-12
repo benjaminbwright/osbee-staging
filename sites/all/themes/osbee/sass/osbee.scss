@@ -1053,6 +1053,22 @@ span.views-slideshow-controls-text-pause {
   width: 668px;
 }
 
+.section-portfolio-page .views-field-field-external-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    a {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        text-indent: -9999px;
+        display: inline-block;
+    }
+}
+
 /* line 545, ../src/scss/_page.scss */
 .section-portfolio-page #page .views-field-field-caption {
     display: none;
@@ -1248,13 +1264,14 @@ span.views-slideshow-controls-text-pause {
 .section-portfolio .field-name-field-press,
 .section-portfolio-page .field-name-field-press {
   //background-image: url(../images/icons/press-icon.png);
-    content: 'f';
-    font-family: 'osbee-icons';
-    padding: 0;
-    position:absolute;
-    left: -25px;
-    font-size: 18px;
-
+    .field-item:before {
+      content: 'f';
+      font-family: 'osbee-icons';
+      padding: 0;
+      position:absolute;
+      left: -25px;
+      font-size: 18px;
+    }
 }
 
 /* line 675, ../src/scss/_page.scss */
