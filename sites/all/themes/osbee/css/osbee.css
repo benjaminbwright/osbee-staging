@@ -7379,6 +7379,10 @@ ul.magazine-articles li ul li.first a img {
   #active-content .responsive-narrow-body .narrow-body #block-block-3 {
     display: none;
   }
+
+  #node-17 .fa:before {
+    font-size: 28px;
+  }
 }
 @media (max-width: 768px) {
   .mobile-blue {
