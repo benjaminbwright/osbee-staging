@@ -7082,6 +7082,10 @@ select.with-style option[selected="selected"] {
     margin-left: -10px !important;
     margin-right: -10px !important;
   }
+
+  .captcha {
+    margin-left: 15px;
+  }
 }
 .page-node-36 .field-name-body .field-item ul {
   margin-left: 0;
