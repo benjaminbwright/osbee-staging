@@ -7179,6 +7179,8 @@ ul.magazine-articles li ul li.first {
 }
 ul.magazine-articles li ul li.first a img {
   border: solid 1px #bcbec0;
+  max-width: 80%;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
