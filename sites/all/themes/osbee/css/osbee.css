@@ -7200,6 +7200,9 @@ ul.magazine-articles li ul li.first a img {
     margin: auto;
     text-align: center;
   }
+  ul.magazine-articles li div .field-content a.colorbox {
+    pointer-events: none;
+  }
 
   .view-id-news_press_awards .view-header {
     margin-left: 15px;

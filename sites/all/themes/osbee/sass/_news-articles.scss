@@ -53,6 +53,9 @@ ul.magazine-articles {
                     display: block;
                     margin: auto;
                     text-align: center;
+                    a.colorbox {
+                        pointer-events: none;
+                    }
                 }
             }
         }
