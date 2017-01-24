@@ -7183,6 +7183,12 @@ ul.magazine-articles li ul li.first a img {
   height: auto;
 }
 
+@media screen and (min-width: 769px) {
+  .view-news-press-awards .field-content img {
+    width: 100px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   ul.magazine-articles li {
     padding-top: 10px;
@@ -7210,6 +7216,14 @@ ul.magazine-articles li ul li.first a img {
 
   .view-id-news_press_awards .view-content {
     margin-left: 15px;
+    height: auto;
+  }
+  .view-id-news_press_awards .view-content .views-field-field-image {
+    margin: 0;
+    width: 97%;
+  }
+  .view-id-news_press_awards .view-content .field-content img {
+    width: 100%;
     height: auto;
   }
 }
